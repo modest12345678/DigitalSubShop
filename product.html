@@ -31,20 +31,21 @@
       theme: {
         extend: {
           colors: {
-            "surface-dim": "#080a0e",
-            "surface": "#0d1015",
-            "surface-container-lowest": "#05070a",
-            "surface-container-low": "#11141b",
-            "surface-container": "#161b24",
-            "surface-container-high": "#1e2430",
-            "primary": "#d4f7ff",
-            "primary-container": "#00e5ff",
-            "on-primary-container": "#00363d",
-            "secondary": "#c8b6ff",
-            "tertiary": "#6ffbbe",
-            "on-surface": "#f1f3f7",
-            "on-surface-variant": "#9aa4b2",
-            "outline": "#4b5565"
+            "surface-dim": "#090d18",
+            "surface": "#0e1424",
+            "surface-container-lowest": "#060912",
+            "surface-container-low": "#11182c",
+            "surface-container": "#151f38",
+            "surface-container-high": "#1c2848",
+            "primary": "#0066ff",
+            "primary-container": "#0066ff",
+            "on-primary-container": "#ffffff",
+            "secondary": "#00d2ff",
+            "tertiary": "#10b981",
+            "accent-red": "#ff3b30",
+            "on-surface": "#ffffff",
+            "on-surface-variant": "#94a3b8",
+            "outline": "#334155"
           },
           fontFamily: {
             sans: ["Inter", "sans-serif"],
@@ -57,18 +58,18 @@
 <style>
     @layer base {
       html, body {
-        background-color: #080a0e;
-        color: #f1f3f7;
+        background-color: #090d18;
+        color: #ffffff;
         scroll-behavior: smooth;
       }
     }
     .glass-card {
-      background: linear-gradient(180deg, rgba(22, 27, 36, 0.75) 0%, rgba(13, 16, 21, 0.92) 100%);
+      background: linear-gradient(180deg, rgba(19, 27, 48, 0.85) 0%, rgba(13, 19, 34, 0.95) 100%);
       backdrop-filter: blur(14px);
-      border: 1px solid rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.08);
     }
     .glass-pill {
-      background: rgba(255, 255, 255, 0.04);
+      background: rgba(255, 255, 255, 0.05);
       border: 1px solid rgba(255, 255, 255, 0.08);
     }
     .desc-content p { margin-bottom: 12px; }
@@ -80,19 +81,19 @@
     .desc-content li { position: relative; padding-left: 18px; margin-bottom: 6px; }
     .desc-content li::before {
       content: ""; position: absolute; left: 0; top: 8px;
-      width: 6px; height: 6px; border-radius: 50%; background: #00e5ff;
+      width: 6px; height: 6px; border-radius: 50%; background: #0066ff;
     }
-    .tab-btn2.active { background: #00e5ff; color: #00363d; }
+    .tab-btn2.active { background: #0066ff; color: #ffffff; }
   </style>
 </head>
 <body class="bg-surface-dim font-sans antialiased text-on-surface selection:bg-primary-container selection:text-on-primary-container">
 <!-- ================= NAVIGATION ================= -->
-<header class="fixed top-0 left-0 right-0 z-50 bg-[#080a0e]/85 backdrop-blur-xl border-b border-white/[0.06]">
+<header class="fixed top-0 left-0 right-0 z-50 bg-[#090d18]/85 backdrop-blur-xl border-b border-white/[0.08]">
   <div class="max-w-7xl mx-auto h-20 px-4 sm:px-8 flex items-center justify-between gap-6">
     <a class="flex items-center gap-3 group" href="index.html">
-      <img src="images/logo.png" alt="DigitalSubShop Logo" class="h-10 w-auto object-contain group-hover:scale-105 transition-transform duration-300 drop-shadow-[0_0_12px_rgba(0,160,255,0.35)]"/>
+      <img src="images/logo.png" alt="DigitalSubShop Logo" class="h-10 w-auto object-contain group-hover:scale-105 transition-transform duration-300 drop-shadow-[0_0_12px_rgba(0,102,255,0.45)]"/>
       <div class="flex flex-col">
-        <span class="font-display font-bold text-lg tracking-tight text-white">Digital<span class="text-primary-container">SubShop</span></span>
+        <span class="font-display font-bold text-lg tracking-tight text-white">Digital<span class="text-[#00d2ff]">SubShop</span></span>
         <span class="text-[10px] tracking-widest text-on-surface-variant font-medium uppercase -mt-0.5">Verified Licenses</span>
       </div>
     </a>
@@ -107,7 +108,7 @@
       <a href="https://www.facebook.com/share/1F3zoLEESe/" target="_blank" class="w-9 h-9 rounded-full glass-pill flex items-center justify-center text-on-surface-variant hover:text-white hover:bg-white/[0.08] transition-all" aria-label="Facebook Page">
         <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073c0 6.021 4.388 11.015 10.125 11.927v-8.42H7.078v-3.507h3.047V9.412c0-3.046 1.792-4.727 4.533-4.727 1.312 0 2.686.235 2.686.235v2.97H15.83c-1.491 0-1.956.93-1.956 1.886v2.267h3.328l-.532 3.507h-2.796V24C19.612 23.088 24 18.094 24 12.073z"/></svg>
       </a>
-      <a href="https://wa.me/8801887924939?text=Hello%20DigitalSubShop!%20I%20have%20a%20question." target="_blank" class="hidden sm:flex items-center gap-2 px-4 py-2.5 rounded-xl bg-primary-container text-on-primary-container font-semibold text-xs uppercase tracking-wider hover:brightness-110 transition-all">
+      <a href="https://wa.me/8801887924939?text=Hello%20DigitalSubShop!%20I%20have%20a%20question." target="_blank" class="hidden sm:flex items-center gap-2 px-4 py-2.5 rounded-xl bg-primary-container text-on-primary-container font-semibold text-xs uppercase tracking-wider hover:brightness-110 shadow-[0_0_16px_rgba(0,102,255,0.4)] transition-all">
         <span class="material-symbols-outlined text-[15px]">chat</span> Order Now
       </a>
       <button class="lg:hidden p-2 rounded-xl text-on-surface-variant hover:text-white focus:outline-none" onclick="toggleMobileMenu()" aria-label="Toggle Menu">
@@ -115,13 +116,13 @@
       </button>
     </div>
   </div>
-  <div class="hidden lg:hidden border-t border-white/[0.06] bg-[#080a0e]/95 backdrop-blur-xl px-6 py-4 flex flex-col gap-3 text-sm text-on-surface-variant" id="mobileMenu">
+  <div class="hidden lg:hidden border-t border-white/[0.06] bg-[#090d18]/95 backdrop-blur-xl px-6 py-4 flex flex-col gap-3 text-sm text-on-surface-variant" id="mobileMenu">
     <a class="py-2 hover:text-white transition-colors border-b border-white/[0.04]" href="index.html" onclick="toggleMobileMenu()">Home</a>
     <a class="py-2 hover:text-white transition-colors border-b border-white/[0.04]" href="index.html#catalog" onclick="toggleMobileMenu()">Catalog</a>
     <a class="py-2 hover:text-white transition-colors border-b border-white/[0.04]" href="pricing.html" onclick="toggleMobileMenu()">Pricing Chart</a>
     <a class="py-2 hover:text-white transition-colors border-b border-white/[0.04]" href="how-to-buy.html" onclick="toggleMobileMenu()">How to Buy</a>
     <a class="py-2 hover:text-white transition-colors border-b border-white/[0.04]" href="index.html#faq" onclick="toggleMobileMenu()">FAQ</a>
-    <a class="mt-2 py-2.5 rounded-xl bg-primary-container text-on-primary-container font-bold text-center uppercase tracking-wider flex items-center justify-center gap-2" href="https://wa.me/8801887924939?text=Hello%20DigitalSubShop!%20I%20want%20to%20order." target="_blank">
+    <a class="mt-2 py-2.5 rounded-xl bg-primary-container text-on-primary-container font-bold text-center uppercase tracking-wider flex items-center justify-center gap-2 shadow-[0_0_16px_rgba(0,102,255,0.4)]" href="https://wa.me/8801887924939?text=Hello%20DigitalSubShop!%20I%20want%20to%20order." target="_blank">
       <span class="material-symbols-outlined text-[18px]">chat</span> Order on WhatsApp
     </a>
   </div>
@@ -244,10 +245,10 @@
                 <span class="text-[11px] text-on-surface-variant block">Total Payable:</span>
                 <div id="pSummaryPlan" class="text-xs text-white truncate max-w-[200px]">Plan details</div>
               </div>
-              <div id="pSummaryPrice" class="text-2xl font-display font-bold text-primary-container">৳0</div>
+              <div id="pSummaryPrice" class="text-2xl font-display font-bold text-[#00d2ff]">৳0</div>
             </div>
             
-            <button onclick="sendWhatsAppOrder()" class="w-full py-3.5 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 hover:brightness-110 shadow-[0_0_20px_rgba(0,229,255,0.35)] transition-all active:scale-[0.98]">
+            <button onclick="sendWhatsAppOrder()" class="w-full py-3.5 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 hover:brightness-110 shadow-[0_0_20px_rgba(0,102,255,0.45)] transition-all active:scale-[0.98]">
               <span class="material-symbols-outlined text-[18px]">chat</span>
               <span>Confirm &amp; Order on WhatsApp</span>
             </button>

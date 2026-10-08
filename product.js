@@ -219,7 +219,7 @@ function renderVariations() {
     const regP = v.regular_price ? `৳${v.regular_price.toLocaleString()}` : '';
     const saveP = (v.regular_price && v.regular_price > v.price) ? `Save ৳${v.regular_price - v.price}` : '';
     return `
-      <div class="variation-option-card flex items-center justify-between p-4 rounded-2xl border cursor-pointer transition-all duration-200 hover:-translate-y-1 hover:shadow-md ${isSelected ? 'border-primary-container bg-primary-container/15 text-white shadow-[0_0_16px_rgba(0,229,255,0.25)]' : 'border-white/10 bg-white/[0.04] text-on-surface-variant'}" data-vi="${i}">
+      <div class="variation-option-card flex items-center justify-between p-4 rounded-2xl border cursor-pointer transition-all duration-200 hover:-translate-y-1 hover:shadow-md ${isSelected ? 'border-primary-container bg-primary-container/15 text-white shadow-[0_0_16px_rgba(0,102,255,0.35)]' : 'border-white/10 bg-white/[0.04] text-on-surface-variant'}" data-vi="${i}">
         <div class="flex items-center gap-3">
           <div class="w-4 h-4 rounded-full border flex items-center justify-center ${isSelected ? 'border-primary-container' : 'border-outline'}">
             <div class="w-2 h-2 rounded-full ${isSelected ? 'bg-primary-container' : 'bg-transparent'}"></div>
@@ -240,12 +240,12 @@ function renderVariations() {
     card.addEventListener('click', () => {
       pCurrentVariation = pProduct.variations[Number(card.dataset.vi)];
       list.querySelectorAll('.variation-option-card').forEach(c => {
-        c.classList.remove('border-primary-container', 'bg-primary-container/15', 'text-white', 'shadow-[0_0_16px_rgba(0,229,255,0.25)]');
+        c.classList.remove('border-primary-container', 'bg-primary-container/15', 'text-white', 'shadow-[0_0_16px_rgba(0,102,255,0.35)]');
         c.classList.add('border-white/10', 'bg-white/[0.04]', 'text-on-surface-variant');
         const dotOuter = c.querySelector('.w-4'); if (dotOuter) { dotOuter.classList.remove('border-primary-container'); dotOuter.classList.add('border-outline'); }
         const dotInner = c.querySelector('.w-4 .w-2'); if (dotInner) { dotInner.classList.remove('bg-primary-container'); dotInner.classList.add('bg-transparent'); }
       });
-      card.classList.add('border-primary-container', 'bg-primary-container/15', 'text-white', 'shadow-[0_0_16px_rgba(0,229,255,0.25)]');
+      card.classList.add('border-primary-container', 'bg-primary-container/15', 'text-white', 'shadow-[0_0_16px_rgba(0,102,255,0.35)]');
       card.classList.remove('border-white/10', 'bg-white/[0.04]', 'text-on-surface-variant');
       const dotOuter = card.querySelector('.w-4'); if (dotOuter) { dotOuter.classList.remove('border-outline'); dotOuter.classList.add('border-primary-container'); }
       const dotInner = card.querySelector('.w-4 .w-2'); if (dotInner) { dotInner.classList.remove('bg-transparent'); dotInner.classList.add('bg-primary-container'); }
@@ -290,7 +290,7 @@ function renderRelated() {
     const img = (p.images && p.images[0]) ? p.images[0] : '';
     const cat = (p.categories && p.categories[0]) || 'Digital';
     return `
-      <div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" onclick="openProductPage(${p.id})">
+      <div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" onclick="openProductPage(${p.id})">
         <div class="relative h-28 sm:h-44 overflow-hidden bg-surface-container">
           ${img ? `<img src="${img}" alt="${p.name}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />` : ''}
           <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>

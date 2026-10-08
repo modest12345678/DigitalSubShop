@@ -30,20 +30,21 @@
       theme: {
         extend: {
           colors: {
-            "surface-dim": "#080a0e",
-            "surface": "#0d1015",
-            "surface-container-lowest": "#05070a",
-            "surface-container-low": "#11141b",
-            "surface-container": "#161b24",
-            "surface-container-high": "#1e2430",
-            "primary": "#d4f7ff",
-            "primary-container": "#00e5ff",
-            "on-primary-container": "#00363d",
-            "secondary": "#c8b6ff",
-            "tertiary": "#6ffbbe",
-            "on-surface": "#f1f3f7",
-            "on-surface-variant": "#9aa4b2",
-            "outline": "#4b5565"
+            "surface-dim": "#090d18",
+            "surface": "#0e1424",
+            "surface-container-lowest": "#060912",
+            "surface-container-low": "#11182c",
+            "surface-container": "#151f38",
+            "surface-container-high": "#1c2848",
+            "primary": "#0066ff",
+            "primary-container": "#0066ff",
+            "on-primary-container": "#ffffff",
+            "secondary": "#00d2ff",
+            "tertiary": "#10b981",
+            "accent-red": "#ff3b30",
+            "on-surface": "#ffffff",
+            "on-surface-variant": "#94a3b8",
+            "outline": "#334155"
           },
           fontFamily: {
             sans: ["Inter", "sans-serif"],
@@ -56,23 +57,23 @@
 <style>
     @layer base {
       html, body {
-        background-color: #080a0e;
-        color: #f1f3f7;
+        background-color: #090d18;
+        color: #ffffff;
         scroll-behavior: smooth;
       }
     }
     .glass-card {
-      background: linear-gradient(180deg, rgba(22, 27, 36, 0.75) 0%, rgba(13, 16, 21, 0.92) 100%);
+      background: linear-gradient(180deg, rgba(19, 27, 48, 0.85) 0%, rgba(13, 19, 34, 0.95) 100%);
       backdrop-filter: blur(14px);
-      border: 1px solid rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.08);
     }
     .glass-card:hover {
-      border-color: rgba(0, 229, 255, 0.35);
-      box-shadow: 0 16px 36px -10px rgba(0, 229, 255, 0.12);
+      border-color: rgba(0, 102, 255, 0.45);
+      box-shadow: 0 16px 36px -10px rgba(0, 102, 255, 0.25);
       transform: translateY(-2px);
     }
     .glass-pill {
-      background: rgba(255, 255, 255, 0.04);
+      background: rgba(255, 255, 255, 0.05);
       border: 1px solid rgba(255, 255, 255, 0.08);
     }
   </style>
@@ -111,13 +112,13 @@
 </head>
 <body class="bg-surface-dim font-sans antialiased text-on-surface selection:bg-primary-container selection:text-on-primary-container">
 <!-- ================= TOP LUXURY NAVIGATION ================= -->
-<header class="fixed top-0 left-0 right-0 z-50 bg-[#080a0e]/85 backdrop-blur-xl border-b border-white/[0.06]">
+<header class="fixed top-0 left-0 right-0 z-50 bg-[#090d18]/85 backdrop-blur-xl border-b border-white/[0.08]">
 <div class="max-w-7xl mx-auto h-20 px-6 sm:px-8 flex items-center justify-between gap-6">
 <a class="flex items-center gap-3 group" href="#">
-<img src="images/logo.png" alt="DigitalSubShop Logo" class="h-10 w-auto object-contain group-hover:scale-105 transition-transform duration-300 drop-shadow-[0_0_12px_rgba(0,160,255,0.35)]"/>
+<img src="images/logo.png" alt="DigitalSubShop Logo" class="h-10 w-auto object-contain group-hover:scale-105 transition-transform duration-300 drop-shadow-[0_0_12px_rgba(0,102,255,0.45)]"/>
 <div class="flex flex-col">
 <span class="font-display font-bold text-lg tracking-tight text-white flex items-center gap-1">
-            Digital<span class="text-primary-container">SubShop</span>
+            Digital<span class="text-[#00d2ff]">SubShop</span>
 </span>
 <span class="text-[10px] tracking-widest text-on-surface-variant font-medium uppercase -mt-0.5">Verified Licenses</span>
 </div>
@@ -130,7 +131,7 @@
 <a class="hover:text-white transition-colors" href="#faq">FAQ</a>
 </nav>
 <div class="hidden lg:flex items-center gap-3">
-<a class="px-4 py-2 rounded-xl bg-primary-container text-on-primary-container font-semibold text-xs tracking-wider uppercase flex items-center gap-1.5 shadow-[0_0_16px_rgba(0,229,255,0.3)] hover:brightness-110 transition-all" href="https://wa.me/8801887924939?text=Hello%20DigitalSubShop!%20I%20want%20to%20order." target="_blank">
+<a class="px-4 py-2 rounded-xl bg-primary-container text-on-primary-container font-semibold text-xs tracking-wider uppercase flex items-center gap-1.5 shadow-[0_0_16px_rgba(0,102,255,0.4)] hover:brightness-110 transition-all" href="https://wa.me/8801887924939?text=Hello%20DigitalSubShop!%20I%20want%20to%20order." target="_blank">
 <span class="material-symbols-outlined text-[15px]">chat</span>
 <span>WhatsApp 24/7</span>
 </a>
@@ -141,13 +142,13 @@
 </div>
 </header>
 <!-- Mobile Navigation Drawer -->
-<div class="hidden fixed top-20 left-0 right-0 z-40 bg-[#080a0e]/95 backdrop-blur-2xl border-b border-white/10 px-6 py-6 lg:hidden flex flex-col gap-4 text-sm font-medium" id="mobileMenu">
-<a class="hover:text-primary-container py-2 border-b border-white/[0.04]" href="#catalog" onclick="toggleMobileMenu()">Services (19)</a>
-<a class="hover:text-primary-container py-2 border-b border-white/[0.04]" href="pricing.html">Price Chart (BDT)</a>
-<a class="hover:text-primary-container py-2 border-b border-white/[0.04]" href="how-to-buy.html">How to Buy</a>
-<a class="hover:text-primary-container py-2 border-b border-white/[0.04]" href="#guarantee" onclick="toggleMobileMenu()">Support &amp; Warranty</a>
-<a class="hover:text-primary-container py-2 border-b border-white/[0.04]" href="#faq" onclick="toggleMobileMenu()">FAQ</a>
-<a class="mt-2 py-3 rounded-xl bg-primary-container text-on-primary-container font-bold text-center uppercase tracking-wider flex items-center justify-center gap-2" href="https://wa.me/8801887924939?text=Hello%20DigitalSubShop!%20I%20want%20to%20order." target="_blank">
+<div class="hidden fixed top-20 left-0 right-0 z-40 bg-[#090d18]/95 backdrop-blur-2xl border-b border-white/10 px-6 py-6 lg:hidden flex flex-col gap-4 text-sm font-medium" id="mobileMenu">
+<a class="hover:text-secondary py-2 border-b border-white/[0.04]" href="#catalog" onclick="toggleMobileMenu()">Services (19)</a>
+<a class="hover:text-secondary py-2 border-b border-white/[0.04]" href="pricing.html">Price Chart (BDT)</a>
+<a class="hover:text-secondary py-2 border-b border-white/[0.04]" href="how-to-buy.html">How to Buy</a>
+<a class="hover:text-secondary py-2 border-b border-white/[0.04]" href="#guarantee" onclick="toggleMobileMenu()">Support &amp; Warranty</a>
+<a class="hover:text-secondary py-2 border-b border-white/[0.04]" href="#faq" onclick="toggleMobileMenu()">FAQ</a>
+<a class="mt-2 py-3 rounded-xl bg-primary-container text-on-primary-container font-bold text-center uppercase tracking-wider flex items-center justify-center gap-2 shadow-[0_0_16px_rgba(0,102,255,0.4)]" href="https://wa.me/8801887924939?text=Hello%20DigitalSubShop!%20I%20want%20to%20order." target="_blank">
 <span class="material-symbols-outlined text-[18px]">chat</span>
       Order on WhatsApp
     </a>
@@ -156,10 +157,10 @@
 <!-- ================= COMPACT SLIDING HERO CAROUSEL ================= -->
 <section class="relative pt-2 sm:pt-4 pb-4 sm:pb-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
   <!-- Subtle ambient glow behind banner -->
-  <div class="absolute -top-10 left-1/2 -translate-x-1/2 w-[550px] h-[180px] bg-primary-container/10 blur-[110px] pointer-events-none -z-10 rounded-full"></div>
+  <div class="absolute -top-10 left-1/2 -translate-x-1/2 w-[550px] h-[180px] bg-blue-600/15 blur-[120px] pointer-events-none -z-10 rounded-full"></div>
 
   <!-- Hero Slider Container (Controlled responsive ratio & max height for sleek placement) -->
-  <div id="heroSliderContainer" class="relative w-full rounded-2xl sm:rounded-3xl overflow-hidden border border-white/10 shadow-[0_12px_40px_rgba(0,0,0,0.6)] group select-none bg-[#080a0e] aspect-[800/420] sm:aspect-[21/9] lg:aspect-[3.08/1] max-h-[330px]">
+  <div id="heroSliderContainer" class="relative w-full rounded-2xl sm:rounded-3xl overflow-hidden border border-white/10 shadow-[0_12px_40px_rgba(0,0,0,0.6)] group select-none bg-[#090d18] aspect-[800/420] sm:aspect-[21/9] lg:aspect-[3.08/1] max-h-[330px]">
     <!-- Slider Track -->
     <div id="heroSliderTrack" class="flex h-full w-full transition-transform duration-500 ease-out will-change-transform">
       <!-- Slide 1: Premium OTT & Streaming -->
@@ -265,7 +266,7 @@
 <!-- 19 Product Cards Grid -->
 <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-6" id="productsGrid">
 <!-- 1. Netflix Premium -->
-<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ott" data-product-id="392" data-title="netflix premium" onclick="if (!event.target.closest('a')) openProductPage(392)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="ott" data-product-id="392" data-title="netflix premium" onclick="if (!event.target.closest('a')) openProductPage(392)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/netflix-premium-subscription-bd.webp" alt="Netflix Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
@@ -305,7 +306,7 @@
         <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳499</span>
         <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳350 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/mo</span></div>
       </div>
-      <a href="product.html?id=392" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+      <a href="product.html?id=392" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,102,255,0.35)] transition-all shrink-0">
         <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
         <span>Order</span>
       </a>
@@ -313,7 +314,7 @@
   </div>
 </div>
 <!-- 2. Amazon Prime Video -->
-<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ott" data-product-id="390" data-title="amazon prime video" onclick="if (!event.target.closest('a')) openProductPage(390)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="ott" data-product-id="390" data-title="amazon prime video" onclick="if (!event.target.closest('a')) openProductPage(390)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/amazon-prime-video-subscription-bd.webp" alt="Amazon Prime Video" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
@@ -353,7 +354,7 @@
         <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳299</span>
         <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳150 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/mo</span></div>
       </div>
-      <a href="product.html?id=390" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+      <a href="product.html?id=390" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,102,255,0.35)] transition-all shrink-0">
         <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
         <span>Order</span>
       </a>
@@ -361,7 +362,7 @@
   </div>
 </div>
 <!-- 3. YouTube Premium -->
-<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ott" data-product-id="861" data-title="youtube premium" onclick="if (!event.target.closest('a')) openProductPage(861)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="ott" data-product-id="861" data-title="youtube premium" onclick="if (!event.target.closest('a')) openProductPage(861)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/youtube-premium-subscription-bd.webp" alt="YouTube Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
@@ -401,7 +402,7 @@
         <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳180</span>
         <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳130 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/mo</span></div>
       </div>
-      <a href="product.html?id=861" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+      <a href="product.html?id=861" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,102,255,0.35)] transition-all shrink-0">
         <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
         <span>Order</span>
       </a>
@@ -409,7 +410,7 @@
   </div>
 </div>
 <!-- 4. Crunchyroll Premium -->
-<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ott" data-product-id="865" data-title="crunchyroll premium" onclick="if (!event.target.closest('a')) openProductPage(865)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="ott" data-product-id="865" data-title="crunchyroll premium" onclick="if (!event.target.closest('a')) openProductPage(865)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/crunchyroll-premium-subscription-bd.webp" alt="Crunchyroll Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
@@ -449,7 +450,7 @@
         <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳200</span>
         <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳170 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/mo</span></div>
       </div>
-      <a href="product.html?id=865" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+      <a href="product.html?id=865" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,102,255,0.35)] transition-all shrink-0">
         <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
         <span>Order</span>
       </a>
@@ -457,7 +458,7 @@
   </div>
 </div>
 <!-- 5. Kuku TV Premium -->
-<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ott" data-product-id="1328" data-title="kuku tv premium" onclick="if (!event.target.closest('a')) openProductPage(1328)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="ott" data-product-id="1328" data-title="kuku tv premium" onclick="if (!event.target.closest('a')) openProductPage(1328)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/kuku-tv-premium-bangladesh-price.webp" alt="Kuku TV Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
@@ -497,7 +498,7 @@
         <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳899</span>
         <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳799 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/mo</span></div>
       </div>
-      <a href="product.html?id=1328" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+      <a href="product.html?id=1328" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,102,255,0.35)] transition-all shrink-0">
         <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
         <span>Order</span>
       </a>
@@ -505,7 +506,7 @@
   </div>
 </div>
 <!-- 6. Ullu Premium -->
-<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ott" data-product-id="389" data-title="ullu premium" onclick="if (!event.target.closest('a')) openProductPage(389)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="ott" data-product-id="389" data-title="ullu premium" onclick="if (!event.target.closest('a')) openProductPage(389)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/ullu-premium-subscription.webp" alt="Ullu Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
@@ -545,7 +546,7 @@
         <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳499</span>
         <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳260 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/mo</span></div>
       </div>
-      <a href="product.html?id=389" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+      <a href="product.html?id=389" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,102,255,0.35)] transition-all shrink-0">
         <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
         <span>Order</span>
       </a>
@@ -553,7 +554,7 @@
   </div>
 </div>
 <!-- 7. ChatGPT Pro (OpenAI) -->
-<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ai" data-product-id="142" data-title="chatgpt pro" onclick="if (!event.target.closest('a')) openProductPage(142)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="ai" data-product-id="142" data-title="chatgpt pro" onclick="if (!event.target.closest('a')) openProductPage(142)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/chatgpt-pro-subscription-bd.webp" alt="ChatGPT Pro (OpenAI)" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
@@ -593,7 +594,7 @@
         <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳699</span>
         <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳499 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/mo</span></div>
       </div>
-      <a href="product.html?id=142" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+      <a href="product.html?id=142" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,102,255,0.35)] transition-all shrink-0">
         <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
         <span>Order</span>
       </a>
@@ -601,7 +602,7 @@
   </div>
 </div>
 <!-- 8. Google Gemini Advanced -->
-<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ai" data-product-id="852" data-title="google gemini pro" onclick="if (!event.target.closest('a')) openProductPage(852)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="ai" data-product-id="852" data-title="google gemini pro" onclick="if (!event.target.closest('a')) openProductPage(852)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/google-gemini-pro-subscription-bd.webp" alt="Google Gemini Advanced" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
@@ -641,7 +642,7 @@
         <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳699</span>
         <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳499 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/mo</span></div>
       </div>
-      <a href="product.html?id=852" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+      <a href="product.html?id=852" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,102,255,0.35)] transition-all shrink-0">
         <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
         <span>Order</span>
       </a>
@@ -649,7 +650,7 @@
   </div>
 </div>
 <!-- 9. SuperGrok Premium (xAI) -->
-<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ai" data-product-id="854" data-title="supergrok premium (xai)" onclick="if (!event.target.closest('a')) openProductPage(854)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="ai" data-product-id="854" data-title="supergrok premium (xai)" onclick="if (!event.target.closest('a')) openProductPage(854)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/supergrok-premium-subscription-bd.webp" alt="SuperGrok Premium (xAI)" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
@@ -689,7 +690,7 @@
         <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳699</span>
         <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳499 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/mo</span></div>
       </div>
-      <a href="product.html?id=854" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+      <a href="product.html?id=854" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,102,255,0.35)] transition-all shrink-0">
         <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
         <span>Order</span>
       </a>
@@ -697,7 +698,7 @@
   </div>
 </div>
 <!-- 10. vidIQ Boost Premium -->
-<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ai" data-product-id="1544" data-title="vidiq boost premium" onclick="if (!event.target.closest('a')) openProductPage(1544)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="ai" data-product-id="1544" data-title="vidiq boost premium" onclick="if (!event.target.closest('a')) openProductPage(1544)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/vidiq-premium-price-bangladesh.webp" alt="vidIQ Boost Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
@@ -737,7 +738,7 @@
         <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳799</span>
         <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳499 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/mo</span></div>
       </div>
-      <a href="product.html?id=1544" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+      <a href="product.html?id=1544" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,102,255,0.35)] transition-all shrink-0">
         <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
         <span>Order</span>
       </a>
@@ -745,7 +746,7 @@
   </div>
 </div>
 <!-- 11. Quizlet Plus Subscription -->
-<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ai" data-product-id="863" data-title="quizlet plus" onclick="if (!event.target.closest('a')) openProductPage(863)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="ai" data-product-id="863" data-title="quizlet plus" onclick="if (!event.target.closest('a')) openProductPage(863)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/quizlet-plus-subscription-bd.webp" alt="Quizlet Plus Subscription" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
@@ -785,7 +786,7 @@
         <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳899</span>
         <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳499 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/mo</span></div>
       </div>
-      <a href="product.html?id=863" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+      <a href="product.html?id=863" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,102,255,0.35)] transition-all shrink-0">
         <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
         <span>Order</span>
       </a>
@@ -793,7 +794,7 @@
   </div>
 </div>
 <!-- 12. Canva Pro Subscription -->
-<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="creative" data-product-id="858" data-title="canva pro" onclick="if (!event.target.closest('a')) openProductPage(858)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="creative" data-product-id="858" data-title="canva pro" onclick="if (!event.target.closest('a')) openProductPage(858)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/canva-pro-subscription-bd.webp" alt="Canva Pro Subscription" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
@@ -833,7 +834,7 @@
         <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳200</span>
         <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳99 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/mo</span></div>
       </div>
-      <a href="product.html?id=858" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+      <a href="product.html?id=858" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,102,255,0.35)] transition-all shrink-0">
         <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
         <span>Order</span>
       </a>
@@ -841,7 +842,7 @@
   </div>
 </div>
 <!-- 13. Adobe Creative Cloud -->
-<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="creative" data-product-id="864" data-title="adobe creative cloud" onclick="if (!event.target.closest('a')) openProductPage(864)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="creative" data-product-id="864" data-title="adobe creative cloud" onclick="if (!event.target.closest('a')) openProductPage(864)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/adobe-creative-cloud-subscription-bd.webp" alt="Adobe Creative Cloud" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
@@ -881,7 +882,7 @@
         <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳3,999</span>
         <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳2,999 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/mo</span></div>
       </div>
-      <a href="product.html?id=864" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+      <a href="product.html?id=864" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,102,255,0.35)] transition-all shrink-0">
         <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
         <span>Order</span>
       </a>
@@ -889,7 +890,7 @@
   </div>
 </div>
 <!-- 14. Envato Elements -->
-<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="creative" data-product-id="855" data-title="envato elements" onclick="if (!event.target.closest('a')) openProductPage(855)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="creative" data-product-id="855" data-title="envato elements" onclick="if (!event.target.closest('a')) openProductPage(855)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/envato-elements-subscription-bd.webp" alt="Envato Elements" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
@@ -929,7 +930,7 @@
         <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳799</span>
         <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳499 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/mo</span></div>
       </div>
-      <a href="product.html?id=855" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+      <a href="product.html?id=855" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,102,255,0.35)] transition-all shrink-0">
         <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
         <span>Order</span>
       </a>
@@ -937,7 +938,7 @@
   </div>
 </div>
 <!-- 15. CapCut Pro Subscription -->
-<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="creative" data-product-id="847" data-title="capcut pro" onclick="if (!event.target.closest('a')) openProductPage(847)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="creative" data-product-id="847" data-title="capcut pro" onclick="if (!event.target.closest('a')) openProductPage(847)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/capcut-pro-subscription-bd.webp" alt="CapCut Pro Subscription" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
@@ -977,7 +978,7 @@
         <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳599</span>
         <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳350 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/mo</span></div>
       </div>
-      <a href="product.html?id=847" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+      <a href="product.html?id=847" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,102,255,0.35)] transition-all shrink-0">
         <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
         <span>Order</span>
       </a>
@@ -985,7 +986,7 @@
   </div>
 </div>
 <!-- 16. Freepik Premium -->
-<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="creative" data-product-id="834" data-title="freepik premium" onclick="if (!event.target.closest('a')) openProductPage(834)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="creative" data-product-id="834" data-title="freepik premium" onclick="if (!event.target.closest('a')) openProductPage(834)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/freepik-premium-subscription-bd.webp" alt="Freepik Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
@@ -1025,7 +1026,7 @@
         <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳799</span>
         <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳499 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/mo</span></div>
       </div>
-      <a href="product.html?id=834" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+      <a href="product.html?id=834" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,102,255,0.35)] transition-all shrink-0">
         <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
         <span>Order</span>
       </a>
@@ -1033,7 +1034,7 @@
   </div>
 </div>
 <!-- 17. TikTok Coins (Top-Up) -->
-<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="social-gaming" data-product-id="862" data-title="tiktok coins (top-up)" onclick="if (!event.target.closest('a')) openProductPage(862)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="social-gaming" data-product-id="862" data-title="tiktok coins (top-up)" onclick="if (!event.target.closest('a')) openProductPage(862)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/tiktok-coins-top-up-bd.webp" alt="TikTok Coins (Top-Up)" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
@@ -1073,7 +1074,7 @@
         <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳270</span>
         <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳245 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/pack</span></div>
       </div>
-      <a href="product.html?id=862" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+      <a href="product.html?id=862" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,102,255,0.35)] transition-all shrink-0">
         <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
         <span>Order</span>
       </a>
@@ -1081,7 +1082,7 @@
   </div>
 </div>
 <!-- 18. Facebook Page Likes & Followers -->
-<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="social-gaming" data-product-id="860" data-title="facebook page likes &amp; followers" onclick="if (!event.target.closest('a')) openProductPage(860)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="social-gaming" data-product-id="860" data-title="facebook page likes &amp; followers" onclick="if (!event.target.closest('a')) openProductPage(860)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/facebook-page-likes-followers-bd.webp" alt="Facebook Page Likes & Followers" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
@@ -1121,7 +1122,7 @@
         <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳120</span>
         <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳80 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/1k</span></div>
       </div>
-      <a href="product.html?id=860" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+      <a href="product.html?id=860" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,102,255,0.35)] transition-all shrink-0">
         <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
         <span>Order</span>
       </a>
@@ -1129,7 +1130,7 @@
   </div>
 </div>
 <!-- 19. Clash of Clans Gold Pass -->
-<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="social-gaming" data-product-id="137" data-title="clash of clans gold pass" onclick="if (!event.target.closest('a')) openProductPage(137)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="social-gaming" data-product-id="137" data-title="clash of clans gold pass" onclick="if (!event.target.closest('a')) openProductPage(137)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/clash-of-clans-gold-pass-bd.webp" alt="Clash of Clans Gold Pass" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
@@ -1169,7 +1170,7 @@
         <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳750</span>
         <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳650 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/pass</span></div>
       </div>
-      <a href="product.html?id=137" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+      <a href="product.html?id=137" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,102,255,0.35)] transition-all shrink-0">
         <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
         <span>Order</span>
       </a>
@@ -1394,7 +1395,7 @@
   <!-- ================= FLOATING WHATSAPP BUTTON ================= -->
   <a href="https://wa.me/8801887924939?text=Hello%20DigitalSubShop!%20I%20have%20a%20question." target="_blank" class="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-[0_4px_24px_rgba(37,211,102,0.45)] hover:scale-110 transition-transform group" aria-label="WhatsApp Support">
     <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    <span class="absolute -top-1 -right-1 w-3.5 h-3.5 bg-emerald-400 border-2 border-[#080a0e] rounded-full animate-ping"></span>
+    <span class="absolute -top-1 -right-1 w-3.5 h-3.5 bg-emerald-400 border-2 border-[#090d18] rounded-full animate-ping"></span>
   </a>
 
   <!-- ================= FLOATING MESSENGER BUTTON ================= -->
