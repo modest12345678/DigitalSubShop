@@ -43,9 +43,83 @@ function setTab(category, btn) {
 }
 window.setTab = setTab;
 
-// Search Logic
-function handleSearch(query) {
-  const q = query.toLowerCase().trim();
+// ================= LIVE SEARCH & AUTOCOMPLETE ENGINE =================
+const POPULAR_SEARCH_TAGS = [
+  { label: 'ChatGPT Pro', query: 'chatgpt' },
+  { label: 'Netflix', query: 'netflix' },
+  { label: 'Canva Pro', query: 'canva' },
+  { label: 'YouTube Premium', query: 'youtube' },
+  { label: 'CoC Gold Pass', query: 'clash of clans' },
+  { label: 'Adobe CC', query: 'adobe' },
+  { label: 'SuperGrok', query: 'supergrok' },
+  { label: 'CapCut Pro', query: 'capcut' },
+  { label: 'TikTok Coins', query: 'tiktok' },
+  { label: 'vidIQ Boost', query: 'vidiq' }
+];
+
+let activeSuggestionIndex = -1;
+let currentSuggestionsList = [];
+
+function getProductMinPrice(p) {
+  if (p.variations && p.variations.length > 0) {
+    const prices = p.variations.map(v => Number(v.price) || 0).filter(pr => pr > 0);
+    if (prices.length > 0) return Math.min(...prices);
+  }
+  if (p.raw_prices && p.raw_prices.price) {
+    return Math.round(Number(p.raw_prices.price) / 100);
+  }
+  return 0;
+}
+
+function escapeRegex(str) {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function highlightMatchText(text, query) {
+  if (!query) return text;
+  const qClean = query.trim();
+  if (!qClean) return text;
+  const regex = new RegExp(`(${escapeRegex(qClean)})`, 'gi');
+  return text.replace(regex, '<mark class="bg-primary/30 text-[#00d2ff] font-bold px-0.5 rounded">$1</mark>');
+}
+
+function searchProducts(query) {
+  const q = (query || '').toLowerCase().trim();
+  if (!q) return [];
+
+  const results = [];
+  PRODUCTS_DATA.forEach(p => {
+    const name = (p.name || '').toLowerCase();
+    const cats = (p.categories || []).map(c => c.toLowerCase()).join(' ');
+    const tags = (p.tags || []).map(t => t.toLowerCase()).join(' ');
+    const slug = (p.slug || '').toLowerCase();
+
+    let score = 0;
+    if (name.startsWith(q)) {
+      score = 100;
+    } else if (name.includes(' ' + q)) {
+      score = 80;
+    } else if (q.length > 1 && name.includes(q)) {
+      score = 60;
+    } else if (tags.includes(q)) {
+      score = 45;
+    } else if (q.length > 2 && cats.includes(q)) {
+      score = 30;
+    } else if (q.length > 2 && slug.includes(q)) {
+      score = 20;
+    }
+
+    if (score > 0) {
+      results.push({ product: p, score });
+    }
+  });
+
+  results.sort((a, b) => b.score - a.score || a.product.name.localeCompare(b.product.name));
+  return results.map(r => r.product);
+}
+
+function filterCatalog(query) {
+  const q = (query || '').toLowerCase().trim();
   const items = document.querySelectorAll('.product-item');
   let visible = 0;
   items.forEach(item => {
@@ -59,15 +133,270 @@ function handleSearch(query) {
     }
   });
   const countEl = document.getElementById('activeCountText');
-  if (countEl) countEl.innerText = `Showing ${visible} matching products`;
+  if (countEl) {
+    countEl.innerText = q ? `Showing ${visible} matching products` : `Showing ${visible} of 19 official licenses`;
+  }
 }
+
+function renderSuggestionsDropdown(query) {
+  const dropdown = document.getElementById('searchSuggestions');
+  const input = document.getElementById('searchInput');
+  const clearBtn = document.getElementById('searchClearBtn');
+  if (!dropdown) return;
+
+  const q = (query || '').trim();
+  if (clearBtn) {
+    if (q.length > 0) {
+      clearBtn.classList.remove('hidden');
+    } else {
+      clearBtn.classList.add('hidden');
+    }
+  }
+
+  activeSuggestionIndex = -1;
+
+  // Empty state: show Trending / Popular Tags
+  if (!q) {
+    currentSuggestionsList = [];
+    dropdown.innerHTML = `
+      <div class="p-3 sm:p-4">
+        <div class="flex items-center justify-between mb-2.5 text-xs font-semibold text-on-surface-variant uppercase tracking-wider">
+          <span class="flex items-center gap-1.5 text-cyan-400">
+            <span class="material-symbols-outlined text-sm">trending_up</span>
+            Popular Searches
+          </span>
+          <span class="text-[10px] text-white/40">Quick Select</span>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          ${POPULAR_SEARCH_TAGS.map(tag => `
+            <button type="button" onclick="selectSearchTag('${tag.query}')" class="px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-xl bg-white/[0.04] hover:bg-primary/20 hover:border-primary/50 border border-white/10 text-white text-xs font-medium transition-all flex items-center gap-1.5 group cursor-pointer">
+              <span class="material-symbols-outlined text-[13px] text-primary group-hover:text-cyan-400">search</span>
+              <span>${tag.label}</span>
+            </button>
+          `).join('')}
+        </div>
+      </div>
+    `;
+    dropdown.classList.remove('hidden');
+    return;
+  }
+
+  // With query: search matches
+  const matches = searchProducts(q);
+  currentSuggestionsList = matches;
+
+  if (matches.length === 0) {
+    const waText = encodeURIComponent(`Hello DigitalSubShop! I am looking for "${q}" which is not in stock. Do you have it available?`);
+    const waUrl = `https://wa.me/${WHATSAPP_PHONE}?text=${waText}`;
+
+    dropdown.innerHTML = `
+      <div class="p-5 sm:p-6 text-center">
+        <div class="w-12 h-12 mx-auto mb-3 rounded-full bg-white/[0.05] border border-white/10 flex items-center justify-center text-on-surface-variant">
+          <span class="material-symbols-outlined text-2xl">search_off</span>
+        </div>
+        <p class="text-sm font-semibold text-white mb-1">No matching subscription found</p>
+        <p class="text-xs text-on-surface-variant mb-4">No results for <span class="text-white font-medium">"${q}"</span> in our 19 verified licenses.</p>
+        <a href="${waUrl}" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#25D366]/20 border border-[#25D366]/40 text-[#25D366] text-xs font-semibold hover:bg-[#25D366] hover:text-black transition-all">
+          <span class="material-symbols-outlined text-sm">chat</span>
+          <span>Request via WhatsApp Support</span>
+        </a>
+      </div>
+    `;
+    dropdown.classList.remove('hidden');
+    return;
+  }
+
+  // Show top matching suggestions
+  const topMatches = matches.slice(0, 6);
+  dropdown.innerHTML = `
+    <div class="p-2 sm:p-3">
+      <div class="px-2 py-1.5 flex items-center justify-between text-[11px] font-semibold text-on-surface-variant uppercase tracking-wider border-b border-white/[0.06] mb-1.5">
+        <span class="text-cyan-400 flex items-center gap-1">
+          <span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+          Matching Subscriptions (${matches.length})
+        </span>
+        <span class="text-white/40 text-[10px] hidden sm:inline">Use ↑↓ to navigate • Enter to open</span>
+      </div>
+      <div class="space-y-1" id="suggestionsItemsContainer">
+        ${topMatches.map((p, idx) => {
+          const minPrice = getProductMinPrice(p);
+          const priceDisplay = minPrice > 0 ? `৳${minPrice.toLocaleString()}` : 'Custom';
+          const cat = (p.categories && p.categories.length) ? p.categories[0] : 'Digital Service';
+          const highlightedName = highlightMatchText(p.name, q);
+          const img = (p.images && p.images[0]) ? p.images[0] : 'images/logo.png';
+
+          return `
+            <a href="product.html?id=${p.id}" data-index="${idx}" class="suggestion-item group flex items-center gap-2.5 sm:gap-3 p-2 sm:p-2.5 rounded-xl hover:bg-white/[0.07] border border-transparent hover:border-white/10 transition-all cursor-pointer">
+              <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl overflow-hidden bg-black/40 border border-white/10 shrink-0 flex items-center justify-center">
+                <img src="${img}" alt="${p.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform" onerror="this.src='images/logo.png'"/>
+              </div>
+              <div class="flex-1 min-w-0">
+                <div class="text-xs sm:text-sm font-semibold text-white truncate group-hover:text-cyan-300 transition-colors">
+                  ${highlightedName}
+                </div>
+                <div class="flex items-center gap-2 mt-0.5">
+                  <span class="text-[10px] text-cyan-300/80 font-medium px-1.5 py-0.2 rounded bg-cyan-950/40 border border-cyan-500/20">${cat}</span>
+                  <span class="inline-flex items-center gap-1 text-[10px] text-emerald-400">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                    In Stock
+                  </span>
+                </div>
+              </div>
+              <div class="text-right shrink-0">
+                <div class="text-xs sm:text-sm font-display font-bold text-white group-hover:text-cyan-300 transition-colors">
+                  ${priceDisplay}
+                </div>
+                <div class="text-[9px] text-on-surface-variant font-medium">Starts from</div>
+              </div>
+              <span class="material-symbols-outlined text-base text-white/30 group-hover:text-primary group-hover:translate-x-0.5 transition-all shrink-0">
+                arrow_forward
+              </span>
+            </a>
+          `;
+        }).join('')}
+      </div>
+      <div class="pt-2 mt-1 border-t border-white/[0.06] flex items-center justify-between px-2">
+        <button type="button" onclick="submitSearchOrScroll()" class="text-xs text-primary hover:text-cyan-300 font-semibold flex items-center gap-1 transition-colors cursor-pointer">
+          <span>View all ${matches.length} results in Catalog</span>
+          <span class="material-symbols-outlined text-sm">south</span>
+        </button>
+        <span class="text-[10px] text-white/40">ESC to close</span>
+      </div>
+    </div>
+  `;
+  dropdown.classList.remove('hidden');
+}
+
+function closeSuggestions() {
+  const dropdown = document.getElementById('searchSuggestions');
+  if (dropdown) dropdown.classList.add('hidden');
+  activeSuggestionIndex = -1;
+}
+
+function selectSearchTag(tagQuery) {
+  const input = document.getElementById('searchInput');
+  if (input) {
+    input.value = tagQuery;
+    input.focus();
+    filterCatalog(tagQuery);
+    renderSuggestionsDropdown(tagQuery);
+  }
+}
+
+function clearSearch() {
+  const input = document.getElementById('searchInput');
+  const clearBtn = document.getElementById('searchClearBtn');
+  if (input) {
+    input.value = '';
+    input.focus();
+  }
+  if (clearBtn) clearBtn.classList.add('hidden');
+  filterCatalog('');
+  renderSuggestionsDropdown('');
+}
+
+function submitSearchOrScroll() {
+  closeSuggestions();
+  const catalog = document.getElementById('catalog');
+  if (catalog) {
+    catalog.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
+function updateActiveSuggestion(newIndex) {
+  const items = document.querySelectorAll('#suggestionsItemsContainer .suggestion-item');
+  if (!items.length) return;
+
+  items.forEach((item, idx) => {
+    if (idx === newIndex) {
+      item.classList.add('bg-primary/25', 'border-primary/50');
+      item.scrollIntoView({ block: 'nearest' });
+    } else {
+      item.classList.remove('bg-primary/25', 'border-primary/50');
+    }
+  });
+  activeSuggestionIndex = newIndex;
+}
+
+// Search Logic
+function handleSearch(query) {
+  filterCatalog(query);
+  renderSuggestionsDropdown(query);
+}
+
 window.handleSearch = handleSearch;
+window.selectSearchTag = selectSearchTag;
+window.clearSearch = clearSearch;
+window.submitSearchOrScroll = submitSearchOrScroll;
+window.closeSuggestions = closeSuggestions;
+window.searchProducts = searchProducts;
+window.getProductMinPrice = getProductMinPrice;
 
 function setupSearch() {
   const input = document.getElementById('searchInput');
-  if (input) {
-    input.addEventListener('input', (e) => handleSearch(e.target.value));
+  const clearBtn = document.getElementById('searchClearBtn');
+  const submitBtn = document.getElementById('searchSubmitBtn');
+  const container = document.getElementById('searchContainer');
+
+  if (!input) return;
+
+  // Real-time input typing listener
+  input.addEventListener('input', (e) => {
+    handleSearch(e.target.value);
+  });
+
+  // Focus listener: immediately open suggestions dropdown
+  input.addEventListener('focus', () => {
+    renderSuggestionsDropdown(input.value);
+  });
+
+  // Keyboard navigation
+  input.addEventListener('keydown', (e) => {
+    const items = document.querySelectorAll('#suggestionsItemsContainer .suggestion-item');
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      if (!items.length) return;
+      const next = (activeSuggestionIndex + 1) % items.length;
+      updateActiveSuggestion(next);
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      if (!items.length) return;
+      const prev = (activeSuggestionIndex - 1 + items.length) % items.length;
+      updateActiveSuggestion(prev);
+    } else if (e.key === 'Enter') {
+      e.preventDefault();
+      if (activeSuggestionIndex >= 0 && items[activeSuggestionIndex]) {
+        items[activeSuggestionIndex].click();
+      } else {
+        submitSearchOrScroll();
+      }
+    } else if (e.key === 'Escape') {
+      closeSuggestions();
+    }
+  });
+
+  // Clear button
+  if (clearBtn) {
+    clearBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      clearSearch();
+    });
   }
+
+  // Submit button
+  if (submitBtn) {
+    submitBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      submitSearchOrScroll();
+    });
+  }
+
+  // Dismiss dropdown on outside click
+  document.addEventListener('click', (e) => {
+    if (container && !container.contains(e.target)) {
+      closeSuggestions();
+    }
+  });
 }
 
 function setupFilterTabs() {
