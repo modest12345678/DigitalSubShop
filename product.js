@@ -290,31 +290,31 @@ function renderRelated() {
     const img = (p.images && p.images[0]) ? p.images[0] : '';
     const cat = (p.categories && p.categories[0]) || 'Digital';
     return `
-      <div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" onclick="openProductPage(${p.id})">
-        <div class="relative h-44 overflow-hidden bg-surface-container">
+      <div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" onclick="openProductPage(${p.id})">
+        <div class="relative h-28 sm:h-44 overflow-hidden bg-surface-container">
           ${img ? `<img src="${img}" alt="${p.name}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />` : ''}
           <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
-          <div class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+          <div class="absolute top-2 left-2 sm:top-2.5 sm:left-2.5 px-2 sm:px-2.5 py-0.5 rounded-full text-[8px] sm:text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
             ${cat}
           </div>
-          <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-            <div class="bg-black/60 backdrop-blur-md rounded-full w-10 h-10 flex items-center justify-center border border-white/20 shadow-xl">
+          <div class="hidden sm:flex absolute inset-0 items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+            <div class="bg-black/60 backdrop-blur-md rounded-full w-9 h-9 flex items-center justify-center border border-white/20 shadow-xl">
               <span class="material-symbols-outlined text-white text-sm">arrow_forward</span>
             </div>
           </div>
         </div>
-        <div class="p-5 flex flex-col flex-grow justify-between">
+        <div class="p-3 sm:p-5 flex flex-col flex-grow justify-between">
           <div>
-            <h3 class="font-display font-bold text-white text-base leading-tight group-hover:text-primary-container transition-colors">${p.name}</h3>
-            <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">${cleanHtml(p.short_description || p.description).substring(0, 85)}...</p>
+            <h3 class="font-display font-bold text-white text-xs sm:text-base leading-tight group-hover:text-primary-container transition-colors line-clamp-1 sm:line-clamp-none">${p.name}</h3>
+            <p class="text-[11px] sm:text-xs text-on-surface-variant mt-1 sm:mt-1.5 line-clamp-2 leading-relaxed hidden sm:block">${cleanHtml(p.short_description || p.description).substring(0, 85)}...</p>
           </div>
-          <div class="mt-4 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+          <div class="mt-3 sm:mt-4 pt-2.5 sm:pt-3.5 border-t border-white/[0.06] flex items-center justify-between gap-1">
             <div>
-              <span class="text-[10px] text-outline line-through block">${pr.reg && pr.reg > pr.min ? `৳${pr.reg.toLocaleString()}` : ''}</span>
-              <div class="text-lg font-display font-bold text-white">${pr.min !== null ? `৳${pr.min.toLocaleString()}` : '৳0'} <span class="text-xs font-normal text-on-surface-variant">/plan</span></div>
+              <span class="text-[9px] sm:text-[10px] text-outline line-through block leading-none">${pr.reg && pr.reg > pr.min ? `৳${pr.reg.toLocaleString()}` : ''}</span>
+              <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">${pr.min !== null ? `৳${pr.min.toLocaleString()}` : '৳0'} <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/plan</span></div>
             </div>
-            <span class="px-3 py-1.5 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110">
-              <span class="material-symbols-outlined text-[13px]">bolt</span>
+            <span class="px-2 sm:px-3 py-1.5 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center gap-0.5 hover:brightness-110 shrink-0">
+              <span class="material-symbols-outlined text-[12px] sm:text-[13px]">bolt</span>
               <span>View</span>
             </span>
           </div>

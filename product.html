@@ -116,7 +116,7 @@
   <!-- ================= BREADCRUMB ================= -->
   <div class="max-w-7xl mx-auto px-6 sm:px-8">
     <!-- Breadcrumb -->
-    <nav class="flex items-center gap-2 text-xs text-on-surface-variant mb-6" aria-label="Breadcrumb">
+    <nav class="flex items-center gap-2 text-xs text-on-surface-variant mb-5 sm:mb-6" aria-label="Breadcrumb">
       <a href="index.html" class="hover:text-white transition-colors">Home</a>
       <span class="material-symbols-outlined text-[14px]">chevron_right</span>
       <a href="index.html#catalog" id="bcCategory" class="hover:text-white transition-colors">Catalog</a>
@@ -124,123 +124,74 @@
       <span id="bcProduct" class="text-white font-medium">Product</span>
     </nav>
 
-    <!-- ============ CINEMATIC HERO BANNER ============ -->
-    <div class="relative w-full rounded-3xl overflow-hidden mb-10 border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.6)]">
-      <!-- Ambient Backdrop Image with Blur -->
-      <div class="absolute inset-0 z-0">
-        <img id="pHeroBackdrop" src="" alt="Backdrop" class="w-full h-full object-cover blur-2xl scale-110 opacity-30"/>
-        <div class="absolute inset-0 bg-gradient-to-r from-[#080a0e] via-[#080a0e]/85 to-transparent z-10"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-[#080a0e] via-transparent to-transparent z-10"></div>
-      </div>
+    <!-- Layout Grid: 1 column on mobile, 5 columns on desktop -->
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-8 items-start">
 
-      <div class="relative z-20 p-6 sm:p-10 flex flex-col md:flex-row items-center gap-6 md:gap-10">
-        <!-- 16:9 Sharp Showcase Card -->
-        <div class="w-full md:w-1/2 aspect-video rounded-2xl overflow-hidden border border-white/15 shadow-2xl relative group bg-surface-container shrink-0">
-          <img id="pImage" src="" alt="Product image" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
-          <div id="pHeroBadge" class="absolute top-3 right-3 px-3 py-1 rounded-md text-[10px] font-bold text-white uppercase tracking-wider backdrop-blur shadow-md bg-primary-container text-on-primary-container">
-            VERIFIED
+      <!-- ============ ELEMENT 1: PRODUCT IMAGE & SHOWCASE ============ -->
+      <!-- On mobile: order-1. On desktop: order-1, col-span-3 -->
+      <div class="order-1 lg:col-span-3 space-y-6">
+        <div class="glass-card rounded-2xl p-4 sm:p-5 relative overflow-hidden">
+          <!-- Ambient blurred backdrop -->
+          <div class="absolute inset-0 z-0 opacity-20 pointer-events-none">
+            <img id="pHeroBackdrop" src="" alt="" class="w-full h-full object-cover blur-2xl scale-125"/>
           </div>
-          <span id="pStockBadge" class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-[11px] font-semibold backdrop-blur border border-emerald-500/30">In Stock</span>
-          <div id="pImageFallback" class="hidden absolute inset-0 bg-gradient-to-tr from-surface-container to-surface-container-high flex items-center justify-center">
-            <span id="pImageLetter" class="font-display text-7xl font-bold text-primary-container/60">D</span>
+          <div class="relative z-10">
+            <div id="pImageWrap" class="relative w-full aspect-video rounded-xl overflow-hidden bg-surface-container flex items-center justify-center border border-white/10 shadow-2xl group">
+              <img id="pImage" src="" alt="Product image" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+              <span id="pStockBadge" class="absolute top-2.5 left-2.5 sm:top-3 sm:left-3 px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-[10px] sm:text-[11px] font-semibold backdrop-blur border border-emerald-500/30">In Stock</span>
+              <div id="pHeroBadge" class="absolute top-2.5 right-2.5 sm:top-3 sm:right-3 px-2.5 py-0.5 sm:py-1 rounded-md text-[9px] sm:text-[10px] font-bold text-white uppercase tracking-wider backdrop-blur shadow bg-primary-container text-on-primary-container">
+                VERIFIED
+              </div>
+              <div id="pImageFallback" class="hidden absolute inset-0 bg-gradient-to-tr from-surface-container to-surface-container-high flex items-center justify-center">
+                <span id="pImageLetter" class="font-display text-7xl font-bold text-primary-container/60">D</span>
+              </div>
+            </div>
+
+            <!-- Title & Category Info -->
+            <div class="mt-4 pt-1">
+              <div class="flex items-center gap-2 mb-1">
+                <span id="pCategory" class="px-2.5 py-0.5 rounded-full text-[10px] sm:text-[11px] font-semibold bg-white/[0.06] border border-white/10 text-primary-container">Category</span>
+                <span class="flex items-center gap-1 text-[10px] sm:text-[11px] text-emerald-400 font-medium"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Instant Dispatch</span>
+              </div>
+              <h1 id="pTitle" class="font-display text-xl sm:text-3xl md:text-4xl font-bold text-white leading-tight">Product Name</h1>
+              <p id="pHeroDesc" class="text-xs sm:text-sm text-on-surface-variant mt-1 leading-relaxed">Official digital license with lowest guaranteed price in Bangladesh.</p>
+            </div>
+
+            <!-- Quick Trust Badges Strip -->
+            <div class="grid grid-cols-3 gap-2 sm:gap-3 mt-4 pt-3.5 border-t border-white/[0.06]">
+              <div class="flex items-center justify-center sm:justify-start gap-1 sm:gap-2 text-[10px] sm:text-[11px] text-on-surface-variant glass-pill rounded-xl px-2 sm:px-3 py-2">
+                <span class="material-symbols-outlined text-[14px] sm:text-[15px] text-tertiary">bolt</span> 1–12h Dispatch
+              </div>
+              <div class="flex items-center justify-center sm:justify-start gap-1 sm:gap-2 text-[10px] sm:text-[11px] text-on-surface-variant glass-pill rounded-xl px-2 sm:px-3 py-2">
+                <span class="material-symbols-outlined text-[14px] sm:text-[15px] text-tertiary">verified</span> 100% Genuine
+              </div>
+              <div class="flex items-center justify-center sm:justify-start gap-1 sm:gap-2 text-[10px] sm:text-[11px] text-on-surface-variant glass-pill rounded-xl px-2 sm:px-3 py-2">
+                <span class="material-symbols-outlined text-[14px] sm:text-[15px] text-tertiary">shield_lock</span> 365d Warranty
+              </div>
+            </div>
           </div>
         </div>
+      </div>
 
-        <!-- Hero Information -->
-        <div class="w-full md:w-1/2 space-y-4">
-          <div class="flex items-center gap-2">
-            <span id="pCategory" class="px-3 py-1 rounded-full text-xs font-semibold bg-white/[0.06] border border-white/10 text-primary-container">Category</span>
-            <span class="flex items-center gap-1 text-xs text-emerald-400 font-semibold"><span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Instant Delivery Available</span>
+      <!-- ============ ELEMENT 2: BUY OPTION / PURCHASE BOX ============ -->
+      <!-- On mobile: order-2 (PLACED IMMEDIATELY AFTER IMAGE & TITLE!). On desktop: order-2, col-span-2, sticky! -->
+      <div class="order-2 lg:col-span-2">
+        <div class="glass-card rounded-2xl p-5 sm:p-6 lg:sticky lg:top-28">
+          <div class="flex items-center justify-between">
+            <span id="pCategoryBox" class="text-[10px] uppercase font-bold tracking-widest text-primary-container">Choose Plan</span>
+            <span class="px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-400 text-[10px] font-semibold">In Stock</span>
           </div>
-          <h1 id="pTitle" class="font-display text-2xl sm:text-4xl md:text-5xl font-black text-white leading-tight">Product Name</h1>
-          <p id="pHeroDesc" class="text-xs sm:text-sm text-on-surface-variant leading-relaxed max-w-xl">Unlock the highest tier digital license with guaranteed lowest prices in Bangladesh.</p>
+          <h2 id="pTitleBox" class="font-display text-xl sm:text-2xl font-bold text-white mt-1 tracking-tight">Product Name</h2>
           
-          <!-- Quick Trust Badges Strip -->
-          <div class="flex flex-wrap items-center gap-2 pt-2">
-            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl glass-pill text-xs text-white">
-              <span class="material-symbols-outlined text-[15px] text-tertiary">bolt</span> 1–12h Dispatch
-            </span>
-            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl glass-pill text-xs text-white">
-              <span class="material-symbols-outlined text-[15px] text-tertiary">verified_user</span> 365d Warranty
-            </span>
-            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl glass-pill text-xs text-white">
-              <span class="material-symbols-outlined text-[15px] text-tertiary">lock</span> 100% Private
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ============ MAIN CONTENT TWO-COLUMN GRID ============ -->
-    <div class="grid grid-cols-1 lg:grid-cols-5 gap-8">
-      <!-- ============ LEFT: BENTO GRID + DESCRIPTION ============ -->
-      <div class="lg:col-span-3 space-y-8">
-        
-        <!-- Bento Grid: What's Included -->
-        <div class="glass-card rounded-2xl p-6">
-          <h3 class="font-display font-bold text-lg text-white mb-4 flex items-center gap-2">
-            <span class="material-symbols-outlined text-primary-container">stars</span>
-            What's Included &amp; Service Highlights
-          </h3>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5 space-y-2 hover:border-white/10 transition-all">
-              <div class="w-9 h-9 rounded-lg bg-primary-container/15 flex items-center justify-center text-primary-container">
-                <span class="material-symbols-outlined text-[20px]">bolt</span>
-              </div>
-              <h4 class="font-bold text-white text-sm">Instant Automated Dispatch</h4>
-              <p class="text-xs text-on-surface-variant leading-relaxed">Fast order processing with activation within 1–12 hours directly sent to your phone or WhatsApp.</p>
-            </div>
-            <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5 space-y-2 hover:border-white/10 transition-all">
-              <div class="w-9 h-9 rounded-lg bg-emerald-500/15 flex items-center justify-center text-emerald-400">
-                <span class="material-symbols-outlined text-[20px]">shield</span>
-              </div>
-              <h4 class="font-bold text-white text-sm">100% Genuine Official License</h4>
-              <p class="text-xs text-on-surface-variant leading-relaxed">No cracked, trial, or insecure accounts. Legitimate subscription credentials with full access.</p>
-            </div>
-            <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5 space-y-2 hover:border-white/10 transition-all">
-              <div class="w-9 h-9 rounded-lg bg-purple-500/15 flex items-center justify-center text-purple-400">
-                <span class="material-symbols-outlined text-[20px]">lock</span>
-              </div>
-              <h4 class="font-bold text-white text-sm">Complete Data Privacy</h4>
-              <p class="text-xs text-on-surface-variant leading-relaxed">Your viewing history, watchlists, AI prompts, and personal data remain completely private.</p>
-            </div>
-            <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5 space-y-2 hover:border-white/10 transition-all">
-              <div class="w-9 h-9 rounded-lg bg-amber-500/15 flex items-center justify-center text-amber-400">
-                <span class="material-symbols-outlined text-[20px]">verified_user</span>
-              </div>
-              <h4 class="font-bold text-white text-sm">365-Day Escrow Replacement</h4>
-              <p class="text-xs text-on-surface-variant leading-relaxed">Full warranty protection throughout your duration. If any interruption occurs, get an instant replacement.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Description Tabs -->
-        <div class="glass-card rounded-2xl p-6">
-          <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-5 border-b border-white/[0.06]">
-            <button class="tab-btn2 active shrink-0 px-4 py-2 rounded-xl text-xs font-semibold bg-white/[0.04] text-on-surface-variant transition-all" data-tab="desc" onclick="setTab2('desc', this)">Description</button>
-            <button class="tab-btn2 shrink-0 px-4 py-2 rounded-xl text-xs font-medium bg-white/[0.04] text-on-surface-variant hover:text-white transition-all" data-tab="delivery" onclick="setTab2('delivery', this)">Delivery & Warranty</button>
-            <button class="tab-btn2 shrink-0 px-4 py-2 rounded-xl text-xs font-medium bg-white/[0.04] text-on-surface-variant hover:text-white transition-all" data-tab="why" onclick="setTab2('why', this)">Why DigitalSubShop?</button>
-          </div>
-          <div id="tabContent" class="text-xs text-on-surface-variant leading-relaxed desc-content">
-            <!-- Injected via product.js -->
-          </div>
-        </div>
-      </div>
-
-      <!-- ============ RIGHT: PURCHASE BOX (sticky) ============ -->
-      <div class="lg:col-span-2">
-        <div class="glass-card rounded-2xl p-6 lg:sticky lg:top-28">
-          <span id="pCategoryBox" class="text-[10px] uppercase font-bold tracking-widest text-primary-container">Selected Service</span>
-          <h2 id="pTitleBox" class="font-display text-2xl sm:text-3xl font-bold text-white mt-1 tracking-tight">Product Name</h2>
-          <div class="flex items-baseline gap-3 mt-4 pb-4 border-b border-white/[0.06]">
-            <div class="text-4xl font-display font-bold text-white" id="pPrice">৳0</div>
-            <span id="pRegPrice" class="text-base text-outline line-through"></span>
-            <span id="pSaveBadge" class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-500 text-[12px] font-semibold"></span>
+          <div class="flex items-baseline gap-3 mt-3 pb-3.5 border-b border-white/[0.06]">
+            <div class="text-3xl sm:text-4xl font-display font-bold text-white" id="pPrice">৳0</div>
+            <span id="pRegPrice" class="text-sm sm:text-base text-outline line-through"></span>
+            <span id="pSaveBadge" class="px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-500 text-[11px] sm:text-[12px] font-semibold"></span>
           </div>
 
           <!-- Plan Selection -->
-          <div class="mt-5">
-            <label class="block text-xs font-semibold text-white uppercase tracking-wider mb-2.5 flex items-center gap-1.5">
+          <div class="mt-4">
+            <label class="block text-xs font-semibold text-white uppercase tracking-wider mb-2 flex items-center gap-1.5">
               <span class="material-symbols-outlined text-sm text-tertiary">tune</span> Select Duration / Plan:
             </label>
             <div id="pVariationsList" class="space-y-2 max-h-64 overflow-y-auto pr-1">
@@ -249,63 +200,124 @@
           </div>
 
           <!-- Payment Method -->
-          <div class="mt-5 pt-4 border-t border-white/[0.06]">
-            <label class="block text-xs font-semibold text-white uppercase tracking-wider mb-2.5 flex items-center gap-1.5">
+          <div class="mt-4 pt-3.5 border-t border-white/[0.06]">
+            <label class="block text-xs font-semibold text-white uppercase tracking-wider mb-2 flex items-center gap-1.5">
               <span class="material-symbols-outlined text-sm text-primary-container">account_balance_wallet</span> Select Payment Method:
             </label>
             <div class="grid grid-cols-3 gap-2">
-              <button onclick="setPaymentMethod('bKash', this)" class="pay-method-btn py-2.5 px-3 rounded-xl border border-primary-container bg-primary-container/20 text-white font-semibold text-xs flex items-center justify-center gap-1.5 transition-all duration-200 hover:-translate-y-1 hover:shadow-md">
+              <button onclick="setPaymentMethod('bKash', this)" class="pay-method-btn py-2 px-2.5 rounded-xl border border-primary-container bg-primary-container/20 text-white font-semibold text-xs flex items-center justify-center gap-1.5 transition-all">
                 <span class="w-2 h-2 rounded-full bg-[#E2136E]"></span><span>bKash</span>
               </button>
-              <button onclick="setPaymentMethod('Nagad', this)" class="pay-method-btn py-2.5 px-3 rounded-xl border border-white/10 bg-white/[0.03] text-on-surface-variant font-semibold text-xs flex items-center justify-center gap-1.5 duration-200 hover:-translate-y-1 hover:shadow-md transition-all">
+              <button onclick="setPaymentMethod('Nagad', this)" class="pay-method-btn py-2 px-2.5 rounded-xl border border-white/10 bg-white/[0.03] text-on-surface-variant font-semibold text-xs flex items-center justify-center gap-1.5 transition-all">
                 <span class="w-2 h-2 rounded-full bg-[#F7941D]"></span><span>Nagad</span>
               </button>
-              <button onclick="setPaymentMethod('Rocket', this)" class="pay-method-btn py-2.5 px-3 rounded-xl border border-white/10 bg-white/[0.03] text-on-surface-variant font-semibold text-xs flex items-center justify-center gap-1.5 duration-200 hover:-translate-y-1 hover:shadow-md transition-all">
+              <button onclick="setPaymentMethod('Rocket', this)" class="pay-method-btn py-2 px-2.5 rounded-xl border border-white/10 bg-white/[0.03] text-on-surface-variant font-semibold text-xs flex items-center justify-center gap-1.5 transition-all">
                 <span class="w-2 h-2 rounded-full bg-[#8C3494]"></span><span>Rocket</span>
               </button>
             </div>
           </div>
 
-          <!-- Contact -->
-          <div class="mt-5">
-            <label class="block text-xs font-semibold text-white uppercase tracking-wider mb-1.5">Your WhatsApp / Phone (Optional):</label>
-            <input id="customerPhone" type="text" placeholder="e.g. 017xxxxxxxx for order receipt" class="w-full bg-surface-container-low text-white text-xs rounded-xl border border-white/10 px-3.5 py-2.5 focus:border-primary-container focus:outline-none"/>
+          <!-- Contact Phone -->
+          <div class="mt-4">
+            <label class="block text-[11px] font-semibold text-white uppercase tracking-wider mb-1">Your WhatsApp / Phone (Optional):</label>
+            <input id="customerPhone" type="text" placeholder="e.g. 017xxxxxxxx for instant receipt" class="w-full bg-surface-container-low text-white text-xs rounded-xl border border-white/10 px-3.5 py-2.5 focus:border-primary-container focus:outline-none"/>
           </div>
 
-          <!-- Summary & Order -->
-          <div class="mt-5 pt-4 border-t border-white/[0.06]">
-            <div class="flex items-baseline justify-between mb-4">
+          <!-- Summary & Order CTA -->
+          <div class="mt-4 pt-3.5 border-t border-white/[0.06]">
+            <div class="flex items-baseline justify-between mb-3">
               <div>
                 <span class="text-[11px] text-on-surface-variant block">Total Payable:</span>
                 <div id="pSummaryPlan" class="text-xs text-white truncate max-w-[200px]">Plan details</div>
               </div>
               <div id="pSummaryPrice" class="text-2xl font-display font-bold text-primary-container">৳0</div>
             </div>
-            <button onclick="sendWhatsAppOrder()" class="w-full py-3.5 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 hover:brightness-110 shadow-[0_0_20px_rgba(0,229,255,0.35)] transition-all">
+            
+            <button onclick="sendWhatsAppOrder()" class="w-full py-3.5 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 hover:brightness-110 shadow-[0_0_20px_rgba(0,229,255,0.35)] transition-all active:scale-[0.98]">
               <span class="material-symbols-outlined text-[18px]">chat</span>
-              <span>Confirm & Order on WhatsApp</span>
+              <span>Confirm &amp; Order on WhatsApp</span>
             </button>
-            <a href="https://www.facebook.com/share/1F3zoLEESe/" target="_blank" class="mt-2 w-full py-3 rounded-xl bg-[#1877F2]/15 border border-[#1877F2]/40 text-white font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-2 hover:bg-[#1877F2]/25 transition-all">
+
+            <a href="https://www.facebook.com/share/1F3zoLEESe/" target="_blank" class="mt-2.5 w-full py-2.5 rounded-xl bg-[#1877F2]/15 border border-[#1877F2]/40 text-white font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-2 hover:bg-[#1877F2]/25 transition-all">
               <svg class="w-4 h-4 text-[#1877F2]" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073c0 6.021 4.388 11.015 10.125 11.927v-8.42H7.078v-3.507h3.047V9.412c0-3.046 1.792-4.727 4.533-4.727 1.312 0 2.686.235 2.686.235v2.97H15.83c-1.491 0-1.956.93-1.956 1.886v2.267h3.328l-.532 3.507h-2.796V24C19.612 23.088 24 18.094 24 12.073z"/></svg>
-              <span>Order via Facebook / Messenger</span>
+              <span>Order via Messenger</span>
             </a>
+
             <p class="text-[10px] text-outline text-center mt-3">
               ⚡ Automated Dispatch • 365-Day Escrow Warranty • 100% Genuine
             </p>
           </div>
         </div>
       </div>
+
+      <!-- ============ ELEMENT 3: BENTO HIGHLIGHTS & DESCRIPTION TABS ============ -->
+      <!-- On mobile: order-3 (BELOW BUY OPTION). On desktop: order-3, col-span-3 (sits below image on left column!) -->
+      <div class="order-3 lg:col-span-3 space-y-6">
+        
+        <!-- Bento Grid: What's Included -->
+        <div class="glass-card rounded-2xl p-5 sm:p-6">
+          <h3 class="font-display font-bold text-base sm:text-lg text-white mb-4 flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary-container">stars</span>
+            What's Included &amp; Service Highlights
+          </h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+            <div class="p-3.5 sm:p-4 rounded-xl bg-white/[0.02] border border-white/5 space-y-1.5 hover:border-white/10 transition-all">
+              <div class="w-8 h-8 rounded-lg bg-primary-container/15 flex items-center justify-center text-primary-container">
+                <span class="material-symbols-outlined text-[18px]">bolt</span>
+              </div>
+              <h4 class="font-bold text-white text-xs sm:text-sm">Instant Automated Dispatch</h4>
+              <p class="text-[11px] sm:text-xs text-on-surface-variant leading-relaxed">Fast order processing with activation within 1–12 hours directly sent to your phone or WhatsApp.</p>
+            </div>
+            <div class="p-3.5 sm:p-4 rounded-xl bg-white/[0.02] border border-white/5 space-y-1.5 hover:border-white/10 transition-all">
+              <div class="w-8 h-8 rounded-lg bg-emerald-500/15 flex items-center justify-center text-emerald-400">
+                <span class="material-symbols-outlined text-[18px]">shield</span>
+              </div>
+              <h4 class="font-bold text-white text-xs sm:text-sm">100% Genuine Official License</h4>
+              <p class="text-[11px] sm:text-xs text-on-surface-variant leading-relaxed">No cracked, trial, or insecure accounts. Legitimate subscription credentials with full access.</p>
+            </div>
+            <div class="p-3.5 sm:p-4 rounded-xl bg-white/[0.02] border border-white/5 space-y-1.5 hover:border-white/10 transition-all">
+              <div class="w-8 h-8 rounded-lg bg-purple-500/15 flex items-center justify-center text-purple-400">
+                <span class="material-symbols-outlined text-[18px]">lock</span>
+              </div>
+              <h4 class="font-bold text-white text-xs sm:text-sm">Complete Data Privacy</h4>
+              <p class="text-[11px] sm:text-xs text-on-surface-variant leading-relaxed">Your viewing history, watchlists, AI prompts, and personal data remain completely private.</p>
+            </div>
+            <div class="p-3.5 sm:p-4 rounded-xl bg-white/[0.02] border border-white/5 space-y-1.5 hover:border-white/10 transition-all">
+              <div class="w-8 h-8 rounded-lg bg-amber-500/15 flex items-center justify-center text-amber-400">
+                <span class="material-symbols-outlined text-[18px]">verified_user</span>
+              </div>
+              <h4 class="font-bold text-white text-xs sm:text-sm">365-Day Escrow Replacement</h4>
+              <p class="text-[11px] sm:text-xs text-on-surface-variant leading-relaxed">Full warranty protection throughout your duration. If any interruption occurs, get an instant replacement.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Description Tabs -->
+        <div class="glass-card rounded-2xl p-5 sm:p-6">
+          <div class="flex items-center gap-2 overflow-x-auto pb-3 mb-4 border-b border-white/[0.06] scrollbar-none">
+            <button class="tab-btn2 active shrink-0 px-3.5 py-2 rounded-xl text-xs font-semibold bg-white/[0.04] text-on-surface-variant transition-all" data-tab="desc" onclick="setTab2('desc', this)">Description</button>
+            <button class="tab-btn2 shrink-0 px-3.5 py-2 rounded-xl text-xs font-medium bg-white/[0.04] text-on-surface-variant hover:text-white transition-all" data-tab="delivery" onclick="setTab2('delivery', this)">Delivery &amp; Warranty</button>
+            <button class="tab-btn2 shrink-0 px-3.5 py-2 rounded-xl text-xs font-medium bg-white/[0.04] text-on-surface-variant hover:text-white transition-all" data-tab="why" onclick="setTab2('why', this)">Why DigitalSubShop?</button>
+          </div>
+          <div id="tabContent" class="text-xs text-on-surface-variant leading-relaxed desc-content">
+            <!-- Injected via product.js -->
+          </div>
+        </div>
+
+      </div>
+
     </div>
-<!-- ================= RELATED PRODUCTS ================= -->
-    <section class="mt-16">
-      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6 pb-4 border-b border-white/[0.06]">
+
+    <!-- ================= RELATED PRODUCTS (2 products side by side on mobile!) ================= -->
+    <section class="mt-14 sm:mt-16">
+      <div class="flex items-center justify-between gap-4 mb-6 pb-4 border-b border-white/[0.06]">
         <div>
           <span class="text-xs font-semibold uppercase tracking-widest text-primary-container">You May Also Like</span>
-          <h2 class="font-display text-2xl sm:text-3xl font-bold text-white mt-1">Related Products</h2>
+          <h2 class="font-display text-xl sm:text-2xl font-bold text-white mt-0.5">Related Products</h2>
         </div>
-        <a href="index.html#catalog" class="text-xs text-on-surface-variant hover:text-white flex items-center gap-1 transition-colors">View all products <span class="material-symbols-outlined text-[14px]">arrow_forward</span></a>
+        <a href="index.html#catalog" class="text-xs text-on-surface-variant hover:text-white flex items-center gap-1 transition-colors">View all <span class="material-symbols-outlined text-[14px]">arrow_forward</span></a>
       </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="relatedGrid">
+      <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6" id="relatedGrid">
         <!-- Injected via product.js -->
       </div>
     </section>

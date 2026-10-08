@@ -263,915 +263,915 @@
         </button>
 </div>
 <!-- 19 Product Cards Grid -->
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="productsGrid">
+<div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-6" id="productsGrid">
 <!-- 1. Netflix Premium -->
-<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ott" data-product-id="392" data-title="netflix premium" onclick="if (!event.target.closest('a')) openProductPage(392)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ott" data-product-id="392" data-title="netflix premium" onclick="if (!event.target.closest('a')) openProductPage(392)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
-  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+  <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/netflix-premium-subscription-bd.webp" alt="Netflix Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
-    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #E50914;">
+    <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #E50914;">
       4K HDR
     </div>
-    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
-      🎬 OTT & Streaming
+    <div class="absolute top-2 left-2 sm:top-3 sm:left-3 px-1.5 sm:px-2 py-0.5 rounded-full text-[8px] sm:text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      🎬 OTT
     </div>
-    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
-        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+    <div class="hidden sm:flex absolute inset-0 items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-10 h-10 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-sm">arrow_forward</span>
       </div>
     </div>
   </div>
 
   <!-- Card Body -->
-  <div class="p-5 flex flex-col flex-grow justify-between">
+  <div class="p-3 sm:p-5 flex flex-col flex-grow justify-between">
     <div>
-      <div class="flex items-center justify-between gap-2 mb-2">
-        <span class="px-2 py-0.5 rounded-full bg-red-500/15 text-red-400 text-[10px] font-bold uppercase tracking-wider">SAVE ৳149</span>
-        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      <div class="flex items-center justify-between gap-1 mb-1.5 sm:mb-2">
+        <span class="px-1.5 sm:px-2 py-0.5 rounded-full bg-red-500/15 text-red-400 text-[8px] sm:text-[10px] font-bold uppercase tracking-wider">SAVE ৳149</span>
+        <span class="text-[9px] sm:text-[11px] text-tertiary flex items-center gap-0.5"><span class="material-symbols-outlined text-[12px] sm:text-[13px] text-tertiary">verified</span> Verified</span>
       </div>
       <a href="product.html?id=392" class="hover:text-primary-container transition-colors block">
-        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">Netflix Premium</h3>
+        <h3 class="font-display font-bold text-white text-xs sm:text-base leading-tight line-clamp-1 sm:line-clamp-none">Netflix Premium</h3>
       </a>
-      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">Ultra HD 4K, dedicated private profile with personal PIN lock, Dolby Vision audio.</p>
-      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+      <p class="text-[11px] sm:text-xs text-on-surface-variant mt-1 sm:mt-1.5 line-clamp-2 leading-relaxed hidden sm:block">Ultra HD 4K, dedicated private profile with personal PIN lock, Dolby Vision audio.</p>
+      <div class="hidden sm:flex flex-wrap items-center gap-1.5 mt-3">
         <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">4K UHD</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Private PIN</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Instant Key</span>
       </div>
     </div>
 
     <!-- Pricing & Action Row -->
-    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+    <div class="mt-3 sm:mt-5 pt-2 sm:pt-3.5 border-t border-white/[0.06] flex items-center justify-between gap-1">
       <div>
-        <span class="text-[11px] text-outline line-through block">৳499</span>
-        <div class="text-lg sm:text-xl font-display font-bold text-white">৳350 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
+        <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳499</span>
+        <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳350 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/mo</span></div>
       </div>
-      <a href="product.html?id=392" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
-        <span class="material-symbols-outlined text-[14px]">bolt</span>
-        <span>Claim Slot</span>
+      <a href="product.html?id=392" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+        <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
+        <span>Order</span>
       </a>
     </div>
   </div>
 </div>
 <!-- 2. Amazon Prime Video -->
-<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ott" data-product-id="390" data-title="amazon prime video" onclick="if (!event.target.closest('a')) openProductPage(390)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ott" data-product-id="390" data-title="amazon prime video" onclick="if (!event.target.closest('a')) openProductPage(390)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
-  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+  <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/amazon-prime-video-subscription-bd.webp" alt="Amazon Prime Video" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
-    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #00A8E1;">
+    <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #00A8E1;">
       HD 1080p
     </div>
-    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
-      🎬 OTT & Streaming
+    <div class="absolute top-2 left-2 sm:top-3 sm:left-3 px-1.5 sm:px-2 py-0.5 rounded-full text-[8px] sm:text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      🎬 OTT
     </div>
-    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
-        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+    <div class="hidden sm:flex absolute inset-0 items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-10 h-10 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-sm">arrow_forward</span>
       </div>
     </div>
   </div>
 
   <!-- Card Body -->
-  <div class="p-5 flex flex-col flex-grow justify-between">
+  <div class="p-3 sm:p-5 flex flex-col flex-grow justify-between">
     <div>
-      <div class="flex items-center justify-between gap-2 mb-2">
-        <span class="px-2 py-0.5 rounded-full bg-sky-500/15 text-sky-400 text-[10px] font-bold uppercase tracking-wider">SAVE ৳149</span>
-        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      <div class="flex items-center justify-between gap-1 mb-1.5 sm:mb-2">
+        <span class="px-1.5 sm:px-2 py-0.5 rounded-full bg-sky-500/15 text-sky-400 text-[8px] sm:text-[10px] font-bold uppercase tracking-wider">SAVE ৳149</span>
+        <span class="text-[9px] sm:text-[11px] text-tertiary flex items-center gap-0.5"><span class="material-symbols-outlined text-[12px] sm:text-[13px] text-tertiary">verified</span> Verified</span>
       </div>
       <a href="product.html?id=390" class="hover:text-primary-container transition-colors block">
-        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">Amazon Prime Video</h3>
+        <h3 class="font-display font-bold text-white text-xs sm:text-base leading-tight line-clamp-1 sm:line-clamp-none">Amazon Prime Video</h3>
       </a>
-      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">Official Prime Video access with uninterrupted streaming on TV, phone & laptop.</p>
-      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+      <p class="text-[11px] sm:text-xs text-on-surface-variant mt-1 sm:mt-1.5 line-clamp-2 leading-relaxed hidden sm:block">Official Prime Video access with uninterrupted streaming on TV, phone & laptop.</p>
+      <div class="hidden sm:flex flex-wrap items-center gap-1.5 mt-3">
         <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Prime Video</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Ad-Free</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Multi-Device</span>
       </div>
     </div>
 
     <!-- Pricing & Action Row -->
-    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+    <div class="mt-3 sm:mt-5 pt-2 sm:pt-3.5 border-t border-white/[0.06] flex items-center justify-between gap-1">
       <div>
-        <span class="text-[11px] text-outline line-through block">৳299</span>
-        <div class="text-lg sm:text-xl font-display font-bold text-white">৳150 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
+        <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳299</span>
+        <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳150 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/mo</span></div>
       </div>
-      <a href="product.html?id=390" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
-        <span class="material-symbols-outlined text-[14px]">bolt</span>
-        <span>Get Access</span>
+      <a href="product.html?id=390" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+        <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
+        <span>Order</span>
       </a>
     </div>
   </div>
 </div>
 <!-- 3. YouTube Premium -->
-<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ott" data-product-id="861" data-title="youtube premium" onclick="if (!event.target.closest('a')) openProductPage(861)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ott" data-product-id="861" data-title="youtube premium" onclick="if (!event.target.closest('a')) openProductPage(861)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
-  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+  <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/youtube-premium-subscription-bd.webp" alt="YouTube Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
-    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #FF0000;">
+    <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #FF0000;">
       Ad-Free
     </div>
-    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
-      🎬 OTT & Streaming
+    <div class="absolute top-2 left-2 sm:top-3 sm:left-3 px-1.5 sm:px-2 py-0.5 rounded-full text-[8px] sm:text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      🎬 OTT
     </div>
-    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
-        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+    <div class="hidden sm:flex absolute inset-0 items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-10 h-10 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-sm">arrow_forward</span>
       </div>
     </div>
   </div>
 
   <!-- Card Body -->
-  <div class="p-5 flex flex-col flex-grow justify-between">
+  <div class="p-3 sm:p-5 flex flex-col flex-grow justify-between">
     <div>
-      <div class="flex items-center justify-between gap-2 mb-2">
-        <span class="px-2 py-0.5 rounded-full bg-red-500/15 text-red-400 text-[10px] font-bold uppercase tracking-wider">SAVE ৳50</span>
-        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      <div class="flex items-center justify-between gap-1 mb-1.5 sm:mb-2">
+        <span class="px-1.5 sm:px-2 py-0.5 rounded-full bg-red-500/15 text-red-400 text-[8px] sm:text-[10px] font-bold uppercase tracking-wider">SAVE ৳50</span>
+        <span class="text-[9px] sm:text-[11px] text-tertiary flex items-center gap-0.5"><span class="material-symbols-outlined text-[12px] sm:text-[13px] text-tertiary">verified</span> Verified</span>
       </div>
       <a href="product.html?id=861" class="hover:text-primary-container transition-colors block">
-        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">YouTube Premium</h3>
+        <h3 class="font-display font-bold text-white text-xs sm:text-base leading-tight line-clamp-1 sm:line-clamp-none">YouTube Premium</h3>
       </a>
-      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">Zero ad interruptions, background playback on lockscreen, and YouTube Music included.</p>
-      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+      <p class="text-[11px] sm:text-xs text-on-surface-variant mt-1 sm:mt-1.5 line-clamp-2 leading-relaxed hidden sm:block">Zero ad interruptions, background playback on lockscreen, and YouTube Music included.</p>
+      <div class="hidden sm:flex flex-wrap items-center gap-1.5 mt-3">
         <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Music Inc.</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Background Play</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">No Ads</span>
       </div>
     </div>
 
     <!-- Pricing & Action Row -->
-    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+    <div class="mt-3 sm:mt-5 pt-2 sm:pt-3.5 border-t border-white/[0.06] flex items-center justify-between gap-1">
       <div>
-        <span class="text-[11px] text-outline line-through block">৳180</span>
-        <div class="text-lg sm:text-xl font-display font-bold text-white">৳130 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
+        <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳180</span>
+        <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳130 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/mo</span></div>
       </div>
-      <a href="product.html?id=861" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
-        <span class="material-symbols-outlined text-[14px]">bolt</span>
-        <span>Activate Now</span>
+      <a href="product.html?id=861" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+        <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
+        <span>Order</span>
       </a>
     </div>
   </div>
 </div>
 <!-- 4. Crunchyroll Premium -->
-<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ott" data-product-id="865" data-title="crunchyroll premium" onclick="if (!event.target.closest('a')) openProductPage(865)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ott" data-product-id="865" data-title="crunchyroll premium" onclick="if (!event.target.closest('a')) openProductPage(865)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
-  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+  <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/crunchyroll-premium-subscription-bd.webp" alt="Crunchyroll Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
-    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #F47521;">
+    <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #F47521;">
       Simulcast
     </div>
-    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
-      🎬 OTT & Streaming
+    <div class="absolute top-2 left-2 sm:top-3 sm:left-3 px-1.5 sm:px-2 py-0.5 rounded-full text-[8px] sm:text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      🎬 Anime
     </div>
-    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
-        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+    <div class="hidden sm:flex absolute inset-0 items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-10 h-10 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-sm">arrow_forward</span>
       </div>
     </div>
   </div>
 
   <!-- Card Body -->
-  <div class="p-5 flex flex-col flex-grow justify-between">
+  <div class="p-3 sm:p-5 flex flex-col flex-grow justify-between">
     <div>
-      <div class="flex items-center justify-between gap-2 mb-2">
-        <span class="px-2 py-0.5 rounded-full bg-orange-500/15 text-orange-400 text-[10px] font-bold uppercase tracking-wider">SAVE ৳30</span>
-        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      <div class="flex items-center justify-between gap-1 mb-1.5 sm:mb-2">
+        <span class="px-1.5 sm:px-2 py-0.5 rounded-full bg-orange-500/15 text-orange-400 text-[8px] sm:text-[10px] font-bold uppercase tracking-wider">SAVE ৳30</span>
+        <span class="text-[9px] sm:text-[11px] text-tertiary flex items-center gap-0.5"><span class="material-symbols-outlined text-[12px] sm:text-[13px] text-tertiary">verified</span> Verified</span>
       </div>
       <a href="product.html?id=865" class="hover:text-primary-container transition-colors block">
-        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">Crunchyroll Premium</h3>
+        <h3 class="font-display font-bold text-white text-xs sm:text-base leading-tight line-clamp-1 sm:line-clamp-none">Crunchyroll Premium</h3>
       </a>
-      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">50,000+ anime episodes simulcast 1-hour post Japan premiere, Game Vault, ad-free.</p>
-      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+      <p class="text-[11px] sm:text-xs text-on-surface-variant mt-1 sm:mt-1.5 line-clamp-2 leading-relaxed hidden sm:block">50,000+ anime episodes simulcast 1-hour post Japan premiere, Game Vault, ad-free.</p>
+      <div class="hidden sm:flex flex-wrap items-center gap-1.5 mt-3">
         <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">50K+ Anime</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Offline View</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Mega Fan</span>
       </div>
     </div>
 
     <!-- Pricing & Action Row -->
-    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+    <div class="mt-3 sm:mt-5 pt-2 sm:pt-3.5 border-t border-white/[0.06] flex items-center justify-between gap-1">
       <div>
-        <span class="text-[11px] text-outline line-through block">৳200</span>
-        <div class="text-lg sm:text-xl font-display font-bold text-white">৳170 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
+        <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳200</span>
+        <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳170 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/mo</span></div>
       </div>
-      <a href="product.html?id=865" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
-        <span class="material-symbols-outlined text-[14px]">bolt</span>
-        <span>Watch Anime</span>
+      <a href="product.html?id=865" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+        <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
+        <span>Order</span>
       </a>
     </div>
   </div>
 </div>
 <!-- 5. Kuku TV Premium -->
-<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ott" data-product-id="1328" data-title="kuku tv premium" onclick="if (!event.target.closest('a')) openProductPage(1328)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ott" data-product-id="1328" data-title="kuku tv premium" onclick="if (!event.target.closest('a')) openProductPage(1328)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
-  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+  <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/kuku-tv-premium-bangladesh-price.webp" alt="Kuku TV Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
-    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #FF4500;">
-      HD Dramas
+    <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #FF4500;">
+      HD Drama
     </div>
-    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
-      🎬 OTT & Streaming
+    <div class="absolute top-2 left-2 sm:top-3 sm:left-3 px-1.5 sm:px-2 py-0.5 rounded-full text-[8px] sm:text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      🎬 Drama
     </div>
-    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
-        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+    <div class="hidden sm:flex absolute inset-0 items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-10 h-10 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-sm">arrow_forward</span>
       </div>
     </div>
   </div>
 
   <!-- Card Body -->
-  <div class="p-5 flex flex-col flex-grow justify-between">
+  <div class="p-3 sm:p-5 flex flex-col flex-grow justify-between">
     <div>
-      <div class="flex items-center justify-between gap-2 mb-2">
-        <span class="px-2 py-0.5 rounded-full bg-orange-500/15 text-orange-400 text-[10px] font-bold uppercase tracking-wider">SAVE ৳100</span>
-        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      <div class="flex items-center justify-between gap-1 mb-1.5 sm:mb-2">
+        <span class="px-1.5 sm:px-2 py-0.5 rounded-full bg-orange-500/15 text-orange-400 text-[8px] sm:text-[10px] font-bold uppercase tracking-wider">SAVE ৳100</span>
+        <span class="text-[9px] sm:text-[11px] text-tertiary flex items-center gap-0.5"><span class="material-symbols-outlined text-[12px] sm:text-[13px] text-tertiary">verified</span> Verified</span>
       </div>
       <a href="product.html?id=1328" class="hover:text-primary-container transition-colors block">
-        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">Kuku TV Premium</h3>
+        <h3 class="font-display font-bold text-white text-xs sm:text-base leading-tight line-clamp-1 sm:line-clamp-none">Kuku TV Premium</h3>
       </a>
-      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">Short dramas, romantic thrillers, exclusive original series on Android and iOS.</p>
-      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+      <p class="text-[11px] sm:text-xs text-on-surface-variant mt-1 sm:mt-1.5 line-clamp-2 leading-relaxed hidden sm:block">Short dramas, romantic thrillers, exclusive original series on Android and iOS.</p>
+      <div class="hidden sm:flex flex-wrap items-center gap-1.5 mt-3">
         <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Short Series</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Shared Slot</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">HD Video</span>
       </div>
     </div>
 
     <!-- Pricing & Action Row -->
-    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+    <div class="mt-3 sm:mt-5 pt-2 sm:pt-3.5 border-t border-white/[0.06] flex items-center justify-between gap-1">
       <div>
-        <span class="text-[11px] text-outline line-through block">৳899</span>
-        <div class="text-lg sm:text-xl font-display font-bold text-white">৳799 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
+        <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳899</span>
+        <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳799 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/mo</span></div>
       </div>
-      <a href="product.html?id=1328" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
-        <span class="material-symbols-outlined text-[14px]">bolt</span>
-        <span>Stream Now</span>
+      <a href="product.html?id=1328" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+        <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
+        <span>Order</span>
       </a>
     </div>
   </div>
 </div>
 <!-- 6. Ullu Premium -->
-<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ott" data-product-id="389" data-title="ullu premium" onclick="if (!event.target.closest('a')) openProductPage(389)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ott" data-product-id="389" data-title="ullu premium" onclick="if (!event.target.closest('a')) openProductPage(389)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
-  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+  <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/ullu-premium-subscription.webp" alt="Ullu Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
-    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #FF6B35;">
+    <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #FF6B35;">
       Originals
     </div>
-    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
-      🎬 OTT & Streaming
+    <div class="absolute top-2 left-2 sm:top-3 sm:left-3 px-1.5 sm:px-2 py-0.5 rounded-full text-[8px] sm:text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      🎬 Drama
     </div>
-    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
-        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+    <div class="hidden sm:flex absolute inset-0 items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-10 h-10 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-sm">arrow_forward</span>
       </div>
     </div>
   </div>
 
   <!-- Card Body -->
-  <div class="p-5 flex flex-col flex-grow justify-between">
+  <div class="p-3 sm:p-5 flex flex-col flex-grow justify-between">
     <div>
-      <div class="flex items-center justify-between gap-2 mb-2">
-        <span class="px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-400 text-[10px] font-bold uppercase tracking-wider">SAVE ৳239</span>
-        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      <div class="flex items-center justify-between gap-1 mb-1.5 sm:mb-2">
+        <span class="px-1.5 sm:px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-400 text-[8px] sm:text-[10px] font-bold uppercase tracking-wider">SAVE ৳239</span>
+        <span class="text-[9px] sm:text-[11px] text-tertiary flex items-center gap-0.5"><span class="material-symbols-outlined text-[12px] sm:text-[13px] text-tertiary">verified</span> Verified</span>
       </div>
       <a href="product.html?id=389" class="hover:text-primary-container transition-colors block">
-        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">Ullu Premium</h3>
+        <h3 class="font-display font-bold text-white text-xs sm:text-base leading-tight line-clamp-1 sm:line-clamp-none">Ullu Premium</h3>
       </a>
-      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">Full catalog of exclusive Ullu web series and short films on phone or TV.</p>
-      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+      <p class="text-[11px] sm:text-xs text-on-surface-variant mt-1 sm:mt-1.5 line-clamp-2 leading-relaxed hidden sm:block">Full catalog of exclusive Ullu web series and short films on phone or TV.</p>
+      <div class="hidden sm:flex flex-wrap items-center gap-1.5 mt-3">
         <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Web Series</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">HD Streaming</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Instant Access</span>
       </div>
     </div>
 
     <!-- Pricing & Action Row -->
-    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+    <div class="mt-3 sm:mt-5 pt-2 sm:pt-3.5 border-t border-white/[0.06] flex items-center justify-between gap-1">
       <div>
-        <span class="text-[11px] text-outline line-through block">৳499</span>
-        <div class="text-lg sm:text-xl font-display font-bold text-white">৳260 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
+        <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳499</span>
+        <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳260 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/mo</span></div>
       </div>
-      <a href="product.html?id=389" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
-        <span class="material-symbols-outlined text-[14px]">bolt</span>
-        <span>Start Watching</span>
+      <a href="product.html?id=389" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+        <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
+        <span>Order</span>
       </a>
     </div>
   </div>
 </div>
 <!-- 7. ChatGPT Pro (OpenAI) -->
-<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ai" data-product-id="142" data-title="chatgpt pro" onclick="if (!event.target.closest('a')) openProductPage(142)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ai" data-product-id="142" data-title="chatgpt pro" onclick="if (!event.target.closest('a')) openProductPage(142)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
-  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+  <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/chatgpt-pro-subscription-bd.webp" alt="ChatGPT Pro (OpenAI)" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
-    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #10A37F;">
+    <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #10A37F;">
       o1 Pro / 4o
     </div>
-    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
-      🤖 Frontier AI
+    <div class="absolute top-2 left-2 sm:top-3 sm:left-3 px-1.5 sm:px-2 py-0.5 rounded-full text-[8px] sm:text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      🤖 AI
     </div>
-    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
-        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+    <div class="hidden sm:flex absolute inset-0 items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-10 h-10 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-sm">arrow_forward</span>
       </div>
     </div>
   </div>
 
   <!-- Card Body -->
-  <div class="p-5 flex flex-col flex-grow justify-between">
+  <div class="p-3 sm:p-5 flex flex-col flex-grow justify-between">
     <div>
-      <div class="flex items-center justify-between gap-2 mb-2">
-        <span class="px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-400 text-[10px] font-bold uppercase tracking-wider">SAVE ৳200</span>
-        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      <div class="flex items-center justify-between gap-1 mb-1.5 sm:mb-2">
+        <span class="px-1.5 sm:px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-400 text-[8px] sm:text-[10px] font-bold uppercase tracking-wider">SAVE ৳200</span>
+        <span class="text-[9px] sm:text-[11px] text-tertiary flex items-center gap-0.5"><span class="material-symbols-outlined text-[12px] sm:text-[13px] text-tertiary">verified</span> Verified</span>
       </div>
       <a href="product.html?id=142" class="hover:text-primary-container transition-colors block">
-        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">ChatGPT Pro (OpenAI)</h3>
+        <h3 class="font-display font-bold text-white text-xs sm:text-base leading-tight line-clamp-1 sm:line-clamp-none">ChatGPT Pro (OpenAI)</h3>
       </a>
-      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">Next-gen reasoning with o1 Pro & GPT-4o, unlimited Advanced Voice, Canvas workspace.</p>
-      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+      <p class="text-[11px] sm:text-xs text-on-surface-variant mt-1 sm:mt-1.5 line-clamp-2 leading-relaxed hidden sm:block">Next-gen reasoning with o1 Pro & GPT-4o, unlimited Advanced Voice, Canvas workspace.</p>
+      <div class="hidden sm:flex flex-wrap items-center gap-1.5 mt-3">
         <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">o1 Pro Reasoning</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Advanced Voice</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Code Canvas</span>
       </div>
     </div>
 
     <!-- Pricing & Action Row -->
-    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+    <div class="mt-3 sm:mt-5 pt-2 sm:pt-3.5 border-t border-white/[0.06] flex items-center justify-between gap-1">
       <div>
-        <span class="text-[11px] text-outline line-through block">৳699</span>
-        <div class="text-lg sm:text-xl font-display font-bold text-white">৳499 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
+        <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳699</span>
+        <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳499 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/mo</span></div>
       </div>
-      <a href="product.html?id=142" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
-        <span class="material-symbols-outlined text-[14px]">bolt</span>
-        <span>Unlock Pro</span>
+      <a href="product.html?id=142" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+        <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
+        <span>Order</span>
       </a>
     </div>
   </div>
 </div>
 <!-- 8. Google Gemini Advanced -->
-<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ai" data-product-id="852" data-title="google gemini pro" onclick="if (!event.target.closest('a')) openProductPage(852)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ai" data-product-id="852" data-title="google gemini pro" onclick="if (!event.target.closest('a')) openProductPage(852)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
-  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+  <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/google-gemini-pro-subscription-bd.webp" alt="Google Gemini Advanced" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
-    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #4285F4;">
+    <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #4285F4;">
       2M Context
     </div>
-    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
-      🤖 Frontier AI
+    <div class="absolute top-2 left-2 sm:top-3 sm:left-3 px-1.5 sm:px-2 py-0.5 rounded-full text-[8px] sm:text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      🤖 AI
     </div>
-    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
-        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+    <div class="hidden sm:flex absolute inset-0 items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-10 h-10 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-sm">arrow_forward</span>
       </div>
     </div>
   </div>
 
   <!-- Card Body -->
-  <div class="p-5 flex flex-col flex-grow justify-between">
+  <div class="p-3 sm:p-5 flex flex-col flex-grow justify-between">
     <div>
-      <div class="flex items-center justify-between gap-2 mb-2">
-        <span class="px-2 py-0.5 rounded-full bg-blue-500/15 text-blue-400 text-[10px] font-bold uppercase tracking-wider">SAVE ৳200</span>
-        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      <div class="flex items-center justify-between gap-1 mb-1.5 sm:mb-2">
+        <span class="px-1.5 sm:px-2 py-0.5 rounded-full bg-blue-500/15 text-blue-400 text-[8px] sm:text-[10px] font-bold uppercase tracking-wider">SAVE ৳200</span>
+        <span class="text-[9px] sm:text-[11px] text-tertiary flex items-center gap-0.5"><span class="material-symbols-outlined text-[12px] sm:text-[13px] text-tertiary">verified</span> Verified</span>
       </div>
       <a href="product.html?id=852" class="hover:text-primary-container transition-colors block">
-        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">Google Gemini Advanced</h3>
+        <h3 class="font-display font-bold text-white text-xs sm:text-base leading-tight line-clamp-1 sm:line-clamp-none">Google Gemini Advanced</h3>
       </a>
-      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">Gemini 1.5 Pro with 2M token context window, deep multimodal analysis & 2TB Drive.</p>
-      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+      <p class="text-[11px] sm:text-xs text-on-surface-variant mt-1 sm:mt-1.5 line-clamp-2 leading-relaxed hidden sm:block">Gemini 1.5 Pro with 2M token context window, deep multimodal analysis & 2TB Drive.</p>
+      <div class="hidden sm:flex flex-wrap items-center gap-1.5 mt-3">
         <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">2M Tokens</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Deep Analysis</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Multimodal</span>
       </div>
     </div>
 
     <!-- Pricing & Action Row -->
-    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+    <div class="mt-3 sm:mt-5 pt-2 sm:pt-3.5 border-t border-white/[0.06] flex items-center justify-between gap-1">
       <div>
-        <span class="text-[11px] text-outline line-through block">৳699</span>
-        <div class="text-lg sm:text-xl font-display font-bold text-white">৳499 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
+        <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳699</span>
+        <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳499 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/mo</span></div>
       </div>
-      <a href="product.html?id=852" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
-        <span class="material-symbols-outlined text-[14px]">bolt</span>
-        <span>Deploy AI</span>
+      <a href="product.html?id=852" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+        <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
+        <span>Order</span>
       </a>
     </div>
   </div>
 </div>
 <!-- 9. SuperGrok Premium (xAI) -->
-<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ai" data-product-id="854" data-title="supergrok premium (xai)" onclick="if (!event.target.closest('a')) openProductPage(854)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ai" data-product-id="854" data-title="supergrok premium (xai)" onclick="if (!event.target.closest('a')) openProductPage(854)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
-  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+  <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/supergrok-premium-subscription-bd.webp" alt="SuperGrok Premium (xAI)" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
-    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #1D9BF0;">
-      Uncensored AI
+    <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #1D9BF0;">
+      Uncensored
     </div>
-    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
-      🤖 Frontier AI
+    <div class="absolute top-2 left-2 sm:top-3 sm:left-3 px-1.5 sm:px-2 py-0.5 rounded-full text-[8px] sm:text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      🤖 AI
     </div>
-    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
-        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+    <div class="hidden sm:flex absolute inset-0 items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-10 h-10 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-sm">arrow_forward</span>
       </div>
     </div>
   </div>
 
   <!-- Card Body -->
-  <div class="p-5 flex flex-col flex-grow justify-between">
+  <div class="p-3 sm:p-5 flex flex-col flex-grow justify-between">
     <div>
-      <div class="flex items-center justify-between gap-2 mb-2">
-        <span class="px-2 py-0.5 rounded-full bg-cyan-500/15 text-cyan-400 text-[10px] font-bold uppercase tracking-wider">SAVE ৳200</span>
-        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      <div class="flex items-center justify-between gap-1 mb-1.5 sm:mb-2">
+        <span class="px-1.5 sm:px-2 py-0.5 rounded-full bg-cyan-500/15 text-cyan-400 text-[8px] sm:text-[10px] font-bold uppercase tracking-wider">SAVE ৳200</span>
+        <span class="text-[9px] sm:text-[11px] text-tertiary flex items-center gap-0.5"><span class="material-symbols-outlined text-[12px] sm:text-[13px] text-tertiary">verified</span> Verified</span>
       </div>
       <a href="product.html?id=854" class="hover:text-primary-container transition-colors block">
-        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">SuperGrok Premium (xAI)</h3>
+        <h3 class="font-display font-bold text-white text-xs sm:text-base leading-tight line-clamp-1 sm:line-clamp-none">SuperGrok Premium (xAI)</h3>
       </a>
-      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">Real-time X integration, maximum Grok 2 & Grok 3 intelligence, raw unfiltered speed.</p>
-      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+      <p class="text-[11px] sm:text-xs text-on-surface-variant mt-1 sm:mt-1.5 line-clamp-2 leading-relaxed hidden sm:block">Real-time X integration, maximum Grok 2 & Grok 3 intelligence, raw unfiltered speed.</p>
+      <div class="hidden sm:flex flex-wrap items-center gap-1.5 mt-3">
         <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Real-time X</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Grok 2 & 3</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Flux Vision</span>
       </div>
     </div>
 
     <!-- Pricing & Action Row -->
-    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+    <div class="mt-3 sm:mt-5 pt-2 sm:pt-3.5 border-t border-white/[0.06] flex items-center justify-between gap-1">
       <div>
-        <span class="text-[11px] text-outline line-through block">৳699</span>
-        <div class="text-lg sm:text-xl font-display font-bold text-white">৳499 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
+        <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳699</span>
+        <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳499 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/mo</span></div>
       </div>
-      <a href="product.html?id=854" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
-        <span class="material-symbols-outlined text-[14px]">bolt</span>
-        <span>Explore Grok</span>
+      <a href="product.html?id=854" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+        <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
+        <span>Order</span>
       </a>
     </div>
   </div>
 </div>
 <!-- 10. vidIQ Boost Premium -->
-<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ai" data-product-id="1544" data-title="vidiq boost premium" onclick="if (!event.target.closest('a')) openProductPage(1544)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ai" data-product-id="1544" data-title="vidiq boost premium" onclick="if (!event.target.closest('a')) openProductPage(1544)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
-  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+  <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/vidiq-premium-price-bangladesh.webp" alt="vidIQ Boost Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
-    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #00D26A;">
+    <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #00D26A;">
       SEO Boost
     </div>
-    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
-      🤖 AI & Growth
+    <div class="absolute top-2 left-2 sm:top-3 sm:left-3 px-1.5 sm:px-2 py-0.5 rounded-full text-[8px] sm:text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      🤖 Growth
     </div>
-    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
-        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+    <div class="hidden sm:flex absolute inset-0 items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-10 h-10 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-sm">arrow_forward</span>
       </div>
     </div>
   </div>
 
   <!-- Card Body -->
-  <div class="p-5 flex flex-col flex-grow justify-between">
+  <div class="p-3 sm:p-5 flex flex-col flex-grow justify-between">
     <div>
-      <div class="flex items-center justify-between gap-2 mb-2">
-        <span class="px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-400 text-[10px] font-bold uppercase tracking-wider">SAVE ৳300</span>
-        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      <div class="flex items-center justify-between gap-1 mb-1.5 sm:mb-2">
+        <span class="px-1.5 sm:px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-400 text-[8px] sm:text-[10px] font-bold uppercase tracking-wider">SAVE ৳300</span>
+        <span class="text-[9px] sm:text-[11px] text-tertiary flex items-center gap-0.5"><span class="material-symbols-outlined text-[12px] sm:text-[13px] text-tertiary">verified</span> Verified</span>
       </div>
       <a href="product.html?id=1544" class="hover:text-primary-container transition-colors block">
-        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">vidIQ Boost Premium</h3>
+        <h3 class="font-display font-bold text-white text-xs sm:text-base leading-tight line-clamp-1 sm:line-clamp-none">vidIQ Boost Premium</h3>
       </a>
-      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">Advanced YouTube SEO, AI keyword discovery, viral competitor audits & trend alerts.</p>
-      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+      <p class="text-[11px] sm:text-xs text-on-surface-variant mt-1 sm:mt-1.5 line-clamp-2 leading-relaxed hidden sm:block">Advanced YouTube SEO, AI keyword discovery, viral competitor audits & trend alerts.</p>
+      <div class="hidden sm:flex flex-wrap items-center gap-1.5 mt-3">
         <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">YouTube SEO</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Trend Radar</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Competitor Spy</span>
       </div>
     </div>
 
     <!-- Pricing & Action Row -->
-    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+    <div class="mt-3 sm:mt-5 pt-2 sm:pt-3.5 border-t border-white/[0.06] flex items-center justify-between gap-1">
       <div>
-        <span class="text-[11px] text-outline line-through block">৳799</span>
-        <div class="text-lg sm:text-xl font-display font-bold text-white">৳499 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
+        <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳799</span>
+        <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳499 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/mo</span></div>
       </div>
-      <a href="product.html?id=1544" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
-        <span class="material-symbols-outlined text-[14px]">bolt</span>
-        <span>Boost Channel</span>
+      <a href="product.html?id=1544" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+        <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
+        <span>Order</span>
       </a>
     </div>
   </div>
 </div>
 <!-- 11. Quizlet Plus Subscription -->
-<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ai" data-product-id="863" data-title="quizlet plus" onclick="if (!event.target.closest('a')) openProductPage(863)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ai" data-product-id="863" data-title="quizlet plus" onclick="if (!event.target.closest('a')) openProductPage(863)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
-  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+  <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/quizlet-plus-subscription-bd.webp" alt="Quizlet Plus Subscription" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
-    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #4257B2;">
+    <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #4257B2;">
       AI Study
     </div>
-    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
-      📚 Smart Education
+    <div class="absolute top-2 left-2 sm:top-3 sm:left-3 px-1.5 sm:px-2 py-0.5 rounded-full text-[8px] sm:text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      📚 Edu
     </div>
-    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
-        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+    <div class="hidden sm:flex absolute inset-0 items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-10 h-10 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-sm">arrow_forward</span>
       </div>
     </div>
   </div>
 
   <!-- Card Body -->
-  <div class="p-5 flex flex-col flex-grow justify-between">
+  <div class="p-3 sm:p-5 flex flex-col flex-grow justify-between">
     <div>
-      <div class="flex items-center justify-between gap-2 mb-2">
-        <span class="px-2 py-0.5 rounded-full bg-indigo-500/15 text-indigo-400 text-[10px] font-bold uppercase tracking-wider">SAVE ৳400</span>
-        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      <div class="flex items-center justify-between gap-1 mb-1.5 sm:mb-2">
+        <span class="px-1.5 sm:px-2 py-0.5 rounded-full bg-indigo-500/15 text-indigo-400 text-[8px] sm:text-[10px] font-bold uppercase tracking-wider">SAVE ৳400</span>
+        <span class="text-[9px] sm:text-[11px] text-tertiary flex items-center gap-0.5"><span class="material-symbols-outlined text-[12px] sm:text-[13px] text-tertiary">verified</span> Verified</span>
       </div>
       <a href="product.html?id=863" class="hover:text-primary-container transition-colors block">
-        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">Quizlet Plus Subscription</h3>
+        <h3 class="font-display font-bold text-white text-xs sm:text-base leading-tight line-clamp-1 sm:line-clamp-none">Quizlet Plus Subscription</h3>
       </a>
-      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">Q-Chat AI tutor, Magic Notes automatic flashcard generator, ad-free offline study.</p>
-      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+      <p class="text-[11px] sm:text-xs text-on-surface-variant mt-1 sm:mt-1.5 line-clamp-2 leading-relaxed hidden sm:block">Q-Chat AI tutor, Magic Notes automatic flashcard generator, ad-free offline study.</p>
+      <div class="hidden sm:flex flex-wrap items-center gap-1.5 mt-3">
         <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Q-Chat AI</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Magic Notes</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Spaced Repetition</span>
       </div>
     </div>
 
     <!-- Pricing & Action Row -->
-    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+    <div class="mt-3 sm:mt-5 pt-2 sm:pt-3.5 border-t border-white/[0.06] flex items-center justify-between gap-1">
       <div>
-        <span class="text-[11px] text-outline line-through block">৳899</span>
-        <div class="text-lg sm:text-xl font-display font-bold text-white">৳499 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
+        <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳899</span>
+        <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳499 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/mo</span></div>
       </div>
-      <a href="product.html?id=863" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
-        <span class="material-symbols-outlined text-[14px]">bolt</span>
-        <span>Study Smarter</span>
+      <a href="product.html?id=863" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+        <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
+        <span>Order</span>
       </a>
     </div>
   </div>
 </div>
 <!-- 12. Canva Pro Subscription -->
-<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="creative" data-product-id="858" data-title="canva pro" onclick="if (!event.target.closest('a')) openProductPage(858)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="creative" data-product-id="858" data-title="canva pro" onclick="if (!event.target.closest('a')) openProductPage(858)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
-  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+  <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/canva-pro-subscription-bd.webp" alt="Canva Pro Subscription" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
-    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #00C4CC;">
+    <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #00C4CC;">
       Magic Studio
     </div>
-    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
-      🎨 Design Suite
+    <div class="absolute top-2 left-2 sm:top-3 sm:left-3 px-1.5 sm:px-2 py-0.5 rounded-full text-[8px] sm:text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      🎨 Design
     </div>
-    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
-        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+    <div class="hidden sm:flex absolute inset-0 items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-10 h-10 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-sm">arrow_forward</span>
       </div>
     </div>
   </div>
 
   <!-- Card Body -->
-  <div class="p-5 flex flex-col flex-grow justify-between">
+  <div class="p-3 sm:p-5 flex flex-col flex-grow justify-between">
     <div>
-      <div class="flex items-center justify-between gap-2 mb-2">
-        <span class="px-2 py-0.5 rounded-full bg-teal-500/15 text-teal-400 text-[10px] font-bold uppercase tracking-wider">SAVE ৳101</span>
-        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      <div class="flex items-center justify-between gap-1 mb-1.5 sm:mb-2">
+        <span class="px-1.5 sm:px-2 py-0.5 rounded-full bg-teal-500/15 text-teal-400 text-[8px] sm:text-[10px] font-bold uppercase tracking-wider">SAVE ৳101</span>
+        <span class="text-[9px] sm:text-[11px] text-tertiary flex items-center gap-0.5"><span class="material-symbols-outlined text-[12px] sm:text-[13px] text-tertiary">verified</span> Verified</span>
       </div>
       <a href="product.html?id=858" class="hover:text-primary-container transition-colors block">
-        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">Canva Pro Subscription</h3>
+        <h3 class="font-display font-bold text-white text-xs sm:text-base leading-tight line-clamp-1 sm:line-clamp-none">Canva Pro Subscription</h3>
       </a>
-      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">100M+ premium stock assets, 1-click Magic Resize, background remover, brand kits.</p>
-      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+      <p class="text-[11px] sm:text-xs text-on-surface-variant mt-1 sm:mt-1.5 line-clamp-2 leading-relaxed hidden sm:block">100M+ premium stock assets, 1-click Magic Resize, background remover, brand kits.</p>
+      <div class="hidden sm:flex flex-wrap items-center gap-1.5 mt-3">
         <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Magic Studio</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">100M+ Assets</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Brand Kit</span>
       </div>
     </div>
 
     <!-- Pricing & Action Row -->
-    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+    <div class="mt-3 sm:mt-5 pt-2 sm:pt-3.5 border-t border-white/[0.06] flex items-center justify-between gap-1">
       <div>
-        <span class="text-[11px] text-outline line-through block">৳200</span>
-        <div class="text-lg sm:text-xl font-display font-bold text-white">৳99 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
+        <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳200</span>
+        <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳99 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/mo</span></div>
       </div>
-      <a href="product.html?id=858" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
-        <span class="material-symbols-outlined text-[14px]">bolt</span>
-        <span>Design Now</span>
+      <a href="product.html?id=858" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+        <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
+        <span>Order</span>
       </a>
     </div>
   </div>
 </div>
 <!-- 13. Adobe Creative Cloud -->
-<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="creative" data-product-id="864" data-title="adobe creative cloud" onclick="if (!event.target.closest('a')) openProductPage(864)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="creative" data-product-id="864" data-title="adobe creative cloud" onclick="if (!event.target.closest('a')) openProductPage(864)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
-  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+  <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/adobe-creative-cloud-subscription-bd.webp" alt="Adobe Creative Cloud" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
-    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #FA0F00;">
+    <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #FA0F00;">
       20+ Apps
     </div>
-    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
-      🎨 Design Suite
+    <div class="absolute top-2 left-2 sm:top-3 sm:left-3 px-1.5 sm:px-2 py-0.5 rounded-full text-[8px] sm:text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      🎨 Design
     </div>
-    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
-        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+    <div class="hidden sm:flex absolute inset-0 items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-10 h-10 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-sm">arrow_forward</span>
       </div>
     </div>
   </div>
 
   <!-- Card Body -->
-  <div class="p-5 flex flex-col flex-grow justify-between">
+  <div class="p-3 sm:p-5 flex flex-col flex-grow justify-between">
     <div>
-      <div class="flex items-center justify-between gap-2 mb-2">
-        <span class="px-2 py-0.5 rounded-full bg-rose-500/15 text-rose-400 text-[10px] font-bold uppercase tracking-wider">SAVE ৳1000</span>
-        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      <div class="flex items-center justify-between gap-1 mb-1.5 sm:mb-2">
+        <span class="px-1.5 sm:px-2 py-0.5 rounded-full bg-rose-500/15 text-rose-400 text-[8px] sm:text-[10px] font-bold uppercase tracking-wider">SAVE ৳1000</span>
+        <span class="text-[9px] sm:text-[11px] text-tertiary flex items-center gap-0.5"><span class="material-symbols-outlined text-[12px] sm:text-[13px] text-tertiary">verified</span> Verified</span>
       </div>
       <a href="product.html?id=864" class="hover:text-primary-container transition-colors block">
-        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">Adobe Creative Cloud</h3>
+        <h3 class="font-display font-bold text-white text-xs sm:text-base leading-tight line-clamp-1 sm:line-clamp-none">Adobe Creative Cloud</h3>
       </a>
-      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">Photoshop, Premiere Pro, Illustrator, After Effects, Firefly AI & 100GB Cloud.</p>
-      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+      <p class="text-[11px] sm:text-xs text-on-surface-variant mt-1 sm:mt-1.5 line-clamp-2 leading-relaxed hidden sm:block">Photoshop, Premiere Pro, Illustrator, After Effects, Firefly AI & 100GB Cloud.</p>
+      <div class="hidden sm:flex flex-wrap items-center gap-1.5 mt-3">
         <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Photoshop & Pr</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Firefly Generative</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Personal Account</span>
       </div>
     </div>
 
     <!-- Pricing & Action Row -->
-    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+    <div class="mt-3 sm:mt-5 pt-2 sm:pt-3.5 border-t border-white/[0.06] flex items-center justify-between gap-1">
       <div>
-        <span class="text-[11px] text-outline line-through block">৳3,999</span>
-        <div class="text-lg sm:text-xl font-display font-bold text-white">৳2,999 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
+        <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳3,999</span>
+        <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳2,999 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/mo</span></div>
       </div>
-      <a href="product.html?id=864" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
-        <span class="material-symbols-outlined text-[14px]">bolt</span>
-        <span>Get License</span>
+      <a href="product.html?id=864" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+        <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
+        <span>Order</span>
       </a>
     </div>
   </div>
 </div>
 <!-- 14. Envato Elements -->
-<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="creative" data-product-id="855" data-title="envato elements" onclick="if (!event.target.closest('a')) openProductPage(855)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="creative" data-product-id="855" data-title="envato elements" onclick="if (!event.target.closest('a')) openProductPage(855)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
-  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+  <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/envato-elements-subscription-bd.webp" alt="Envato Elements" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
-    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #82B541;">
+    <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #82B541;">
       Unlimited
     </div>
-    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
-      🎨 Creative Assets
+    <div class="absolute top-2 left-2 sm:top-3 sm:left-3 px-1.5 sm:px-2 py-0.5 rounded-full text-[8px] sm:text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      🎨 Assets
     </div>
-    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
-        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+    <div class="hidden sm:flex absolute inset-0 items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-10 h-10 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-sm">arrow_forward</span>
       </div>
     </div>
   </div>
 
   <!-- Card Body -->
-  <div class="p-5 flex flex-col flex-grow justify-between">
+  <div class="p-3 sm:p-5 flex flex-col flex-grow justify-between">
     <div>
-      <div class="flex items-center justify-between gap-2 mb-2">
-        <span class="px-2 py-0.5 rounded-full bg-lime-500/15 text-lime-400 text-[10px] font-bold uppercase tracking-wider">SAVE ৳300</span>
-        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      <div class="flex items-center justify-between gap-1 mb-1.5 sm:mb-2">
+        <span class="px-1.5 sm:px-2 py-0.5 rounded-full bg-lime-500/15 text-lime-400 text-[8px] sm:text-[10px] font-bold uppercase tracking-wider">SAVE ৳300</span>
+        <span class="text-[9px] sm:text-[11px] text-tertiary flex items-center gap-0.5"><span class="material-symbols-outlined text-[12px] sm:text-[13px] text-tertiary">verified</span> Verified</span>
       </div>
       <a href="product.html?id=855" class="hover:text-primary-container transition-colors block">
-        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">Envato Elements</h3>
+        <h3 class="font-display font-bold text-white text-xs sm:text-base leading-tight line-clamp-1 sm:line-clamp-none">Envato Elements</h3>
       </a>
-      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">Unlimited downloads of video templates, stock footage, audio tracks, fonts & 3D models.</p>
-      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+      <p class="text-[11px] sm:text-xs text-on-surface-variant mt-1 sm:mt-1.5 line-clamp-2 leading-relaxed hidden sm:block">Unlimited downloads of video templates, stock footage, audio tracks, fonts & 3D models.</p>
+      <div class="hidden sm:flex flex-wrap items-center gap-1.5 mt-3">
         <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Stock Video</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Audio & Fonts</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Commercial Use</span>
       </div>
     </div>
 
     <!-- Pricing & Action Row -->
-    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+    <div class="mt-3 sm:mt-5 pt-2 sm:pt-3.5 border-t border-white/[0.06] flex items-center justify-between gap-1">
       <div>
-        <span class="text-[11px] text-outline line-through block">৳799</span>
-        <div class="text-lg sm:text-xl font-display font-bold text-white">৳499 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
+        <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳799</span>
+        <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳499 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/mo</span></div>
       </div>
-      <a href="product.html?id=855" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
-        <span class="material-symbols-outlined text-[14px]">bolt</span>
-        <span>Download All</span>
+      <a href="product.html?id=855" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+        <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
+        <span>Order</span>
       </a>
     </div>
   </div>
 </div>
 <!-- 15. CapCut Pro Subscription -->
-<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="creative" data-product-id="847" data-title="capcut pro" onclick="if (!event.target.closest('a')) openProductPage(847)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="creative" data-product-id="847" data-title="capcut pro" onclick="if (!event.target.closest('a')) openProductPage(847)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
-  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+  <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/capcut-pro-subscription-bd.webp" alt="CapCut Pro Subscription" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
-    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #101010;">
+    <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #101010;">
       4K 60FPS
     </div>
-    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
-      🎨 Video Editing
+    <div class="absolute top-2 left-2 sm:top-3 sm:left-3 px-1.5 sm:px-2 py-0.5 rounded-full text-[8px] sm:text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      🎨 Video
     </div>
-    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
-        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+    <div class="hidden sm:flex absolute inset-0 items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-10 h-10 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-sm">arrow_forward</span>
       </div>
     </div>
   </div>
 
   <!-- Card Body -->
-  <div class="p-5 flex flex-col flex-grow justify-between">
+  <div class="p-3 sm:p-5 flex flex-col flex-grow justify-between">
     <div>
-      <div class="flex items-center justify-between gap-2 mb-2">
-        <span class="px-2 py-0.5 rounded-full bg-cyan-500/15 text-cyan-400 text-[10px] font-bold uppercase tracking-wider">SAVE ৳249</span>
-        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      <div class="flex items-center justify-between gap-1 mb-1.5 sm:mb-2">
+        <span class="px-1.5 sm:px-2 py-0.5 rounded-full bg-cyan-500/15 text-cyan-400 text-[8px] sm:text-[10px] font-bold uppercase tracking-wider">SAVE ৳249</span>
+        <span class="text-[9px] sm:text-[11px] text-tertiary flex items-center gap-0.5"><span class="material-symbols-outlined text-[12px] sm:text-[13px] text-tertiary">verified</span> Verified</span>
       </div>
       <a href="product.html?id=847" class="hover:text-primary-container transition-colors block">
-        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">CapCut Pro Subscription</h3>
+        <h3 class="font-display font-bold text-white text-xs sm:text-base leading-tight line-clamp-1 sm:line-clamp-none">CapCut Pro Subscription</h3>
       </a>
-      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">Exclusive Pro visual effects, AI body tracking, auto-captions, 4K 60fps exports.</p>
-      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+      <p class="text-[11px] sm:text-xs text-on-surface-variant mt-1 sm:mt-1.5 line-clamp-2 leading-relaxed hidden sm:block">Exclusive Pro visual effects, AI body tracking, auto-captions, 4K 60fps exports.</p>
+      <div class="hidden sm:flex flex-wrap items-center gap-1.5 mt-3">
         <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">AI Captions</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Pro Filters</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">No Watermark</span>
       </div>
     </div>
 
     <!-- Pricing & Action Row -->
-    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+    <div class="mt-3 sm:mt-5 pt-2 sm:pt-3.5 border-t border-white/[0.06] flex items-center justify-between gap-1">
       <div>
-        <span class="text-[11px] text-outline line-through block">৳599</span>
-        <div class="text-lg sm:text-xl font-display font-bold text-white">৳350 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
+        <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳599</span>
+        <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳350 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/mo</span></div>
       </div>
-      <a href="product.html?id=847" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
-        <span class="material-symbols-outlined text-[14px]">bolt</span>
-        <span>Edit Videos</span>
+      <a href="product.html?id=847" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+        <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
+        <span>Order</span>
       </a>
     </div>
   </div>
 </div>
 <!-- 16. Freepik Premium -->
-<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="creative" data-product-id="834" data-title="freepik premium" onclick="if (!event.target.closest('a')) openProductPage(834)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="creative" data-product-id="834" data-title="freepik premium" onclick="if (!event.target.closest('a')) openProductPage(834)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
-  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+  <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/freepik-premium-subscription-bd.webp" alt="Freepik Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
-    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #1273EB;">
+    <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #1273EB;">
       Vectors & PSD
     </div>
-    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
-      🎨 Creative Assets
+    <div class="absolute top-2 left-2 sm:top-3 sm:left-3 px-1.5 sm:px-2 py-0.5 rounded-full text-[8px] sm:text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      🎨 Assets
     </div>
-    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
-        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+    <div class="hidden sm:flex absolute inset-0 items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-10 h-10 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-sm">arrow_forward</span>
       </div>
     </div>
   </div>
 
   <!-- Card Body -->
-  <div class="p-5 flex flex-col flex-grow justify-between">
+  <div class="p-3 sm:p-5 flex flex-col flex-grow justify-between">
     <div>
-      <div class="flex items-center justify-between gap-2 mb-2">
-        <span class="px-2 py-0.5 rounded-full bg-blue-500/15 text-blue-400 text-[10px] font-bold uppercase tracking-wider">SAVE ৳300</span>
-        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      <div class="flex items-center justify-between gap-1 mb-1.5 sm:mb-2">
+        <span class="px-1.5 sm:px-2 py-0.5 rounded-full bg-blue-500/15 text-blue-400 text-[8px] sm:text-[10px] font-bold uppercase tracking-wider">SAVE ৳300</span>
+        <span class="text-[9px] sm:text-[11px] text-tertiary flex items-center gap-0.5"><span class="material-symbols-outlined text-[12px] sm:text-[13px] text-tertiary">verified</span> Verified</span>
       </div>
       <a href="product.html?id=834" class="hover:text-primary-container transition-colors block">
-        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">Freepik Premium</h3>
+        <h3 class="font-display font-bold text-white text-xs sm:text-base leading-tight line-clamp-1 sm:line-clamp-none">Freepik Premium</h3>
       </a>
-      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">Millions of premium vectors, PSD mockups, AI image generator, commercial licenses.</p>
-      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+      <p class="text-[11px] sm:text-xs text-on-surface-variant mt-1 sm:mt-1.5 line-clamp-2 leading-relaxed hidden sm:block">Millions of premium vectors, PSD mockups, AI image generator, commercial licenses.</p>
+      <div class="hidden sm:flex flex-wrap items-center gap-1.5 mt-3">
         <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Vectors & Mockups</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">AI Generator</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Commercial Lic.</span>
       </div>
     </div>
 
     <!-- Pricing & Action Row -->
-    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+    <div class="mt-3 sm:mt-5 pt-2 sm:pt-3.5 border-t border-white/[0.06] flex items-center justify-between gap-1">
       <div>
-        <span class="text-[11px] text-outline line-through block">৳799</span>
-        <div class="text-lg sm:text-xl font-display font-bold text-white">৳499 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
+        <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳799</span>
+        <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳499 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/mo</span></div>
       </div>
-      <a href="product.html?id=834" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
-        <span class="material-symbols-outlined text-[14px]">bolt</span>
-        <span>Get Vectors</span>
+      <a href="product.html?id=834" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+        <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
+        <span>Order</span>
       </a>
     </div>
   </div>
 </div>
 <!-- 17. TikTok Coins (Top-Up) -->
-<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="social-gaming" data-product-id="862" data-title="tiktok coins (top-up)" onclick="if (!event.target.closest('a')) openProductPage(862)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="social-gaming" data-product-id="862" data-title="tiktok coins (top-up)" onclick="if (!event.target.closest('a')) openProductPage(862)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
-  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+  <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/tiktok-coins-top-up-bd.webp" alt="TikTok Coins (Top-Up)" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
-    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #FE2C55;">
+    <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #FE2C55;">
       Instant LIVE
     </div>
-    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
-      📱 Social & LIVE
+    <div class="absolute top-2 left-2 sm:top-3 sm:left-3 px-1.5 sm:px-2 py-0.5 rounded-full text-[8px] sm:text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      📱 LIVE
     </div>
-    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
-        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+    <div class="hidden sm:flex absolute inset-0 items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-10 h-10 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-sm">arrow_forward</span>
       </div>
     </div>
   </div>
 
   <!-- Card Body -->
-  <div class="p-5 flex flex-col flex-grow justify-between">
+  <div class="p-3 sm:p-5 flex flex-col flex-grow justify-between">
     <div>
-      <div class="flex items-center justify-between gap-2 mb-2">
-        <span class="px-2 py-0.5 rounded-full bg-pink-500/15 text-pink-400 text-[10px] font-bold uppercase tracking-wider">SAVE ৳25</span>
-        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      <div class="flex items-center justify-between gap-1 mb-1.5 sm:mb-2">
+        <span class="px-1.5 sm:px-2 py-0.5 rounded-full bg-pink-500/15 text-pink-400 text-[8px] sm:text-[10px] font-bold uppercase tracking-wider">SAVE ৳25</span>
+        <span class="text-[9px] sm:text-[11px] text-tertiary flex items-center gap-0.5"><span class="material-symbols-outlined text-[12px] sm:text-[13px] text-tertiary">verified</span> Verified</span>
       </div>
       <a href="product.html?id=862" class="hover:text-primary-container transition-colors block">
-        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">TikTok Coins (Top-Up)</h3>
+        <h3 class="font-display font-bold text-white text-xs sm:text-base leading-tight line-clamp-1 sm:line-clamp-none">TikTok Coins (Top-Up)</h3>
       </a>
-      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">Direct LIVE stream gifts recharge via User ID. Instant delivery, no password needed.</p>
-      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+      <p class="text-[11px] sm:text-xs text-on-surface-variant mt-1 sm:mt-1.5 line-clamp-2 leading-relaxed hidden sm:block">Direct LIVE stream gifts recharge via User ID. Instant delivery, no password needed.</p>
+      <div class="hidden sm:flex flex-wrap items-center gap-1.5 mt-3">
         <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">User ID Top-Up</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">LIVE Gifts</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">No Password</span>
       </div>
     </div>
 
     <!-- Pricing & Action Row -->
-    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+    <div class="mt-3 sm:mt-5 pt-2 sm:pt-3.5 border-t border-white/[0.06] flex items-center justify-between gap-1">
       <div>
-        <span class="text-[11px] text-outline line-through block">৳270</span>
-        <div class="text-lg sm:text-xl font-display font-bold text-white">৳245 <span class="text-xs font-normal text-on-surface-variant">/pack</span></div>
+        <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳270</span>
+        <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳245 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/pack</span></div>
       </div>
-      <a href="product.html?id=862" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
-        <span class="material-symbols-outlined text-[14px]">bolt</span>
-        <span>Recharge Coins</span>
+      <a href="product.html?id=862" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+        <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
+        <span>Order</span>
       </a>
     </div>
   </div>
 </div>
 <!-- 18. Facebook Page Likes & Followers -->
-<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="social-gaming" data-product-id="860" data-title="facebook page likes &amp; followers" onclick="if (!event.target.closest('a')) openProductPage(860)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="social-gaming" data-product-id="860" data-title="facebook page likes &amp; followers" onclick="if (!event.target.closest('a')) openProductPage(860)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
-  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+  <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/facebook-page-likes-followers-bd.webp" alt="Facebook Page Likes & Followers" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
-    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #1877F2;">
+    <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #1877F2;">
       Non-Drop
     </div>
-    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
-      🚀 Social Growth
+    <div class="absolute top-2 left-2 sm:top-3 sm:left-3 px-1.5 sm:px-2 py-0.5 rounded-full text-[8px] sm:text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      🚀 Growth
     </div>
-    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
-        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+    <div class="hidden sm:flex absolute inset-0 items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-10 h-10 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-sm">arrow_forward</span>
       </div>
     </div>
   </div>
 
   <!-- Card Body -->
-  <div class="p-5 flex flex-col flex-grow justify-between">
+  <div class="p-3 sm:p-5 flex flex-col flex-grow justify-between">
     <div>
-      <div class="flex items-center justify-between gap-2 mb-2">
-        <span class="px-2 py-0.5 rounded-full bg-blue-500/15 text-blue-400 text-[10px] font-bold uppercase tracking-wider">POPULAR</span>
-        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      <div class="flex items-center justify-between gap-1 mb-1.5 sm:mb-2">
+        <span class="px-1.5 sm:px-2 py-0.5 rounded-full bg-blue-500/15 text-blue-400 text-[8px] sm:text-[10px] font-bold uppercase tracking-wider">POPULAR</span>
+        <span class="text-[9px] sm:text-[11px] text-tertiary flex items-center gap-0.5"><span class="material-symbols-outlined text-[12px] sm:text-[13px] text-tertiary">verified</span> Verified</span>
       </div>
       <a href="product.html?id=860" class="hover:text-primary-container transition-colors block">
-        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">Facebook Page Likes & Followers</h3>
+        <h3 class="font-display font-bold text-white text-xs sm:text-base leading-tight line-clamp-1 sm:line-clamp-none">Facebook Page Likes & Followers</h3>
       </a>
-      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">Real social proof with non-drop refills. Page link only, safe gradual delivery.</p>
-      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+      <p class="text-[11px] sm:text-xs text-on-surface-variant mt-1 sm:mt-1.5 line-clamp-2 leading-relaxed hidden sm:block">Real social proof with non-drop refills. Page link only, safe gradual delivery.</p>
+      <div class="hidden sm:flex flex-wrap items-center gap-1.5 mt-3">
         <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Non-Drop Refill</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Page Link Only</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Instant Start</span>
       </div>
     </div>
 
     <!-- Pricing & Action Row -->
-    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+    <div class="mt-3 sm:mt-5 pt-2 sm:pt-3.5 border-t border-white/[0.06] flex items-center justify-between gap-1">
       <div>
-        <span class="text-[11px] text-outline line-through block">৳120</span>
-        <div class="text-lg sm:text-xl font-display font-bold text-white">৳80 <span class="text-xs font-normal text-on-surface-variant">/1k</span></div>
+        <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳120</span>
+        <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳80 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/1k</span></div>
       </div>
-      <a href="product.html?id=860" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
-        <span class="material-symbols-outlined text-[14px]">bolt</span>
-        <span>Boost Page</span>
+      <a href="product.html?id=860" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+        <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
+        <span>Order</span>
       </a>
     </div>
   </div>
 </div>
 <!-- 19. Clash of Clans Gold Pass -->
-<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="social-gaming" data-product-id="137" data-title="clash of clans gold pass" onclick="if (!event.target.closest('a')) openProductPage(137)">
+<div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="social-gaming" data-product-id="137" data-title="clash of clans gold pass" onclick="if (!event.target.closest('a')) openProductPage(137)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
-  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+  <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
     <img src="images/products/clash-of-clans-gold-pass-bd.webp" alt="Clash of Clans Gold Pass" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
-    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #FFA000;">
-      Seasonal Pass
+    <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #FFA000;">
+      Pass
     </div>
-    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
-      🎮 Mobile Gaming
+    <div class="absolute top-2 left-2 sm:top-3 sm:left-3 px-1.5 sm:px-2 py-0.5 rounded-full text-[8px] sm:text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      🎮 Gaming
     </div>
-    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
-        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+    <div class="hidden sm:flex absolute inset-0 items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-10 h-10 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-sm">arrow_forward</span>
       </div>
     </div>
   </div>
 
   <!-- Card Body -->
-  <div class="p-5 flex flex-col flex-grow justify-between">
+  <div class="p-3 sm:p-5 flex flex-col flex-grow justify-between">
     <div>
-      <div class="flex items-center justify-between gap-2 mb-2">
-        <span class="px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-400 text-[10px] font-bold uppercase tracking-wider">HOT</span>
-        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      <div class="flex items-center justify-between gap-1 mb-1.5 sm:mb-2">
+        <span class="px-1.5 sm:px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-400 text-[8px] sm:text-[10px] font-bold uppercase tracking-wider">HOT</span>
+        <span class="text-[9px] sm:text-[11px] text-tertiary flex items-center gap-0.5"><span class="material-symbols-outlined text-[12px] sm:text-[13px] text-tertiary">verified</span> Verified</span>
       </div>
       <a href="product.html?id=137" class="hover:text-primary-container transition-colors block">
-        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">Clash of Clans Gold Pass</h3>
+        <h3 class="font-display font-bold text-white text-xs sm:text-base leading-tight line-clamp-1 sm:line-clamp-none">Clash of Clans Gold Pass</h3>
       </a>
-      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">40 tiers of rewards, limited Hero Skin, 20% Builder Boost, Season Bank unlock.</p>
-      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+      <p class="text-[11px] sm:text-xs text-on-surface-variant mt-1 sm:mt-1.5 line-clamp-2 leading-relaxed hidden sm:block">40 tiers of rewards, limited Hero Skin, 20% Builder Boost, Season Bank unlock.</p>
+      <div class="hidden sm:flex flex-wrap items-center gap-1.5 mt-3">
         <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Hero Skin</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">20% Boosts</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Player Tag Only</span>
       </div>
     </div>
 
     <!-- Pricing & Action Row -->
-    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+    <div class="mt-3 sm:mt-5 pt-2 sm:pt-3.5 border-t border-white/[0.06] flex items-center justify-between gap-1">
       <div>
-        <span class="text-[11px] text-outline line-through block">৳750</span>
-        <div class="text-lg sm:text-xl font-display font-bold text-white">৳650 <span class="text-xs font-normal text-on-surface-variant">/pass</span></div>
+        <span class="text-[9px] sm:text-[11px] text-outline line-through block leading-none">৳750</span>
+        <div class="text-xs sm:text-lg font-display font-bold text-white leading-tight">৳650 <span class="text-[9px] sm:text-xs font-normal text-on-surface-variant">/pass</span></div>
       </div>
-      <a href="product.html?id=137" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
-        <span class="material-symbols-outlined text-[14px]">bolt</span>
-        <span>Claim Pass</span>
+      <a href="product.html?id=137" class="px-2 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-primary-container text-on-primary-container font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-0.5 sm:gap-1 hover:brightness-110 shadow-[0_0_10px_rgba(0,229,255,0.25)] transition-all shrink-0">
+        <span class="material-symbols-outlined text-[12px] sm:text-[14px]">bolt</span>
+        <span>Order</span>
       </a>
     </div>
   </div>
