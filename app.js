@@ -235,3 +235,106 @@ function openProductPage(id) {
 
 window.toggleMobileMenu = toggleMobileMenu;
 window.openProductPage = openProductPage;
+
+
+// ================= HERO BANNER SLIDER =================
+let currentHeroSlide = 0;
+const totalHeroSlides = 3;
+let heroSlideTimer = null;
+
+function updateHeroSlider() {
+  const track = document.getElementById('heroSliderTrack');
+  const dots = document.querySelectorAll('#heroDots .hero-dot');
+  if (track) {
+    track.style.transform = `translateX(-${currentHeroSlide * 100}%)`;
+  }
+  dots.forEach((dot, idx) => {
+    if (idx === currentHeroSlide) {
+      dot.className = 'hero-dot w-6 h-2 rounded-full bg-primary-container transition-all';
+    } else {
+      dot.className = 'hero-dot w-2 h-2 rounded-full bg-white/40 hover:bg-white/70 transition-all';
+    }
+  });
+}
+
+function nextHeroSlide() {
+  currentHeroSlide = (currentHeroSlide + 1) % totalHeroSlides;
+  updateHeroSlider();
+}
+
+function prevHeroSlide() {
+  currentHeroSlide = (currentHeroSlide - 1 + totalHeroSlides) % totalHeroSlides;
+  updateHeroSlider();
+}
+
+function gotoHeroSlide(idx) {
+  currentHeroSlide = idx;
+  updateHeroSlider();
+  restartHeroAutoplay();
+}
+
+function startHeroAutoplay() {
+  stopHeroAutoplay();
+  heroSlideTimer = setInterval(() => {
+    nextHeroSlide();
+  }, 4500);
+}
+
+function stopHeroAutoplay() {
+  if (heroSlideTimer) {
+    clearInterval(heroSlideTimer);
+    heroSlideTimer = null;
+  }
+}
+
+function restartHeroAutoplay() {
+  stopHeroAutoplay();
+  startHeroAutoplay();
+}
+
+window.nextHeroSlide = nextHeroSlide;
+window.prevHeroSlide = prevHeroSlide;
+window.gotoHeroSlide = gotoHeroSlide;
+
+// Initialize Hero Slider if present
+function initHeroSlider() {
+  const container = document.getElementById('heroSliderContainer');
+  if (!container) return;
+
+  container.addEventListener('mouseenter', stopHeroAutoplay);
+  container.addEventListener('mouseleave', startHeroAutoplay);
+
+  // Touch Swipe Support for Mobile Devices
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  container.addEventListener('touchstart', (e) => {
+    if (e.touches && e.touches.length > 0) {
+      touchStartX = e.touches[0].screenX;
+    }
+    stopHeroAutoplay();
+  }, { passive: true });
+
+  container.addEventListener('touchend', (e) => {
+    if (e.changedTouches && e.changedTouches.length > 0) {
+      touchEndX = e.changedTouches[0].screenX;
+      const diff = touchStartX - touchEndX;
+      if (Math.abs(diff) > 40) {
+        if (diff > 0) {
+          nextHeroSlide();
+        } else {
+          prevHeroSlide();
+        }
+      }
+    }
+    startHeroAutoplay();
+  }, { passive: true });
+
+  startHeroAutoplay();
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initHeroSlider);
+} else {
+  initHeroSlider();
+}
