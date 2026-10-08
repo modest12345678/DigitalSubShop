@@ -1,7 +1,7 @@
-// DigitalSubShop - Individual Product Page Engine (SubStoreBD style)
+// DigitalSubShop - Individual Product Page Engine (DigitalSubShop style)
 'use strict';
 
-const WHATSAPP_PHONE = window.WHATSAPP_PHONE || '8801887924939';
+var WHATSAPP_PHONE = window.WHATSAPP_PHONE || '8801887924939';
 const FB_PAGE_URL = 'https://www.facebook.com/share/1F3zoLEESe/';
 
 let pCurrentVariation = null;
