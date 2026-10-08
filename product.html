@@ -265,41 +265,41 @@
         </div>
       </div>
 
-      <!-- ============ ELEMENT 3: BENTO HIGHLIGHTS & DESCRIPTION TABS ============ -->
-      <!-- On mobile: order-3 (BELOW BUY OPTION). On desktop: order-3, col-span-3 (sits below image on left column!) -->
-      <div class="order-3 lg:col-span-3 space-y-6">
+      <!-- ============ ELEMENT 3: BENTO HIGHLIGHTS & DESCRIPTION TABS (FULL PAGE WIDTH!) ============ -->
+      <!-- On mobile: order-3 (BELOW BUY OPTION). On desktop: order-3, lg:col-span-5 (FULL PAGE WIDTH SPAN!) -->
+      <div class="order-3 lg:col-span-5 space-y-6 lg:space-y-8 mt-2 lg:mt-6">
         
-        <!-- Bento Grid: What's Included -->
-        <div class="glass-card rounded-2xl p-5 sm:p-6">
-          <h3 class="font-display font-bold text-base sm:text-lg text-white mb-4 flex items-center gap-2">
-            <span class="material-symbols-outlined text-primary-container">stars</span>
+        <!-- Bento Grid: What's Included (Spanning 4 columns across the full page) -->
+        <div class="glass-card rounded-2xl p-5 sm:p-7">
+          <h3 class="font-display font-bold text-base sm:text-lg text-white mb-5 flex items-center gap-2">
+            <span class="material-symbols-outlined text-[#00d2ff]">stars</span>
             What's Included &amp; Service Highlights
           </h3>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-            <div class="p-3.5 sm:p-4 rounded-xl bg-white/[0.02] border border-white/5 space-y-1.5 hover:border-white/10 transition-all">
-              <div class="w-8 h-8 rounded-lg bg-primary-container/15 flex items-center justify-center text-primary-container">
-                <span class="material-symbols-outlined text-[18px]">bolt</span>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+            <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5 space-y-2 hover:border-white/10 transition-all">
+              <div class="w-9 h-9 rounded-lg bg-primary-container/15 flex items-center justify-center text-[#00d2ff]">
+                <span class="material-symbols-outlined text-[20px]">bolt</span>
               </div>
               <h4 class="font-bold text-white text-xs sm:text-sm">Instant Automated Dispatch</h4>
               <p class="text-[11px] sm:text-xs text-on-surface-variant leading-relaxed">Fast order processing with activation within 1–12 hours directly sent to your phone or WhatsApp.</p>
             </div>
-            <div class="p-3.5 sm:p-4 rounded-xl bg-white/[0.02] border border-white/5 space-y-1.5 hover:border-white/10 transition-all">
-              <div class="w-8 h-8 rounded-lg bg-emerald-500/15 flex items-center justify-center text-emerald-400">
-                <span class="material-symbols-outlined text-[18px]">shield</span>
+            <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5 space-y-2 hover:border-white/10 transition-all">
+              <div class="w-9 h-9 rounded-lg bg-emerald-500/15 flex items-center justify-center text-emerald-400">
+                <span class="material-symbols-outlined text-[20px]">shield</span>
               </div>
               <h4 class="font-bold text-white text-xs sm:text-sm">100% Genuine Official License</h4>
               <p class="text-[11px] sm:text-xs text-on-surface-variant leading-relaxed">No cracked, trial, or insecure accounts. Legitimate subscription credentials with full access.</p>
             </div>
-            <div class="p-3.5 sm:p-4 rounded-xl bg-white/[0.02] border border-white/5 space-y-1.5 hover:border-white/10 transition-all">
-              <div class="w-8 h-8 rounded-lg bg-purple-500/15 flex items-center justify-center text-purple-400">
-                <span class="material-symbols-outlined text-[18px]">lock</span>
+            <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5 space-y-2 hover:border-white/10 transition-all">
+              <div class="w-9 h-9 rounded-lg bg-purple-500/15 flex items-center justify-center text-purple-400">
+                <span class="material-symbols-outlined text-[20px]">lock</span>
               </div>
               <h4 class="font-bold text-white text-xs sm:text-sm">Complete Data Privacy</h4>
               <p class="text-[11px] sm:text-xs text-on-surface-variant leading-relaxed">Your viewing history, watchlists, AI prompts, and personal data remain completely private.</p>
             </div>
-            <div class="p-3.5 sm:p-4 rounded-xl bg-white/[0.02] border border-white/5 space-y-1.5 hover:border-white/10 transition-all">
-              <div class="w-8 h-8 rounded-lg bg-amber-500/15 flex items-center justify-center text-amber-400">
-                <span class="material-symbols-outlined text-[18px]">verified_user</span>
+            <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5 space-y-2 hover:border-white/10 transition-all">
+              <div class="w-9 h-9 rounded-lg bg-amber-500/15 flex items-center justify-center text-amber-400">
+                <span class="material-symbols-outlined text-[20px]">verified_user</span>
               </div>
               <h4 class="font-bold text-white text-xs sm:text-sm">365-Day Escrow Replacement</h4>
               <p class="text-[11px] sm:text-xs text-on-surface-variant leading-relaxed">Full warranty protection throughout your duration. If any interruption occurs, get an instant replacement.</p>
@@ -307,14 +307,14 @@
           </div>
         </div>
 
-        <!-- Description Tabs -->
-        <div class="glass-card rounded-2xl p-5 sm:p-6">
-          <div class="flex items-center gap-2 overflow-x-auto pb-3 mb-4 border-b border-white/[0.06] scrollbar-none">
-            <button class="tab-btn2 active shrink-0 px-3.5 py-2 rounded-xl text-xs font-semibold bg-white/[0.04] text-on-surface-variant transition-all" data-tab="desc" onclick="setTab2('desc', this)">Description</button>
-            <button class="tab-btn2 shrink-0 px-3.5 py-2 rounded-xl text-xs font-medium bg-white/[0.04] text-on-surface-variant hover:text-white transition-all" data-tab="delivery" onclick="setTab2('delivery', this)">Delivery &amp; Warranty</button>
-            <button class="tab-btn2 shrink-0 px-3.5 py-2 rounded-xl text-xs font-medium bg-white/[0.04] text-on-surface-variant hover:text-white transition-all" data-tab="why" onclick="setTab2('why', this)">Why DigitalSubShop?</button>
+        <!-- Full-Width Description Tabs -->
+        <div class="glass-card rounded-2xl p-5 sm:p-7">
+          <div class="flex items-center gap-2 overflow-x-auto pb-3 mb-5 border-b border-white/[0.06] scrollbar-none">
+            <button class="tab-btn2 active shrink-0 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-primary-container text-white transition-all shadow-[0_0_12px_rgba(0,102,255,0.35)]" data-tab="desc" onclick="setTab2('desc', this)">Product Description</button>
+            <button class="tab-btn2 shrink-0 px-4 py-2 rounded-xl text-xs sm:text-sm font-medium glass-pill text-on-surface-variant hover:text-white transition-all" data-tab="delivery" onclick="setTab2('delivery', this)">Delivery &amp; Warranty</button>
+            <button class="tab-btn2 shrink-0 px-4 py-2 rounded-xl text-xs sm:text-sm font-medium glass-pill text-on-surface-variant hover:text-white transition-all" data-tab="why" onclick="setTab2('why', this)">Why DigitalSubShop?</button>
           </div>
-          <div id="tabContent" class="text-xs text-on-surface-variant leading-relaxed desc-content">
+          <div id="tabContent" class="text-xs sm:text-sm text-on-surface-variant leading-relaxed desc-content max-w-none">
             <!-- Injected via product.js -->
           </div>
         </div>
@@ -327,7 +327,7 @@
     <section class="mt-14 sm:mt-16">
       <div class="flex items-center justify-between gap-4 mb-6 pb-4 border-b border-white/[0.06]">
         <div>
-          <span class="text-xs font-semibold uppercase tracking-widest text-primary-container">You May Also Like</span>
+          <span class="text-xs font-semibold uppercase tracking-widest text-[#00d2ff]">You May Also Like</span>
           <h2 class="font-display text-xl sm:text-2xl font-bold text-white mt-0.5">Related Products</h2>
         </div>
         <a href="index.html#catalog" class="text-xs text-on-surface-variant hover:text-white flex items-center gap-1 transition-colors">View all <span class="material-symbols-outlined text-[14px]">arrow_forward</span></a>
@@ -339,7 +339,7 @@
   </div>
 </main>
 <!-- ================= FOOTER ================= -->
-<footer class="border-t border-white/[0.06] bg-[#05070a] py-12 px-6 sm:px-8">
+<footer class="border-t border-white/[0.06] bg-[#060912] py-12 px-6 sm:px-8">
   <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-on-surface-variant">
     <div class="flex items-center gap-3">
 <img src="images/logo.png" alt="DigitalSubShop Logo" class="h-8 w-auto object-contain"/>

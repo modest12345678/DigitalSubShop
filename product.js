@@ -161,9 +161,11 @@ window.updateSEO = updateSEO;
 
 function setTab2(tab, btn) {
   document.querySelectorAll('.tab-btn2').forEach(b => {
-    b.classList.remove('active', 'bg-primary-container', 'text-on-primary-container');
+    b.classList.remove('active', 'bg-primary-container', 'text-white', 'shadow-[0_0_12px_rgba(0,102,255,0.35)]');
+    b.classList.add('glass-pill', 'text-on-surface-variant');
   });
-  btn.classList.add('active');
+  btn.classList.add('active', 'bg-primary-container', 'text-white', 'shadow-[0_0_12px_rgba(0,102,255,0.35)]');
+  btn.classList.remove('glass-pill', 'text-on-surface-variant');
   const c = document.getElementById('tabContent');
   if (tab === 'desc') {
     renderRichText(c, cleanHtml(pProduct.description || pProduct.short_description));
