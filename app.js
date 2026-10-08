@@ -250,9 +250,9 @@ function updateHeroSlider() {
   }
   dots.forEach((dot, idx) => {
     if (idx === currentHeroSlide) {
-      dot.className = 'hero-dot w-6 h-2 rounded-full bg-primary-container transition-all';
+      dot.className = 'hero-dot w-6 h-1.5 rounded-full bg-primary-container transition-all';
     } else {
-      dot.className = 'hero-dot w-2 h-2 rounded-full bg-white/40 hover:bg-white/70 transition-all';
+      dot.className = 'hero-dot w-2 h-1.5 rounded-full bg-white/40 hover:bg-white/70 transition-all';
     }
   });
 }
