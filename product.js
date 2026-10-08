@@ -1,6 +1,7 @@
 // DigitalSubShop - Individual Product Page Engine (SubStoreBD style)
 'use strict';
 
+const WHATSAPP_PHONE = window.WHATSAPP_PHONE || '8801887924939';
 const FB_PAGE_URL = 'https://www.facebook.com/share/1F3zoLEESe/';
 
 let pCurrentVariation = null;
@@ -120,6 +121,41 @@ function updateSEO(product) {
     const img = (product.images && product.images[0]) ? product.images[0] : 'https://digitalsubshop.com/og-image.jpg';
     twImgEl.content = img;
   }
+  // Update canonical URL
+  const canonicalEl = document.querySelector('link[rel="canonical"]');
+  if (canonicalEl && product.id) {
+    canonicalEl.href = `https://digitalsubshop.com/product.html?id=${product.id}`;
+  }
+  // Inject or update Schema.org Product JSON-LD
+  let scriptEl = document.getElementById('product-schema-ld');
+  if (!scriptEl) {
+    scriptEl = document.createElement('script');
+    scriptEl.id = 'product-schema-ld';
+    scriptEl.type = 'application/ld+json';
+    document.head.appendChild(scriptEl);
+  }
+  const pricing = getProductPricing(product);
+  const pImg = (product.images && product.images[0]) 
+    ? (product.images[0].startsWith('http') ? product.images[0] : `https://digitalsubshop.com/${product.images[0]}`)
+    : 'https://digitalsubshop.com/og-image.jpg';
+  scriptEl.textContent = JSON.stringify({
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": product.name,
+    "image": pImg,
+    "description": cleanHtml(product.short_description || product.description).substring(0, 300),
+    "brand": {
+      "@type": "Brand",
+      "name": "DigitalSubShop"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": `https://digitalsubshop.com/product.html?id=${product.id}`,
+      "priceCurrency": "BDT",
+      "price": pricing.min || 0,
+      "availability": product.is_in_stock ? "https://schema.org/InStock" : "https://schema.org/OutOfStock"
+    }
+  });
 }
 window.updateSEO = updateSEO;
 
@@ -349,11 +385,9 @@ function cleanProductData(product) {
   // Clean permalink if needed (though we don't display it prominently)
   if (cleaned.permalink) cleaned.permalink = cleaned.permalink.replace(/primeaccessbd\.com/g, 'digitalsubshop.com');
   
-  // Clean image URLs
+  // Clean image URLs (keep valid local/remote URLs)
   if (cleaned.images && Array.isArray(cleaned.images)) {
-    cleaned.images = cleaned.images.map(img => 
-      img.replace(/primeaccessbd\.com/g, 'digitalsubshop.com')
-    );
+    cleaned.images = cleaned.images.map(img => img);
   }
   
   // Clean tags if needed
