@@ -265,612 +265,916 @@
 <!-- 19 Product Cards Grid -->
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="productsGrid">
 <!-- 1. Netflix Premium -->
-<div class="product-item glass-card rounded-2xl p-6 flex flex-col justify-between transition-all duration-200 cursor-pointer hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,229,255,0.15)]" data-category="ott" data-product-id="392" data-title="netflix premium" onclick="if (!event.target.closest('a')) openProductPage(392)">
-<div>
-<div class="flex items-center justify-between mb-4">
-<div class="w-13 h-13 p-3 rounded-2xl bg-[#E50914]/10 border border-[#E50914]/30 flex items-center justify-center">
-<svg class="w-7 h-7 text-[#E50914]" fill="currentColor" viewbox="0 0 24 24"><path d="M5.398 0v24c1.868-.363 3.738-.727 5.607-1.09V8.625l4.388 14.512c1.787-.348 3.574-.697 5.362-1.045V0h-4.99v14.908L10.388 0H5.398z"></path></svg>
-</div>
-<span class="px-2.5 py-0.5 rounded-full bg-red-500/15 text-red-400 text-[11px] font-semibold">SAVE ৳149</span>
-</div>
-<div class="text-[11px] font-medium text-red-400/90 mb-1">🎬 Entertainment &amp; OTT</div>
-<a href="product.html?id=392" class="hover:text-primary-container transition-colors"><h3 class="font-display font-semibold text-white text-lg">Netflix Premium</h3></a>
-<p class="text-xs text-on-surface-variant mt-1 leading-relaxed">Ultra HD 4K, dedicated private profile with personal PIN lock, Dolby Vision audio.</p>
-<div class="flex items-center gap-2 mt-4 text-[11px] text-on-surface-variant">
-<span class="flex items-center gap-1 text-white"><span class="material-symbols-outlined text-[14px] text-tertiary">check_circle</span> Screen PIN</span>
-<span class="">•</span>
-<span class="">365d Guarantee</span>
-</div>
-</div>
-<div class="mt-6 pt-4 border-t border-white/[0.06]">
-<div class="flex items-baseline justify-between mb-3">
-<div>
-<span class="text-xs text-outline line-through">৳499</span>
-<div class="text-xl font-display font-bold text-white">৳350 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
-</div>
-<span class="text-[11px] text-on-surface-variant bg-white/[0.04] px-2 py-0.5 rounded">4K UHD</span>
-</div>
-<a href="product.html?id=392" class="w-full py-2.5 rounded-xl bg-primary-container text-on-primary-container font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 hover:brightness-110 shadow-[0_0_14px_rgba(0,229,255,0.25)]">
-<span class="material-symbols-outlined text-[15px]">bolt</span>
-<span class="">Claim Slot</span>
-</a>
-</div>
+<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ott" data-product-id="392" data-title="netflix premium" onclick="if (!event.target.closest('a')) openProductPage(392)">
+  <!-- 16:9 Image Header with Obsidian Gradient Fade -->
+  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+    <img src="images/products/netflix-premium-subscription-bd.webp" alt="Netflix Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
+    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #E50914;">
+      4K HDR
+    </div>
+    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      🎬 OTT & Streaming
+    </div>
+    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card Body -->
+  <div class="p-5 flex flex-col flex-grow justify-between">
+    <div>
+      <div class="flex items-center justify-between gap-2 mb-2">
+        <span class="px-2 py-0.5 rounded-full bg-red-500/15 text-red-400 text-[10px] font-bold uppercase tracking-wider">SAVE ৳149</span>
+        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      </div>
+      <a href="product.html?id=392" class="hover:text-primary-container transition-colors block">
+        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">Netflix Premium</h3>
+      </a>
+      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">Ultra HD 4K, dedicated private profile with personal PIN lock, Dolby Vision audio.</p>
+      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+        <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">4K UHD</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Private PIN</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Instant Key</span>
+      </div>
+    </div>
+
+    <!-- Pricing & Action Row -->
+    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+      <div>
+        <span class="text-[11px] text-outline line-through block">৳499</span>
+        <div class="text-lg sm:text-xl font-display font-bold text-white">৳350 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
+      </div>
+      <a href="product.html?id=392" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
+        <span class="material-symbols-outlined text-[14px]">bolt</span>
+        <span>Claim Slot</span>
+      </a>
+    </div>
+  </div>
 </div>
 <!-- 2. Amazon Prime Video -->
-<div class="product-item glass-card rounded-2xl p-6 flex flex-col justify-between transition-all duration-200 cursor-pointer hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,229,255,0.15)]" data-category="ott" data-product-id="390" data-title="amazon prime video" onclick="if (!event.target.closest('a')) openProductPage(390)">
-<div>
-<div class="flex items-center justify-between mb-4">
-<div class="w-13 h-13 p-3 rounded-2xl bg-[#00A8E1]/10 border border-[#00A8E1]/30 flex items-center justify-center">
-<svg class="w-7 h-7 text-[#00A8E1]" fill="currentColor" viewbox="0 0 24 24"><path d="M13.62 16.51c-3.38 2.49-8.28 3.82-12.48 3.82-.6 0-1.14-.04-1.14-.54 0-.41.52-.51 1.05-.56 3.73-.39 8.08-1.59 11.23-3.8.38-.27.81.18 1.34 1.08zm8.68-1.61c-.28-.35-1.85-.16-2.56-.07-.22.03-.25-.14-.06-.28 1.25-.92 3.29-.65 3.52-.37.24.28-.06 2.37-1.25 3.37-.18.15-.36.07-.27-.13.3-.65.9-2.17.62-2.52zm-5.06-8.9c0-1.87-.93-2.91-2.47-2.91-1.82 0-2.83 1.35-2.83 3.19 0 1.84.97 2.87 2.58 2.87 1.63 0 2.72-1.18 2.72-3.15zm2.84 3.03c-.22.25-.66.27-.99.03-.93-.66-.99-1.02-1.4-1.61-1.16 1.48-2.6 1.89-4.33 1.89-2.75 0-4.64-1.74-4.64-4.32 0-2.68 1.95-4.44 4.88-4.44 1.61 0 2.85.5 3.73 1.49V4.02c0-.39.27-.67.66-.67h1.56c.39 0 .66.28.66.67v8.51c0 .28-.05.51-.13.7z"></path></svg>
-</div>
-<span class="px-2.5 py-0.5 rounded-full bg-sky-500/15 text-sky-400 text-[11px] font-semibold">BEST VALUE</span>
-</div>
-<div class="text-[11px] font-medium text-sky-400/90 mb-1">🎬 Entertainment &amp; OTT</div>
-<a href="product.html?id=390" class="hover:text-primary-container transition-colors"><h3 class="font-display font-semibold text-white text-lg">Amazon Prime Video</h3></a>
-<p class="text-xs text-on-surface-variant mt-1 leading-relaxed">4K HDR streaming + Prime delivery perks, personal slot, multi-language support.</p>
-<div class="flex items-center gap-2 mt-4 text-[11px] text-on-surface-variant">
-<span class="flex items-center gap-1 text-white"><span class="material-symbols-outlined text-[14px] text-tertiary">check_circle</span> Personal Slot</span>
-<span class="">•</span>
-<span class="">4K HDR</span>
-</div>
-</div>
-<div class="mt-6 pt-4 border-t border-white/[0.06]">
-<div class="flex items-baseline justify-between mb-3">
-<div>
-<span class="text-xs text-outline line-through">৳150</span>
-<div class="text-xl font-display font-bold text-white">৳100 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
-</div>
-<span class="text-[11px] text-on-surface-variant bg-white/[0.04] px-2 py-0.5 rounded">All Devices</span>
-</div>
-<a href="product.html?id=390" class="w-full py-2.5 rounded-xl bg-white/[0.08] hover:bg-white/[0.15] text-white font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 transition-all">
-<span class="material-symbols-outlined text-[15px]">bolt</span>
-<span class="">Claim Slot</span>
-</a>
-</div>
+<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ott" data-product-id="390" data-title="amazon prime video" onclick="if (!event.target.closest('a')) openProductPage(390)">
+  <!-- 16:9 Image Header with Obsidian Gradient Fade -->
+  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+    <img src="images/products/amazon-prime-video-subscription-bd.webp" alt="Amazon Prime Video" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
+    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #00A8E1;">
+      HD 1080p
+    </div>
+    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      🎬 OTT & Streaming
+    </div>
+    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card Body -->
+  <div class="p-5 flex flex-col flex-grow justify-between">
+    <div>
+      <div class="flex items-center justify-between gap-2 mb-2">
+        <span class="px-2 py-0.5 rounded-full bg-sky-500/15 text-sky-400 text-[10px] font-bold uppercase tracking-wider">SAVE ৳149</span>
+        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      </div>
+      <a href="product.html?id=390" class="hover:text-primary-container transition-colors block">
+        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">Amazon Prime Video</h3>
+      </a>
+      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">Official Prime Video access with uninterrupted streaming on TV, phone & laptop.</p>
+      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+        <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Prime Video</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Ad-Free</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Multi-Device</span>
+      </div>
+    </div>
+
+    <!-- Pricing & Action Row -->
+    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+      <div>
+        <span class="text-[11px] text-outline line-through block">৳299</span>
+        <div class="text-lg sm:text-xl font-display font-bold text-white">৳150 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
+      </div>
+      <a href="product.html?id=390" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
+        <span class="material-symbols-outlined text-[14px]">bolt</span>
+        <span>Get Access</span>
+      </a>
+    </div>
+  </div>
 </div>
 <!-- 3. YouTube Premium -->
-<div class="product-item glass-card rounded-2xl p-6 flex flex-col justify-between transition-all duration-200 cursor-pointer hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,229,255,0.15)]" data-category="ott" data-product-id="861" data-title="youtube premium" onclick="if (!event.target.closest('a')) openProductPage(861)">
-<div>
-<div class="flex items-center justify-between mb-4">
-<div class="w-13 h-13 p-3 rounded-2xl bg-[#FF0000]/10 border border-[#FF0000]/30 flex items-center justify-center">
-<svg class="w-7 h-7 text-[#FF0000]" fill="currentColor" viewbox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
-</div>
-<span class="px-2.5 py-0.5 rounded-full bg-red-500/15 text-red-400 text-[11px] font-semibold">SAVE ৳50</span>
-</div>
-<div class="text-[11px] font-medium text-red-400/90 mb-1">🎬 Entertainment &amp; OTT</div>
-<a href="product.html?id=861" class="hover:text-primary-container transition-colors"><h3 class="font-display font-semibold text-white text-lg">YouTube Premium</h3></a>
-<p class="text-xs text-on-surface-variant mt-1 leading-relaxed">Ad-free 4K playback, offline downloads, background audio, full YouTube Music incl.</p>
-<div class="flex items-center gap-2 mt-4 text-[11px] text-on-surface-variant">
-<span class="flex items-center gap-1 text-white"><span class="material-symbols-outlined text-[14px] text-tertiary">check_circle</span> Personal Gmail</span>
-<span class="">•</span>
-<span class="">Music Incl.</span>
-</div>
-</div>
-<div class="mt-6 pt-4 border-t border-white/[0.06]">
-<div class="flex items-baseline justify-between mb-3">
-<div>
-<span class="text-xs text-outline line-through">৳180</span>
-<div class="text-xl font-display font-bold text-white">৳130 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
-</div>
-<span class="text-[11px] text-on-surface-variant bg-white/[0.04] px-2 py-0.5 rounded">No Ads</span>
-</div>
-<a href="product.html?id=861" class="w-full py-2.5 rounded-xl bg-white/[0.08] hover:bg-white/[0.15] text-white font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 transition-all">
-<span class="material-symbols-outlined text-[15px]">bolt</span>
-<span class="">Claim Slot</span>
-</a>
-</div>
+<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ott" data-product-id="861" data-title="youtube premium" onclick="if (!event.target.closest('a')) openProductPage(861)">
+  <!-- 16:9 Image Header with Obsidian Gradient Fade -->
+  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+    <img src="images/products/youtube-premium-subscription-bd.webp" alt="YouTube Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
+    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #FF0000;">
+      Ad-Free
+    </div>
+    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      🎬 OTT & Streaming
+    </div>
+    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card Body -->
+  <div class="p-5 flex flex-col flex-grow justify-between">
+    <div>
+      <div class="flex items-center justify-between gap-2 mb-2">
+        <span class="px-2 py-0.5 rounded-full bg-red-500/15 text-red-400 text-[10px] font-bold uppercase tracking-wider">SAVE ৳50</span>
+        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      </div>
+      <a href="product.html?id=861" class="hover:text-primary-container transition-colors block">
+        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">YouTube Premium</h3>
+      </a>
+      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">Zero ad interruptions, background playback on lockscreen, and YouTube Music included.</p>
+      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+        <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Music Inc.</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Background Play</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">No Ads</span>
+      </div>
+    </div>
+
+    <!-- Pricing & Action Row -->
+    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+      <div>
+        <span class="text-[11px] text-outline line-through block">৳180</span>
+        <div class="text-lg sm:text-xl font-display font-bold text-white">৳130 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
+      </div>
+      <a href="product.html?id=861" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
+        <span class="material-symbols-outlined text-[14px]">bolt</span>
+        <span>Activate Now</span>
+      </a>
+    </div>
+  </div>
 </div>
 <!-- 4. Crunchyroll Premium -->
-<div class="product-item glass-card rounded-2xl p-6 flex flex-col justify-between transition-all duration-200 cursor-pointer hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,229,255,0.15)]" data-category="ott" data-product-id="865" data-title="crunchyroll premium" onclick="if (!event.target.closest('a')) openProductPage(865)">
-<div>
-<div class="flex items-center justify-between mb-4">
-<div class="w-13 h-13 p-3 rounded-2xl bg-[#F47521]/10 border border-[#F47521]/30 flex items-center justify-center">
-<svg class="w-7 h-7 text-[#F47521]" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm2.8 14.5c-2.48 0-4.5-2.02-4.5-4.5s2.02-4.5 4.5-4.5c.67 0 1.3.15 1.88.42-1.39.9-2.32 2.45-2.32 4.08s.93 3.18 2.32 4.08c-.58.27-1.21.42-1.88.42z"></path></svg>
-</div>
-<span class="px-2.5 py-0.5 rounded-full bg-orange-500/15 text-orange-400 text-[11px] font-semibold">SAVE ৳30</span>
-</div>
-<div class="text-[11px] font-medium text-orange-400/90 mb-1">🎬 Entertainment &amp; OTT</div>
-<a href="product.html?id=865" class="hover:text-primary-container transition-colors"><h3 class="font-display font-semibold text-white text-lg">Crunchyroll Premium</h3></a>
-<p class="text-xs text-on-surface-variant mt-1 leading-relaxed">Mega Fan tier: 1-hour anime simulcasts from Japan, offline sync &amp; zero ads.</p>
-<div class="flex items-center gap-2 mt-4 text-[11px] text-on-surface-variant">
-<span class="flex items-center gap-1 text-white"><span class="material-symbols-outlined text-[14px] text-tertiary">check_circle</span> Mega Fan</span>
-<span class="">•</span>
-<span class="">Simulcast</span>
-</div>
-</div>
-<div class="mt-6 pt-4 border-t border-white/[0.06]">
-<div class="flex items-baseline justify-between mb-3">
-<div>
-<span class="text-xs text-outline line-through">৳200</span>
-<div class="text-xl font-display font-bold text-white">৳170 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
-</div>
-<span class="text-[11px] text-on-surface-variant bg-white/[0.04] px-2 py-0.5 rounded">Offline Sync</span>
-</div>
-<a href="product.html?id=865" class="w-full py-2.5 rounded-xl bg-white/[0.08] hover:bg-white/[0.15] text-white font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 transition-all">
-<span class="material-symbols-outlined text-[15px]">bolt</span>
-<span class="">Claim Slot</span>
-</a>
-</div>
+<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ott" data-product-id="865" data-title="crunchyroll premium" onclick="if (!event.target.closest('a')) openProductPage(865)">
+  <!-- 16:9 Image Header with Obsidian Gradient Fade -->
+  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+    <img src="images/products/crunchyroll-premium-subscription-bd.webp" alt="Crunchyroll Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
+    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #F47521;">
+      Simulcast
+    </div>
+    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      🎬 OTT & Streaming
+    </div>
+    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card Body -->
+  <div class="p-5 flex flex-col flex-grow justify-between">
+    <div>
+      <div class="flex items-center justify-between gap-2 mb-2">
+        <span class="px-2 py-0.5 rounded-full bg-orange-500/15 text-orange-400 text-[10px] font-bold uppercase tracking-wider">SAVE ৳30</span>
+        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      </div>
+      <a href="product.html?id=865" class="hover:text-primary-container transition-colors block">
+        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">Crunchyroll Premium</h3>
+      </a>
+      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">50,000+ anime episodes simulcast 1-hour post Japan premiere, Game Vault, ad-free.</p>
+      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+        <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">50K+ Anime</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Offline View</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Mega Fan</span>
+      </div>
+    </div>
+
+    <!-- Pricing & Action Row -->
+    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+      <div>
+        <span class="text-[11px] text-outline line-through block">৳200</span>
+        <div class="text-lg sm:text-xl font-display font-bold text-white">৳170 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
+      </div>
+      <a href="product.html?id=865" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
+        <span class="material-symbols-outlined text-[14px]">bolt</span>
+        <span>Watch Anime</span>
+      </a>
+    </div>
+  </div>
 </div>
 <!-- 5. Kuku TV Premium -->
-<div class="product-item glass-card rounded-2xl p-6 flex flex-col justify-between transition-all duration-200 cursor-pointer hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,229,255,0.15)]" data-category="ott" data-product-id="1328" data-title="kuku tv premium" onclick="if (!event.target.closest('a')) openProductPage(1328)">
-<div>
-<div class="flex items-center justify-between mb-4">
-<div class="w-13 h-13 p-3 rounded-2xl bg-[#E65100]/10 border border-[#E65100]/30 flex items-center justify-center">
-<svg class="w-7 h-7 text-[#FF6F00]" fill="currentColor" viewbox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6zm-2 16c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"></path></svg>
-</div>
-<span class="px-2.5 py-0.5 rounded-full bg-amber-500/15 text-amber-400 text-[11px] font-semibold">SAVE ৳100</span>
-</div>
-<div class="text-[11px] font-medium text-amber-400/90 mb-1">🎬 Entertainment &amp; OTT</div>
-<a href="product.html?id=1328" class="hover:text-primary-container transition-colors"><h3 class="font-display font-semibold text-white text-lg">Kuku TV Premium</h3></a>
-<p class="text-xs text-on-surface-variant mt-1 leading-relaxed">Full regional audiobooks, web series &amp; audio dramas. Ad-free uninterrupted streaming.</p>
-<div class="flex items-center gap-2 mt-4 text-[11px] text-on-surface-variant">
-<span class="flex items-center gap-1 text-white"><span class="material-symbols-outlined text-[14px] text-tertiary">check_circle</span> Audio &amp; Video</span>
-<span class="">•</span>
-<span class="">All Episodes</span>
-</div>
-</div>
-<div class="mt-6 pt-4 border-t border-white/[0.06]">
-<div class="flex items-baseline justify-between mb-3">
-<div>
-<span class="text-xs text-outline line-through">৳899</span>
-<div class="text-xl font-display font-bold text-white">৳799 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
-</div>
-<span class="text-[11px] text-on-surface-variant bg-white/[0.04] px-2 py-0.5 rounded">VIP Pass</span>
-</div>
-<a href="product.html?id=1328" class="w-full py-2.5 rounded-xl bg-white/[0.08] hover:bg-white/[0.15] text-white font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 transition-all">
-<span class="material-symbols-outlined text-[15px]">bolt</span>
-<span class="">Claim Slot</span>
-</a>
-</div>
+<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ott" data-product-id="1328" data-title="kuku tv premium" onclick="if (!event.target.closest('a')) openProductPage(1328)">
+  <!-- 16:9 Image Header with Obsidian Gradient Fade -->
+  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+    <img src="images/products/kuku-tv-premium-bangladesh-price.webp" alt="Kuku TV Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
+    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #FF4500;">
+      HD Dramas
+    </div>
+    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      🎬 OTT & Streaming
+    </div>
+    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card Body -->
+  <div class="p-5 flex flex-col flex-grow justify-between">
+    <div>
+      <div class="flex items-center justify-between gap-2 mb-2">
+        <span class="px-2 py-0.5 rounded-full bg-orange-500/15 text-orange-400 text-[10px] font-bold uppercase tracking-wider">SAVE ৳100</span>
+        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      </div>
+      <a href="product.html?id=1328" class="hover:text-primary-container transition-colors block">
+        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">Kuku TV Premium</h3>
+      </a>
+      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">Short dramas, romantic thrillers, exclusive original series on Android and iOS.</p>
+      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+        <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Short Series</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Shared Slot</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">HD Video</span>
+      </div>
+    </div>
+
+    <!-- Pricing & Action Row -->
+    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+      <div>
+        <span class="text-[11px] text-outline line-through block">৳899</span>
+        <div class="text-lg sm:text-xl font-display font-bold text-white">৳799 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
+      </div>
+      <a href="product.html?id=1328" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
+        <span class="material-symbols-outlined text-[14px]">bolt</span>
+        <span>Stream Now</span>
+      </a>
+    </div>
+  </div>
 </div>
 <!-- 6. Ullu Premium -->
-<div class="product-item glass-card rounded-2xl p-6 flex flex-col justify-between transition-all duration-200 cursor-pointer hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,229,255,0.15)]" data-category="ott" data-product-id="389" data-title="ullu premium" onclick="if (!event.target.closest('a')) openProductPage(389)">
-<div>
-<div class="flex items-center justify-between mb-4">
-<div class="w-13 h-13 p-3 rounded-2xl bg-[#D4AF37]/15 border border-[#D4AF37]/30 flex items-center justify-center">
-<svg class="w-7 h-7 text-[#FFD700]" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-3 7c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm6 0c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm-3 9c-2.33 0-4.31-1.46-5.11-3.5h10.22c-.8 2.04-2.78 3.5-5.11 3.5z"></path></svg>
+<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ott" data-product-id="389" data-title="ullu premium" onclick="if (!event.target.closest('a')) openProductPage(389)">
+  <!-- 16:9 Image Header with Obsidian Gradient Fade -->
+  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+    <img src="images/products/ullu-premium-subscription.webp" alt="Ullu Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
+    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #FF6B35;">
+      Originals
+    </div>
+    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      🎬 OTT & Streaming
+    </div>
+    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card Body -->
+  <div class="p-5 flex flex-col flex-grow justify-between">
+    <div>
+      <div class="flex items-center justify-between gap-2 mb-2">
+        <span class="px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-400 text-[10px] font-bold uppercase tracking-wider">SAVE ৳239</span>
+        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      </div>
+      <a href="product.html?id=389" class="hover:text-primary-container transition-colors block">
+        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">Ullu Premium</h3>
+      </a>
+      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">Full catalog of exclusive Ullu web series and short films on phone or TV.</p>
+      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+        <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Web Series</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">HD Streaming</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Instant Access</span>
+      </div>
+    </div>
+
+    <!-- Pricing & Action Row -->
+    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+      <div>
+        <span class="text-[11px] text-outline line-through block">৳499</span>
+        <div class="text-lg sm:text-xl font-display font-bold text-white">৳260 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
+      </div>
+      <a href="product.html?id=389" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
+        <span class="material-symbols-outlined text-[14px]">bolt</span>
+        <span>Start Watching</span>
+      </a>
+    </div>
+  </div>
 </div>
-<span class="px-2.5 py-0.5 rounded-full bg-yellow-500/15 text-yellow-300 text-[11px] font-semibold">SAVE ৳151</span>
+<!-- 7. ChatGPT Pro (OpenAI) -->
+<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ai" data-product-id="142" data-title="chatgpt pro" onclick="if (!event.target.closest('a')) openProductPage(142)">
+  <!-- 16:9 Image Header with Obsidian Gradient Fade -->
+  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+    <img src="images/products/chatgpt-pro-subscription-bd.webp" alt="ChatGPT Pro (OpenAI)" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
+    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #10A37F;">
+      o1 Pro / 4o
+    </div>
+    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      🤖 Frontier AI
+    </div>
+    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card Body -->
+  <div class="p-5 flex flex-col flex-grow justify-between">
+    <div>
+      <div class="flex items-center justify-between gap-2 mb-2">
+        <span class="px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-400 text-[10px] font-bold uppercase tracking-wider">SAVE ৳200</span>
+        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      </div>
+      <a href="product.html?id=142" class="hover:text-primary-container transition-colors block">
+        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">ChatGPT Pro (OpenAI)</h3>
+      </a>
+      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">Next-gen reasoning with o1 Pro & GPT-4o, unlimited Advanced Voice, Canvas workspace.</p>
+      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+        <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">o1 Pro Reasoning</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Advanced Voice</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Code Canvas</span>
+      </div>
+    </div>
+
+    <!-- Pricing & Action Row -->
+    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+      <div>
+        <span class="text-[11px] text-outline line-through block">৳699</span>
+        <div class="text-lg sm:text-xl font-display font-bold text-white">৳499 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
+      </div>
+      <a href="product.html?id=142" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
+        <span class="material-symbols-outlined text-[14px]">bolt</span>
+        <span>Unlock Pro</span>
+      </a>
+    </div>
+  </div>
 </div>
-<div class="text-[11px] font-medium text-yellow-300/90 mb-1">🎬 Entertainment &amp; OTT</div>
-<a href="product.html?id=389" class="hover:text-primary-container transition-colors"><h3 class="font-display font-semibold text-white text-lg">Ullu Premium</h3></a>
-<p class="text-xs text-on-surface-variant mt-1 leading-relaxed">VIP Access pass: all exclusive series and episodes unlocked. High-bitrate 1080p.</p>
-<div class="flex items-center gap-2 mt-4 text-[11px] text-on-surface-variant">
-<span class="flex items-center gap-1 text-white"><span class="material-symbols-outlined text-[14px] text-tertiary">check_circle</span> Multi-Screen</span>
-<span class="">•</span>
-<span class="">VIP Pass</span>
+<!-- 8. Google Gemini Advanced -->
+<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ai" data-product-id="852" data-title="google gemini pro" onclick="if (!event.target.closest('a')) openProductPage(852)">
+  <!-- 16:9 Image Header with Obsidian Gradient Fade -->
+  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+    <img src="images/products/google-gemini-pro-subscription-bd.webp" alt="Google Gemini Advanced" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
+    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #4285F4;">
+      2M Context
+    </div>
+    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      🤖 Frontier AI
+    </div>
+    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card Body -->
+  <div class="p-5 flex flex-col flex-grow justify-between">
+    <div>
+      <div class="flex items-center justify-between gap-2 mb-2">
+        <span class="px-2 py-0.5 rounded-full bg-blue-500/15 text-blue-400 text-[10px] font-bold uppercase tracking-wider">SAVE ৳200</span>
+        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      </div>
+      <a href="product.html?id=852" class="hover:text-primary-container transition-colors block">
+        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">Google Gemini Advanced</h3>
+      </a>
+      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">Gemini 1.5 Pro with 2M token context window, deep multimodal analysis & 2TB Drive.</p>
+      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+        <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">2M Tokens</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Deep Analysis</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Multimodal</span>
+      </div>
+    </div>
+
+    <!-- Pricing & Action Row -->
+    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+      <div>
+        <span class="text-[11px] text-outline line-through block">৳699</span>
+        <div class="text-lg sm:text-xl font-display font-bold text-white">৳499 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
+      </div>
+      <a href="product.html?id=852" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
+        <span class="material-symbols-outlined text-[14px]">bolt</span>
+        <span>Deploy AI</span>
+      </a>
+    </div>
+  </div>
 </div>
-</div>
-<div class="mt-6 pt-4 border-t border-white/[0.06]">
-<div class="flex items-baseline justify-between mb-3">
-<div>
-<span class="text-xs text-outline line-through">৳450</span>
-<div class="text-xl font-display font-bold text-white">৳299 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
-</div>
-<span class="text-[11px] text-on-surface-variant bg-white/[0.04] px-2 py-0.5 rounded">All Seasons</span>
-</div>
-<a href="product.html?id=389" class="w-full py-2.5 rounded-xl bg-white/[0.08] hover:bg-white/[0.15] text-white font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 transition-all">
-<span class="material-symbols-outlined text-[15px]">bolt</span>
-<span class="">Claim Slot</span>
-</a>
-</div>
-</div>
-<!-- 7. ChatGPT Pro -->
-<div class="product-item glass-card rounded-2xl p-6 flex flex-col justify-between transition-all duration-200 cursor-pointer hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,229,255,0.15)]" data-category="ai" data-product-id="142" data-title="chatgpt pro" onclick="if (!event.target.closest('a')) openProductPage(142)">
-<div>
-<div class="flex items-center justify-between mb-4">
-<div class="w-13 h-13 p-3 rounded-2xl bg-[#00A67E]/10 border border-[#00A67E]/30 flex items-center justify-center">
-<svg class="w-7 h-7 text-[#10A37F]" fill="currentColor" viewbox="0 0 24 24"><path d="M22.28 9.9c-.15-.9-.65-1.7-1.4-2.22-.5-.35-1.1-.53-1.7-.53h-.4a4.98 4.98 0 0 0-4.08-2.1c-.96 0-1.88.27-2.67.78a5 5 0 0 0-7.3 2.58 4.97 4.97 0 0 0-2.8 4.45c0 .76.17 1.5.5 2.18-.15.9.35 1.7 1.1 2.22.5.35 1.1.53 1.7.53h.4a4.98 4.98 0 0 0 4.08 2.1c.96 0 1.88-.27 2.67-.78a5 5 0 0 0 7.3-2.58 4.97 4.97 0 0 0 2.8-4.45c0-.76-.17-1.5-.5-2.18zm-8.8 9.68a3.3 3.3 0 0 1-2.02-.69l3.52-2.03a.85.85 0 0 0 .42-.74v-4.9l1.47.85v4.22a3.34 3.34 0 0 1-3.39 3.29zm-7.6-3.8c-.54-.93-.66-2.03-.33-3.05l3.52 2.03a.84.84 0 0 0 .85 0l4.24-2.45v1.7l-3.66 2.11a3.34 3.34 0 0 1-4.62-.34zm-1.2-7.38c.54-.93 1.45-1.6 2.5-1.88v4.06a.85.85 0 0 0 .43.74l4.24 2.45-1.47.85-3.65-2.11a3.34 3.34 0 0 1-2.05-4.11zm12.56-1.52l-3.52 2.03a.84.84 0 0 0-.85 0L8.63 7.37v-1.7l3.66-2.11a3.34 3.34 0 0 1 4.62.34c.54.93.66 2.03.33 3.05zm2.84 4.5c0 1.08-.43 2.1-1.2 2.85v-4.06a.85.85 0 0 0-.43-.74L14.4 7.29l1.47-.85 3.65 2.11c.78.68 1.28 1.66 1.28 2.83zm-8.08 1.87l-1.92-1.11 1.92-1.11 1.92 1.11-1.92 1.11z"></path></svg>
-</div>
-<span class="px-2.5 py-0.5 rounded-full bg-emerald-500/15 text-emerald-400 text-[11px] font-semibold">POPULAR</span>
-</div>
-<div class="text-[11px] font-medium text-emerald-400 mb-1">🤖 AI &amp; Productivity</div>
-<a href="product.html?id=142" class="hover:text-primary-container transition-colors"><h3 class="font-display font-semibold text-white text-lg">ChatGPT Pro</h3></a>
-<p class="text-xs text-on-surface-variant mt-1 leading-relaxed">High-compute o1 Pro mode, GPT-4o, Unlimited Canvas &amp; Deep Research. Dedicated account.</p>
-<div class="flex items-center gap-2 mt-4 text-[11px] text-on-surface-variant">
-<span class="flex items-center gap-1 text-white"><span class="material-symbols-outlined text-[14px] text-tertiary">check_circle</span> o1 Pro Compute</span>
-<span class="">•</span>
-<span class="">Dedicated</span>
-</div>
-</div>
-<div class="mt-6 pt-4 border-t border-white/[0.06]">
-<div class="flex items-baseline justify-between mb-3">
-<div>
-<span class="text-xs text-outline line-through">৳699</span>
-<div class="text-xl font-display font-bold text-white">৳499 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
-</div>
-<span class="text-[11px] text-on-surface-variant bg-white/[0.04] px-2 py-0.5 rounded">Private Login</span>
-</div>
-<a href="product.html?id=142" class="w-full py-2.5 rounded-xl bg-primary-container text-on-primary-container font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 hover:brightness-110 shadow-[0_0_14px_rgba(0,229,255,0.25)]">
-<span class="material-symbols-outlined text-[15px]">bolt</span>
-<span class="">Get Access</span>
-</a>
-</div>
-</div>
-<!-- 8. Google Gemini Pro -->
-<div class="product-item glass-card rounded-2xl p-6 flex flex-col justify-between transition-all duration-200 cursor-pointer hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,229,255,0.15)]" data-category="ai" data-product-id="852" data-title="google gemini pro" onclick="if (!event.target.closest('a')) openProductPage(852)">
-<div>
-<div class="flex items-center justify-between mb-4">
-<div class="w-13 h-13 p-3 rounded-2xl bg-[#4285F4]/10 border border-[#4285F4]/30 flex items-center justify-center">
-<svg class="w-7 h-7 text-[#4285F4]" fill="currentColor" viewbox="0 0 24 24"><path d="M12 0C12 6.627 6.627 12 0 12c6.627 0 12 5.373 12 12 0-6.627 5.373-12 12-12-6.627 0-12-5.373-12-12z"></path></svg>
-</div>
-<span class="px-2.5 py-0.5 rounded-full bg-blue-500/15 text-blue-400 text-[11px] font-semibold">SAVE ৳51</span>
-</div>
-<div class="text-[11px] font-medium text-blue-400 mb-1">🤖 AI &amp; Productivity</div>
-<a href="product.html?id=852" class="hover:text-primary-container transition-colors"><h3 class="font-display font-semibold text-white text-lg">Google Gemini Pro</h3></a>
-<p class="text-xs text-on-surface-variant mt-1 leading-relaxed">Gemini 1.5 Pro &amp; Advanced 2M token context window, Google One AI integration.</p>
-<div class="flex items-center gap-2 mt-4 text-[11px] text-on-surface-variant">
-<span class="flex items-center gap-1 text-white"><span class="material-symbols-outlined text-[14px] text-tertiary">check_circle</span> 2M Context</span>
-<span class="">•</span>
-<span class="">Google One AI</span>
-</div>
-</div>
-<div class="mt-6 pt-4 border-t border-white/[0.06]">
-<div class="flex items-baseline justify-between mb-3">
-<div>
-<span class="text-xs text-outline line-through">৳350</span>
-<div class="text-xl font-display font-bold text-white">৳299 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
-</div>
-<span class="text-[11px] text-on-surface-variant bg-white/[0.04] px-2 py-0.5 rounded">Direct Pass</span>
-</div>
-<a href="product.html?id=852" class="w-full py-2.5 rounded-xl bg-white/[0.08] hover:bg-white/[0.15] text-white font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 transition-all">
-<span class="material-symbols-outlined text-[15px]">bolt</span>
-<span class="">Get Access</span>
-</a>
-</div>
-</div>
-<!-- 9. SuperGrok Premium -->
-<div class="product-item glass-card rounded-2xl p-6 flex flex-col justify-between transition-all duration-200 cursor-pointer hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,229,255,0.15)]" data-category="ai" data-product-id="854" data-title="supergrok premium (xai)" onclick="if (!event.target.closest('a')) openProductPage(854)">
-<div>
-<div class="flex items-center justify-between mb-4">
-<div class="w-13 h-13 p-3 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center">
-<svg class="w-7 h-7 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
-</div>
-<span class="px-2.5 py-0.5 rounded-full bg-purple-500/15 text-purple-400 text-[11px] font-semibold">SAVE ৳251</span>
-</div>
-<div class="text-[11px] font-medium text-purple-400 mb-1">🤖 AI &amp; Productivity</div>
-<a href="product.html?id=854" class="hover:text-primary-container transition-colors"><h3 class="font-display font-semibold text-white text-lg">SuperGrok Premium</h3></a>
-<p class="text-xs text-on-surface-variant mt-1 leading-relaxed">xAI Grok 2, uncensored real-time X telemetry, Flux image generation engine.</p>
-<div class="flex items-center gap-2 mt-4 text-[11px] text-on-surface-variant">
-<span class="flex items-center gap-1 text-white"><span class="material-symbols-outlined text-[14px] text-tertiary">check_circle</span> Real-Time X</span>
-<span class="">•</span>
-<span class="">Unfiltered</span>
-</div>
-</div>
-<div class="mt-6 pt-4 border-t border-white/[0.06]">
-<div class="flex items-baseline justify-between mb-3">
-<div>
-<span class="text-xs text-outline line-through">৳1,150</span>
-<div class="text-xl font-display font-bold text-white">৳899 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
-</div>
-<span class="text-[11px] text-on-surface-variant bg-white/[0.04] px-2 py-0.5 rounded">Flux Images</span>
-</div>
-<a href="product.html?id=854" class="w-full py-2.5 rounded-xl bg-white/[0.08] hover:bg-white/[0.15] text-white font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 transition-all">
-<span class="material-symbols-outlined text-[15px]">bolt</span>
-<span class="">Get Access</span>
-</a>
-</div>
+<!-- 9. SuperGrok Premium (xAI) -->
+<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ai" data-product-id="854" data-title="supergrok premium (xai)" onclick="if (!event.target.closest('a')) openProductPage(854)">
+  <!-- 16:9 Image Header with Obsidian Gradient Fade -->
+  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+    <img src="images/products/supergrok-premium-subscription-bd.webp" alt="SuperGrok Premium (xAI)" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
+    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #1D9BF0;">
+      Uncensored AI
+    </div>
+    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      🤖 Frontier AI
+    </div>
+    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card Body -->
+  <div class="p-5 flex flex-col flex-grow justify-between">
+    <div>
+      <div class="flex items-center justify-between gap-2 mb-2">
+        <span class="px-2 py-0.5 rounded-full bg-cyan-500/15 text-cyan-400 text-[10px] font-bold uppercase tracking-wider">SAVE ৳200</span>
+        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      </div>
+      <a href="product.html?id=854" class="hover:text-primary-container transition-colors block">
+        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">SuperGrok Premium (xAI)</h3>
+      </a>
+      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">Real-time X integration, maximum Grok 2 & Grok 3 intelligence, raw unfiltered speed.</p>
+      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+        <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Real-time X</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Grok 2 & 3</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Flux Vision</span>
+      </div>
+    </div>
+
+    <!-- Pricing & Action Row -->
+    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+      <div>
+        <span class="text-[11px] text-outline line-through block">৳699</span>
+        <div class="text-lg sm:text-xl font-display font-bold text-white">৳499 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
+      </div>
+      <a href="product.html?id=854" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
+        <span class="material-symbols-outlined text-[14px]">bolt</span>
+        <span>Explore Grok</span>
+      </a>
+    </div>
+  </div>
 </div>
 <!-- 10. vidIQ Boost Premium -->
-<div class="product-item glass-card rounded-2xl p-6 flex flex-col justify-between transition-all duration-200 cursor-pointer hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,229,255,0.15)]" data-category="ai" data-product-id="1544" data-title="vidiq boost premium" onclick="if (!event.target.closest('a')) openProductPage(1544)">
-<div>
-<div class="flex items-center justify-between mb-4">
-<div class="w-13 h-13 p-3 rounded-2xl bg-[#00BCD4]/10 border border-[#00BCD4]/30 flex items-center justify-center">
-<svg class="w-7 h-7 text-[#00E5FF]" fill="currentColor" viewbox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"></path></svg>
+<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ai" data-product-id="1544" data-title="vidiq boost premium" onclick="if (!event.target.closest('a')) openProductPage(1544)">
+  <!-- 16:9 Image Header with Obsidian Gradient Fade -->
+  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+    <img src="images/products/vidiq-premium-price-bangladesh.webp" alt="vidIQ Boost Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
+    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #00D26A;">
+      SEO Boost
+    </div>
+    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      🤖 AI & Growth
+    </div>
+    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card Body -->
+  <div class="p-5 flex flex-col flex-grow justify-between">
+    <div>
+      <div class="flex items-center justify-between gap-2 mb-2">
+        <span class="px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-400 text-[10px] font-bold uppercase tracking-wider">SAVE ৳300</span>
+        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      </div>
+      <a href="product.html?id=1544" class="hover:text-primary-container transition-colors block">
+        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">vidIQ Boost Premium</h3>
+      </a>
+      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">Advanced YouTube SEO, AI keyword discovery, viral competitor audits & trend alerts.</p>
+      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+        <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">YouTube SEO</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Trend Radar</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Competitor Spy</span>
+      </div>
+    </div>
+
+    <!-- Pricing & Action Row -->
+    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+      <div>
+        <span class="text-[11px] text-outline line-through block">৳799</span>
+        <div class="text-lg sm:text-xl font-display font-bold text-white">৳499 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
+      </div>
+      <a href="product.html?id=1544" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
+        <span class="material-symbols-outlined text-[14px]">bolt</span>
+        <span>Boost Channel</span>
+      </a>
+    </div>
+  </div>
 </div>
-<span class="px-2.5 py-0.5 rounded-full bg-cyan-500/15 text-cyan-400 text-[11px] font-semibold">SAVE ৳300</span>
+<!-- 11. Quizlet Plus Subscription -->
+<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="ai" data-product-id="863" data-title="quizlet plus" onclick="if (!event.target.closest('a')) openProductPage(863)">
+  <!-- 16:9 Image Header with Obsidian Gradient Fade -->
+  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+    <img src="images/products/quizlet-plus-subscription-bd.webp" alt="Quizlet Plus Subscription" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
+    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #4257B2;">
+      AI Study
+    </div>
+    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      📚 Smart Education
+    </div>
+    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card Body -->
+  <div class="p-5 flex flex-col flex-grow justify-between">
+    <div>
+      <div class="flex items-center justify-between gap-2 mb-2">
+        <span class="px-2 py-0.5 rounded-full bg-indigo-500/15 text-indigo-400 text-[10px] font-bold uppercase tracking-wider">SAVE ৳400</span>
+        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      </div>
+      <a href="product.html?id=863" class="hover:text-primary-container transition-colors block">
+        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">Quizlet Plus Subscription</h3>
+      </a>
+      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">Q-Chat AI tutor, Magic Notes automatic flashcard generator, ad-free offline study.</p>
+      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+        <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Q-Chat AI</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Magic Notes</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Spaced Repetition</span>
+      </div>
+    </div>
+
+    <!-- Pricing & Action Row -->
+    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+      <div>
+        <span class="text-[11px] text-outline line-through block">৳899</span>
+        <div class="text-lg sm:text-xl font-display font-bold text-white">৳499 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
+      </div>
+      <a href="product.html?id=863" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
+        <span class="material-symbols-outlined text-[14px]">bolt</span>
+        <span>Study Smarter</span>
+      </a>
+    </div>
+  </div>
 </div>
-<div class="text-[11px] font-medium text-cyan-400 mb-1">🤖 AI &amp; Productivity</div>
-<a href="product.html?id=1544" class="hover:text-primary-container transition-colors"><h3 class="font-display font-semibold text-white text-lg">vidIQ Boost Premium</h3></a>
-<p class="text-xs text-on-surface-variant mt-1 leading-relaxed">YouTube SEO AI keyword engine, competitor spy, AI title &amp; description generator.</p>
-<div class="flex items-center gap-2 mt-4 text-[11px] text-on-surface-variant">
-<span class="flex items-center gap-1 text-white"><span class="material-symbols-outlined text-[14px] text-tertiary">check_circle</span> SEO Keywords</span>
-<span class="">•</span>
-<span class="">5 Channels</span>
-</div>
-</div>
-<div class="mt-6 pt-4 border-t border-white/[0.06]">
-<div class="flex items-baseline justify-between mb-3">
-<div>
-<span class="text-xs text-outline line-through">৳799</span>
-<div class="text-xl font-display font-bold text-white">৳499 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
-</div>
-<span class="text-[11px] text-on-surface-variant bg-white/[0.04] px-2 py-0.5 rounded">Channel Sync</span>
-</div>
-<a href="product.html?id=1544" class="w-full py-2.5 rounded-xl bg-white/[0.08] hover:bg-white/[0.15] text-white font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 transition-all">
-<span class="material-symbols-outlined text-[15px]">bolt</span>
-<span class="">Get Access</span>
-</a>
-</div>
-</div>
-<!-- 11. Quizlet Plus -->
-<div class="product-item glass-card rounded-2xl p-6 flex flex-col justify-between transition-all duration-200 cursor-pointer hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,229,255,0.15)]" data-category="ai" data-product-id="863" data-title="quizlet plus" onclick="if (!event.target.closest('a')) openProductPage(863)">
-<div>
-<div class="flex items-center justify-between mb-4">
-<div class="w-13 h-13 p-3 rounded-2xl bg-[#3B82F6]/10 border border-[#3B82F6]/30 flex items-center justify-center">
-<svg class="w-7 h-7 text-[#4285F4]" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c2.25 0 4.33-.74 6.01-2l2.29 2.29a1 1 0 0 0 1.41-1.41l-2.29-2.29A9.957 9.957 0 0 0 22 12c0-5.52-4.48-10-10-10zm0 17c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7c0 1.62-.55 3.11-1.48 4.31l-1.93-1.93a1 1 0 0 0-1.41 1.41l1.93 1.93A6.953 6.953 0 0 1 12 19z"></path></svg>
-</div>
-<span class="px-2.5 py-0.5 rounded-full bg-blue-500/15 text-blue-400 text-[11px] font-semibold">SAVE ৳400</span>
-</div>
-<div class="text-[11px] font-medium text-blue-400 mb-1">🤖 AI &amp; Productivity</div>
-<a href="product.html?id=863" class="hover:text-primary-container transition-colors"><h3 class="font-display font-semibold text-white text-lg">Quizlet Plus</h3></a>
-<p class="text-xs text-on-surface-variant mt-1 leading-relaxed">AI Study Guides, Learn &amp; Test mode offline, ad-free flashcard sets &amp; explanations.</p>
-<div class="flex items-center gap-2 mt-4 text-[11px] text-on-surface-variant">
-<span class="flex items-center gap-1 text-white"><span class="material-symbols-outlined text-[14px] text-tertiary">check_circle</span> AI Tutor</span>
-<span class="">•</span>
-<span class="">Offline Mode</span>
-</div>
-</div>
-<div class="mt-6 pt-4 border-t border-white/[0.06]">
-<div class="flex items-baseline justify-between mb-3">
-<div>
-<span class="text-xs text-outline line-through">৳899</span>
-<div class="text-xl font-display font-bold text-white">৳499 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
-</div>
-<span class="text-[11px] text-on-surface-variant bg-white/[0.04] px-2 py-0.5 rounded">All Subjects</span>
-</div>
-<a href="product.html?id=863" class="w-full py-2.5 rounded-xl bg-white/[0.08] hover:bg-white/[0.15] text-white font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 transition-all">
-<span class="material-symbols-outlined text-[15px]">bolt</span>
-<span class="">Get Access</span>
-</a>
-</div>
-</div>
-<!-- 12. Canva Pro -->
-<div class="product-item glass-card rounded-2xl p-6 flex flex-col justify-between transition-all duration-200 cursor-pointer hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,229,255,0.15)]" data-category="creative" data-product-id="858" data-title="canva pro" onclick="if (!event.target.closest('a')) openProductPage(858)">
-<div>
-<div class="flex items-center justify-between mb-4">
-<div class="w-13 h-13 p-3 rounded-2xl bg-gradient-to-tr from-[#00C4CC]/20 to-[#7D2AE8]/20 border border-[#00C4CC]/30 flex items-center justify-center">
-<svg class="w-7 h-7 text-[#00C4CC]" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14.5c-2.48 0-4.5-1.5-4.5-3.5 0-1.8 1.5-3.2 3.5-3.2 1.3 0 2.2.6 2.7 1.3l-1.2.9c-.3-.5-.8-.8-1.5-.8-1.1 0-1.9.8-1.9 1.8 0 1.2 1.1 2 2.4 2 .8 0 1.5-.3 2-.7v-1.3h-2v-1.3h3.5v3.2c-.8.8-1.9 1.6-3 1.6z"></path></svg>
-</div>
-<span class="px-2.5 py-0.5 rounded-full bg-cyan-500/15 text-cyan-400 text-[11px] font-semibold">HOT DEAL</span>
-</div>
-<div class="text-[11px] font-medium text-cyan-400 mb-1">🎨 Creative &amp; Video Editing</div>
-<a href="product.html?id=858" class="hover:text-primary-container transition-colors"><h3 class="font-display font-semibold text-white text-lg">Canva Pro</h3></a>
-<p class="text-xs text-on-surface-variant mt-1 leading-relaxed">All premium templates, 1-click magic background remover, Brand Kit &amp; 1TB cloud.</p>
-<div class="flex items-center gap-2 mt-4 text-[11px] text-on-surface-variant">
-<span class="flex items-center gap-1 text-white"><span class="material-symbols-outlined text-[14px] text-tertiary">check_circle</span> Personal Email</span>
-<span class="">•</span>
-<span class="">Brand Kit</span>
-</div>
-</div>
-<div class="mt-6 pt-4 border-t border-white/[0.06]">
-<div class="flex items-baseline justify-between mb-3">
-<div>
-<span class="text-xs text-outline line-through">৳120</span>
-<div class="text-xl font-display font-bold text-white">৳100 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
-</div>
-<span class="text-[11px] text-on-surface-variant bg-white/[0.04] px-2 py-0.5 rounded">Private Seat</span>
-</div>
-<a href="product.html?id=858" class="w-full py-2.5 rounded-xl bg-primary-container text-on-primary-container font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 hover:brightness-110 shadow-[0_0_14px_rgba(0,229,255,0.25)]">
-<span class="material-symbols-outlined text-[15px]">bolt</span>
-<span class="">Claim Slot</span>
-</a>
-</div>
+<!-- 12. Canva Pro Subscription -->
+<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="creative" data-product-id="858" data-title="canva pro" onclick="if (!event.target.closest('a')) openProductPage(858)">
+  <!-- 16:9 Image Header with Obsidian Gradient Fade -->
+  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+    <img src="images/products/canva-pro-subscription-bd.webp" alt="Canva Pro Subscription" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
+    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #00C4CC;">
+      Magic Studio
+    </div>
+    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      🎨 Design Suite
+    </div>
+    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card Body -->
+  <div class="p-5 flex flex-col flex-grow justify-between">
+    <div>
+      <div class="flex items-center justify-between gap-2 mb-2">
+        <span class="px-2 py-0.5 rounded-full bg-teal-500/15 text-teal-400 text-[10px] font-bold uppercase tracking-wider">SAVE ৳101</span>
+        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      </div>
+      <a href="product.html?id=858" class="hover:text-primary-container transition-colors block">
+        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">Canva Pro Subscription</h3>
+      </a>
+      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">100M+ premium stock assets, 1-click Magic Resize, background remover, brand kits.</p>
+      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+        <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Magic Studio</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">100M+ Assets</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Brand Kit</span>
+      </div>
+    </div>
+
+    <!-- Pricing & Action Row -->
+    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+      <div>
+        <span class="text-[11px] text-outline line-through block">৳200</span>
+        <div class="text-lg sm:text-xl font-display font-bold text-white">৳99 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
+      </div>
+      <a href="product.html?id=858" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
+        <span class="material-symbols-outlined text-[14px]">bolt</span>
+        <span>Design Now</span>
+      </a>
+    </div>
+  </div>
 </div>
 <!-- 13. Adobe Creative Cloud -->
-<div class="product-item glass-card rounded-2xl p-6 flex flex-col justify-between transition-all duration-200 cursor-pointer hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,229,255,0.15)]" data-category="creative" data-product-id="864" data-title="adobe creative cloud" onclick="if (!event.target.closest('a')) openProductPage(864)">
-<div>
-<div class="flex items-center justify-between mb-4">
-<div class="w-13 h-13 p-3 rounded-2xl bg-gradient-to-tr from-[#FF0000]/20 to-[#9900FF]/20 border border-white/20 flex items-center justify-center">
-<svg class="w-6 h-6 text-[#FA0F00]" fill="currentColor" viewbox="0 0 24 24"><path d="M13.966 22h-3.932l4.897-12.016 3.639 9.012H16.27l-1.127-2.915h-2.31L13.966 22zM8.889 2h6.222L24 22h-6.222L8.889 2zM0 2h6.222L0 22V2z"></path></svg>
-</div>
-<span class="px-2.5 py-0.5 rounded-full bg-red-500/15 text-red-400 text-[11px] font-semibold">SAVE ৳1,000</span>
-</div>
-<div class="text-[11px] font-medium text-red-400 mb-1">🎨 Creative &amp; Video Editing</div>
-<a href="product.html?id=864" class="hover:text-primary-container transition-colors"><h3 class="font-display font-semibold text-white text-lg">Adobe Creative Cloud</h3></a>
-<p class="text-xs text-on-surface-variant mt-1 leading-relaxed">Photoshop, Premiere, After Effects, Illustrator + 100GB cloud storage on your Adobe ID.</p>
-<div class="flex items-center gap-2 mt-4 text-[11px] text-on-surface-variant">
-<span class="flex items-center gap-1 text-white"><span class="material-symbols-outlined text-[14px] text-tertiary">check_circle</span> Your Adobe ID</span>
-<span class="">•</span>
-<span class="">20+ Apps</span>
-</div>
-</div>
-<div class="mt-6 pt-4 border-t border-white/[0.06]">
-<div class="flex items-baseline justify-between mb-3">
-<div>
-<span class="text-xs text-outline line-through">৳3,999</span>
-<div class="text-xl font-display font-bold text-white">৳2,999 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
-</div>
-<span class="text-[11px] text-on-surface-variant bg-white/[0.04] px-2 py-0.5 rounded">Enterprise</span>
-</div>
-<a href="product.html?id=864" class="w-full py-2.5 rounded-xl bg-white/[0.08] hover:bg-white/[0.15] text-white font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 transition-all">
-<span class="material-symbols-outlined text-[15px]">bolt</span>
-<span class="">Get Access</span>
-</a>
-</div>
+<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="creative" data-product-id="864" data-title="adobe creative cloud" onclick="if (!event.target.closest('a')) openProductPage(864)">
+  <!-- 16:9 Image Header with Obsidian Gradient Fade -->
+  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+    <img src="images/products/adobe-creative-cloud-subscription-bd.webp" alt="Adobe Creative Cloud" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
+    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #FA0F00;">
+      20+ Apps
+    </div>
+    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      🎨 Design Suite
+    </div>
+    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card Body -->
+  <div class="p-5 flex flex-col flex-grow justify-between">
+    <div>
+      <div class="flex items-center justify-between gap-2 mb-2">
+        <span class="px-2 py-0.5 rounded-full bg-rose-500/15 text-rose-400 text-[10px] font-bold uppercase tracking-wider">SAVE ৳1000</span>
+        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      </div>
+      <a href="product.html?id=864" class="hover:text-primary-container transition-colors block">
+        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">Adobe Creative Cloud</h3>
+      </a>
+      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">Photoshop, Premiere Pro, Illustrator, After Effects, Firefly AI & 100GB Cloud.</p>
+      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+        <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Photoshop & Pr</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Firefly Generative</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Personal Account</span>
+      </div>
+    </div>
+
+    <!-- Pricing & Action Row -->
+    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+      <div>
+        <span class="text-[11px] text-outline line-through block">৳3,999</span>
+        <div class="text-lg sm:text-xl font-display font-bold text-white">৳2,999 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
+      </div>
+      <a href="product.html?id=864" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
+        <span class="material-symbols-outlined text-[14px]">bolt</span>
+        <span>Get License</span>
+      </a>
+    </div>
+  </div>
 </div>
 <!-- 14. Envato Elements -->
-<div class="product-item glass-card rounded-2xl p-6 flex flex-col justify-between transition-all duration-200 cursor-pointer hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,229,255,0.15)]" data-category="creative" data-product-id="855" data-title="envato elements" onclick="if (!event.target.closest('a')) openProductPage(855)">
-<div>
-<div class="flex items-center justify-between mb-4">
-<div class="w-13 h-13 p-3 rounded-2xl bg-[#82B541]/10 border border-[#82B541]/30 flex items-center justify-center">
-<svg class="w-7 h-7 text-[#82B541]" fill="currentColor" viewbox="0 0 24 24"><path d="M21.5 3.5C18.5 2.5 13.5 3 10.5 6C7 9.5 6.5 15 7.5 19.5C8 19.5 8.5 19 9 18.5C8.5 15.5 9 12 11.5 9.5C14.5 6.5 18.5 5.5 21.5 3.5M6 19.5C4 17 3 13.5 3.5 10C3.5 9.5 4 9 4.5 9C4 12 4.5 15 6 17.5C6 18.5 6 19 6 19.5Z"></path></svg>
+<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="creative" data-product-id="855" data-title="envato elements" onclick="if (!event.target.closest('a')) openProductPage(855)">
+  <!-- 16:9 Image Header with Obsidian Gradient Fade -->
+  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+    <img src="images/products/envato-elements-subscription-bd.webp" alt="Envato Elements" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
+    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #82B541;">
+      Unlimited
+    </div>
+    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      🎨 Creative Assets
+    </div>
+    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card Body -->
+  <div class="p-5 flex flex-col flex-grow justify-between">
+    <div>
+      <div class="flex items-center justify-between gap-2 mb-2">
+        <span class="px-2 py-0.5 rounded-full bg-lime-500/15 text-lime-400 text-[10px] font-bold uppercase tracking-wider">SAVE ৳300</span>
+        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      </div>
+      <a href="product.html?id=855" class="hover:text-primary-container transition-colors block">
+        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">Envato Elements</h3>
+      </a>
+      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">Unlimited downloads of video templates, stock footage, audio tracks, fonts & 3D models.</p>
+      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+        <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Stock Video</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Audio & Fonts</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Commercial Use</span>
+      </div>
+    </div>
+
+    <!-- Pricing & Action Row -->
+    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+      <div>
+        <span class="text-[11px] text-outline line-through block">৳799</span>
+        <div class="text-lg sm:text-xl font-display font-bold text-white">৳499 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
+      </div>
+      <a href="product.html?id=855" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
+        <span class="material-symbols-outlined text-[14px]">bolt</span>
+        <span>Download All</span>
+      </a>
+    </div>
+  </div>
 </div>
-<span class="px-2.5 py-0.5 rounded-full bg-emerald-500/15 text-emerald-400 text-[11px] font-semibold">SAVE ৳200</span>
-</div>
-<div class="text-[11px] font-medium text-emerald-400 mb-1">🎨 Creative &amp; Video Editing</div>
-<a href="product.html?id=855" class="hover:text-primary-container transition-colors"><h3 class="font-display font-semibold text-white text-lg">Envato Elements</h3></a>
-<p class="text-xs text-on-surface-variant mt-1 leading-relaxed">Unlimited asset downloads: video templates, music, 3D files, graphic vectors, fonts &amp; stock.</p>
-<div class="flex items-center gap-2 mt-4 text-[11px] text-on-surface-variant">
-<span class="flex items-center gap-1 text-white"><span class="material-symbols-outlined text-[14px] text-tertiary">check_circle</span> Unlimited DL</span>
-<span class="">•</span>
-<span class="">Commercial</span>
-</div>
-</div>
-<div class="mt-6 pt-4 border-t border-white/[0.06]">
-<div class="flex items-baseline justify-between mb-3">
-<div>
-<span class="text-xs text-outline line-through">৳799</span>
-<div class="text-xl font-display font-bold text-white">৳599 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
-</div>
-<span class="text-[11px] text-on-surface-variant bg-white/[0.04] px-2 py-0.5 rounded">All Assets</span>
-</div>
-<a href="product.html?id=855" class="w-full py-2.5 rounded-xl bg-white/[0.08] hover:bg-white/[0.15] text-white font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 transition-all">
-<span class="material-symbols-outlined text-[15px]">bolt</span>
-<span class="">Claim Slot</span>
-</a>
-</div>
-</div>
-<!-- 15. CapCut Pro -->
-<div class="product-item glass-card rounded-2xl p-6 flex flex-col justify-between transition-all duration-200 cursor-pointer hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,229,255,0.15)]" data-category="creative" data-product-id="847" data-title="capcut pro" onclick="if (!event.target.closest('a')) openProductPage(847)">
-<div>
-<div class="flex items-center justify-between mb-4">
-<div class="w-13 h-13 p-3 rounded-2xl bg-[#00E5FF]/10 border border-[#00E5FF]/30 flex items-center justify-center">
-<svg class="w-7 h-7 text-[#00E5FF]" fill="currentColor" viewbox="0 0 24 24"><path d="M4 6.5L10 12L4 17.5V6.5ZM20 6.5V17.5L14 12L20 6.5ZM12 8L15 5H9L12 8ZM12 16L9 19H15L12 16Z"></path></svg>
-</div>
-<span class="px-2.5 py-0.5 rounded-full bg-cyan-500/15 text-cyan-400 text-[11px] font-semibold">SAVE ৳51</span>
-</div>
-<div class="text-[11px] font-medium text-cyan-400 mb-1">🎨 Creative &amp; Video Editing</div>
-<a href="product.html?id=847" class="hover:text-primary-container transition-colors"><h3 class="font-display font-semibold text-white text-lg">CapCut Pro</h3></a>
-<p class="text-xs text-on-surface-variant mt-1 leading-relaxed">Cloud multi-track desktop &amp; mobile editing, AI auto-captions, 4K 60FPS export &amp; AI cutouts.</p>
-<div class="flex items-center gap-2 mt-4 text-[11px] text-on-surface-variant">
-<span class="flex items-center gap-1 text-white"><span class="material-symbols-outlined text-[14px] text-tertiary">check_circle</span> Multi-Track</span>
-<span class="">•</span>
-<span class="">4K Export</span>
-</div>
-</div>
-<div class="mt-6 pt-4 border-t border-white/[0.06]">
-<div class="flex items-baseline justify-between mb-3">
-<div>
-<span class="text-xs text-outline line-through">৳550</span>
-<div class="text-xl font-display font-bold text-white">৳499 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
-</div>
-<span class="text-[11px] text-on-surface-variant bg-white/[0.04] px-2 py-0.5 rounded">No Watermark</span>
-</div>
-<a href="product.html?id=847" class="w-full py-2.5 rounded-xl bg-white/[0.08] hover:bg-white/[0.15] text-white font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 transition-all">
-<span class="material-symbols-outlined text-[15px]">bolt</span>
-<span class="">Get Access</span>
-</a>
-</div>
+<!-- 15. CapCut Pro Subscription -->
+<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="creative" data-product-id="847" data-title="capcut pro" onclick="if (!event.target.closest('a')) openProductPage(847)">
+  <!-- 16:9 Image Header with Obsidian Gradient Fade -->
+  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+    <img src="images/products/capcut-pro-subscription-bd.webp" alt="CapCut Pro Subscription" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
+    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #101010;">
+      4K 60FPS
+    </div>
+    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      🎨 Video Editing
+    </div>
+    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card Body -->
+  <div class="p-5 flex flex-col flex-grow justify-between">
+    <div>
+      <div class="flex items-center justify-between gap-2 mb-2">
+        <span class="px-2 py-0.5 rounded-full bg-cyan-500/15 text-cyan-400 text-[10px] font-bold uppercase tracking-wider">SAVE ৳249</span>
+        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      </div>
+      <a href="product.html?id=847" class="hover:text-primary-container transition-colors block">
+        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">CapCut Pro Subscription</h3>
+      </a>
+      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">Exclusive Pro visual effects, AI body tracking, auto-captions, 4K 60fps exports.</p>
+      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+        <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">AI Captions</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Pro Filters</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">No Watermark</span>
+      </div>
+    </div>
+
+    <!-- Pricing & Action Row -->
+    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+      <div>
+        <span class="text-[11px] text-outline line-through block">৳599</span>
+        <div class="text-lg sm:text-xl font-display font-bold text-white">৳350 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
+      </div>
+      <a href="product.html?id=847" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
+        <span class="material-symbols-outlined text-[14px]">bolt</span>
+        <span>Edit Videos</span>
+      </a>
+    </div>
+  </div>
 </div>
 <!-- 16. Freepik Premium -->
-<div class="product-item glass-card rounded-2xl p-6 flex flex-col justify-between transition-all duration-200 cursor-pointer hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,229,255,0.15)]" data-category="creative" data-product-id="834" data-title="freepik premium" onclick="if (!event.target.closest('a')) openProductPage(834)">
-<div>
-<div class="flex items-center justify-between mb-4">
-<div class="w-13 h-13 p-3 rounded-2xl bg-[#0066FF]/10 border border-[#0066FF]/30 flex items-center justify-center">
-<svg class="w-7 h-7 text-[#0066FF]" fill="currentColor" viewbox="0 0 24 24"><path d="M14 2H10C5.58 2 2 5.58 2 10v4c0 4.42 3.58 8 8 8h4c4.42 0 8-3.58 8-8v-4c0-4.42-3.58-8-8-8zm-1 14h-2v-4H9v-2h2V8.5C11 7.12 12.12 6 13.5 6H15v2h-1.5c-.28 0-.5.22-.5.5V10h2.5l-.5 2H13v4z"></path></svg>
+<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="creative" data-product-id="834" data-title="freepik premium" onclick="if (!event.target.closest('a')) openProductPage(834)">
+  <!-- 16:9 Image Header with Obsidian Gradient Fade -->
+  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+    <img src="images/products/freepik-premium-subscription-bd.webp" alt="Freepik Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
+    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #1273EB;">
+      Vectors & PSD
+    </div>
+    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      🎨 Creative Assets
+    </div>
+    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card Body -->
+  <div class="p-5 flex flex-col flex-grow justify-between">
+    <div>
+      <div class="flex items-center justify-between gap-2 mb-2">
+        <span class="px-2 py-0.5 rounded-full bg-blue-500/15 text-blue-400 text-[10px] font-bold uppercase tracking-wider">SAVE ৳300</span>
+        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      </div>
+      <a href="product.html?id=834" class="hover:text-primary-container transition-colors block">
+        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">Freepik Premium</h3>
+      </a>
+      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">Millions of premium vectors, PSD mockups, AI image generator, commercial licenses.</p>
+      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+        <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Vectors & Mockups</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">AI Generator</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Commercial Lic.</span>
+      </div>
+    </div>
+
+    <!-- Pricing & Action Row -->
+    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+      <div>
+        <span class="text-[11px] text-outline line-through block">৳799</span>
+        <div class="text-lg sm:text-xl font-display font-bold text-white">৳499 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
+      </div>
+      <a href="product.html?id=834" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
+        <span class="material-symbols-outlined text-[14px]">bolt</span>
+        <span>Get Vectors</span>
+      </a>
+    </div>
+  </div>
 </div>
-<span class="px-2.5 py-0.5 rounded-full bg-blue-500/15 text-blue-400 text-[11px] font-semibold">SAVE ৳100</span>
-</div>
-<div class="text-[11px] font-medium text-blue-400 mb-1">🎨 Creative &amp; Video Editing</div>
-<a href="product.html?id=834" class="hover:text-primary-container transition-colors"><h3 class="font-display font-semibold text-white text-lg">Freepik Premium</h3></a>
-<p class="text-xs text-on-surface-variant mt-1 leading-relaxed">Unlimited vector &amp; PSD downloads, Flaticon access, AI image generator credits.</p>
-<div class="flex items-center gap-2 mt-4 text-[11px] text-on-surface-variant">
-<span class="flex items-center gap-1 text-white"><span class="material-symbols-outlined text-[14px] text-tertiary">check_circle</span> Flaticon Incl.</span>
-<span class="">•</span>
-<span class="">PSD &amp; Vectors</span>
-</div>
-</div>
-<div class="mt-6 pt-4 border-t border-white/[0.06]">
-<div class="flex items-baseline justify-between mb-3">
-<div>
-<span class="text-xs text-outline line-through">৳599</span>
-<div class="text-xl font-display font-bold text-white">৳499 <span class="text-xs font-normal text-on-surface-variant">/mo</span></div>
-</div>
-<span class="text-[11px] text-on-surface-variant bg-white/[0.04] px-2 py-0.5 rounded">Daily 100 DL</span>
-</div>
-<a href="product.html?id=834" class="w-full py-2.5 rounded-xl bg-white/[0.08] hover:bg-white/[0.15] text-white font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 transition-all">
-<span class="material-symbols-outlined text-[15px]">bolt</span>
-<span class="">Claim Slot</span>
-</a>
-</div>
-</div>
-<!-- 17. TikTok Coins -->
-<div class="product-item glass-card rounded-2xl p-6 flex flex-col justify-between transition-all duration-200 cursor-pointer hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,229,255,0.15)]" data-category="social-gaming" data-product-id="862" data-title="tiktok coins (top-up)" onclick="if (!event.target.closest('a')) openProductPage(862)">
-<div>
-<div class="flex items-center justify-between mb-4">
-<div class="w-13 h-13 p-3 rounded-2xl bg-gradient-to-tr from-[#00F2FE]/20 to-[#FE2C55]/20 border border-[#FE2C55]/30 flex items-center justify-center">
-<svg class="w-7 h-7 text-[#FE2C55]" fill="currentColor" viewbox="0 0 24 24"><path d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743 2.895 2.895 0 0 1 2.308-4.639c.319 0 .628.053.917.151V9.456a6.34 6.34 0 0 0-.917-.067c-3.538 0-6.406 2.868-6.406 6.406s2.868 6.406 6.406 6.406 6.406-2.868 6.406-6.406V8.92a8.163 8.163 0 0 0 4.887 1.602V7.078a4.814 4.814 0 0 1-1.185-.392z"></path></svg>
-</div>
-<span class="px-2.5 py-0.5 rounded-full bg-pink-500/15 text-pink-400 text-[11px] font-semibold">0% FEE</span>
-</div>
-<div class="text-[11px] font-medium text-pink-400 mb-1">📱 Social Media &amp; Gaming</div>
-<a href="product.html?id=862" class="hover:text-primary-container transition-colors"><h3 class="font-display font-semibold text-white text-lg">TikTok Coins (Top-Up)</h3></a>
-<p class="text-xs text-on-surface-variant mt-1 leading-relaxed">Instant In-App Currency Top-Up via username/UID. 0% Apple/Google surcharge, direct wallet arrival.</p>
-<div class="flex items-center gap-2 mt-4 text-[11px] text-on-surface-variant">
-<span class="flex items-center gap-1 text-white"><span class="material-symbols-outlined text-[14px] text-tertiary">check_circle</span> UID Direct</span>
-<span class="">•</span>
-<span class="">No Password Req.</span>
-</div>
-</div>
-<div class="mt-6 pt-4 border-t border-white/[0.06]">
-<div class="flex items-baseline justify-between mb-3">
-<div>
-<span class="text-xs text-outline line-through">৳270</span>
-<div class="text-xl font-display font-bold text-white">from ৳245 <span class="text-xs font-normal text-on-surface-variant">pack</span></div>
-</div>
-<span class="text-[11px] text-on-surface-variant bg-white/[0.04] px-2 py-0.5 rounded">&lt; 60s Dispatch</span>
-</div>
-<a href="product.html?id=862" class="w-full py-2.5 rounded-xl bg-primary-container text-on-primary-container font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 hover:brightness-110 shadow-[0_0_14px_rgba(0,229,255,0.25)]">
-<span class="material-symbols-outlined text-[15px]">bolt</span>
-<span class="">Top-Up Now</span>
-</a>
-</div>
+<!-- 17. TikTok Coins (Top-Up) -->
+<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="social-gaming" data-product-id="862" data-title="tiktok coins (top-up)" onclick="if (!event.target.closest('a')) openProductPage(862)">
+  <!-- 16:9 Image Header with Obsidian Gradient Fade -->
+  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+    <img src="images/products/tiktok-coins-top-up-bd.webp" alt="TikTok Coins (Top-Up)" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
+    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #FE2C55;">
+      Instant LIVE
+    </div>
+    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      📱 Social & LIVE
+    </div>
+    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card Body -->
+  <div class="p-5 flex flex-col flex-grow justify-between">
+    <div>
+      <div class="flex items-center justify-between gap-2 mb-2">
+        <span class="px-2 py-0.5 rounded-full bg-pink-500/15 text-pink-400 text-[10px] font-bold uppercase tracking-wider">SAVE ৳25</span>
+        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      </div>
+      <a href="product.html?id=862" class="hover:text-primary-container transition-colors block">
+        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">TikTok Coins (Top-Up)</h3>
+      </a>
+      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">Direct LIVE stream gifts recharge via User ID. Instant delivery, no password needed.</p>
+      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+        <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">User ID Top-Up</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">LIVE Gifts</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">No Password</span>
+      </div>
+    </div>
+
+    <!-- Pricing & Action Row -->
+    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+      <div>
+        <span class="text-[11px] text-outline line-through block">৳270</span>
+        <div class="text-lg sm:text-xl font-display font-bold text-white">৳245 <span class="text-xs font-normal text-on-surface-variant">/pack</span></div>
+      </div>
+      <a href="product.html?id=862" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
+        <span class="material-symbols-outlined text-[14px]">bolt</span>
+        <span>Recharge Coins</span>
+      </a>
+    </div>
+  </div>
 </div>
 <!-- 18. Facebook Page Likes & Followers -->
-<div class="product-item glass-card rounded-2xl p-6 flex flex-col justify-between transition-all duration-200 cursor-pointer hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,229,255,0.15)]" data-category="social-gaming" data-product-id="860" data-title="facebook page likes &amp; followers" onclick="if (!event.target.closest('a')) openProductPage(860)">
-<div>
-<div class="flex items-center justify-between mb-4">
-<div class="w-13 h-13 p-3 rounded-2xl bg-[#1877F2]/10 border border-[#1877F2]/30 flex items-center justify-center">
-<svg class="w-7 h-7 text-[#1877F2]" fill="currentColor" viewbox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
-</div>
-<span class="px-2.5 py-0.5 rounded-full bg-blue-500/15 text-blue-400 text-[11px] font-semibold">NON-DROP</span>
-</div>
-<div class="text-[11px] font-medium text-blue-400 mb-1">📱 Social Media &amp; Gaming</div>
-<a href="product.html?id=860" class="hover:text-primary-container transition-colors"><h3 class="font-display font-semibold text-white text-lg">Facebook Page Growth</h3></a>
-<p class="text-xs text-on-surface-variant mt-1 leading-relaxed">High-retention verified organic page likes &amp; followers. Automated gradual drip-feed, warranty backed.</p>
-<div class="flex items-center gap-2 mt-4 text-[11px] text-on-surface-variant">
-<span class="flex items-center gap-1 text-white"><span class="material-symbols-outlined text-[14px] text-tertiary">check_circle</span> Drip-Feed</span>
-<span class="">•</span>
-<span class="">30-Day Refill</span>
-</div>
-</div>
-<div class="mt-6 pt-4 border-t border-white/[0.06]">
-<div class="flex items-baseline justify-between mb-3">
-<div>
-<span class="text-xs text-outline line-through">৳80</span>
-<div class="text-xl font-display font-bold text-white">from ৳80 <span class="text-xs font-normal text-on-surface-variant">pack</span></div>
-</div>
-<span class="text-[11px] text-on-surface-variant bg-white/[0.04] px-2 py-0.5 rounded">No Password</span>
-</div>
-<a href="product.html?id=860" class="w-full py-2.5 rounded-xl bg-white/[0.08] hover:bg-white/[0.15] text-white font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 transition-all">
-<span class="material-symbols-outlined text-[15px]">bolt</span>
-<span class="">Boost Page</span>
-</a>
-</div>
+<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="social-gaming" data-product-id="860" data-title="facebook page likes &amp; followers" onclick="if (!event.target.closest('a')) openProductPage(860)">
+  <!-- 16:9 Image Header with Obsidian Gradient Fade -->
+  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+    <img src="images/products/facebook-page-likes-followers-bd.webp" alt="Facebook Page Likes & Followers" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
+    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #1877F2;">
+      Non-Drop
+    </div>
+    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      🚀 Social Growth
+    </div>
+    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card Body -->
+  <div class="p-5 flex flex-col flex-grow justify-between">
+    <div>
+      <div class="flex items-center justify-between gap-2 mb-2">
+        <span class="px-2 py-0.5 rounded-full bg-blue-500/15 text-blue-400 text-[10px] font-bold uppercase tracking-wider">POPULAR</span>
+        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      </div>
+      <a href="product.html?id=860" class="hover:text-primary-container transition-colors block">
+        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">Facebook Page Likes & Followers</h3>
+      </a>
+      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">Real social proof with non-drop refills. Page link only, safe gradual delivery.</p>
+      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+        <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Non-Drop Refill</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Page Link Only</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Instant Start</span>
+      </div>
+    </div>
+
+    <!-- Pricing & Action Row -->
+    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+      <div>
+        <span class="text-[11px] text-outline line-through block">৳120</span>
+        <div class="text-lg sm:text-xl font-display font-bold text-white">৳80 <span class="text-xs font-normal text-on-surface-variant">/1k</span></div>
+      </div>
+      <a href="product.html?id=860" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
+        <span class="material-symbols-outlined text-[14px]">bolt</span>
+        <span>Boost Page</span>
+      </a>
+    </div>
+  </div>
 </div>
 <!-- 19. Clash of Clans Gold Pass -->
-<div class="product-item glass-card rounded-2xl p-6 flex flex-col justify-between transition-all duration-200 cursor-pointer hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,229,255,0.15)]" data-category="social-gaming" data-product-id="137" data-title="clash of clans gold pass" onclick="if (!event.target.closest('a')) openProductPage(137)">
-<div>
-<div class="flex items-center justify-between mb-4">
-<div class="w-13 h-13 p-3 rounded-2xl bg-[#EAB308]/15 border border-[#EAB308]/30 flex items-center justify-center">
-<svg class="w-7 h-7 text-[#FACC15]" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3zm0 4.5c1.38 0 2.5 1.12 2.5 2.5 0 .86-.44 1.62-1.1 2.05l1.6 4.45h-6l1.6-4.45c-.66-.43-1.1-1.19-1.1-2.05 0-1.38 1.12-2.5 2.5-2.5z"></path></svg>
-</div>
-<span class="px-2.5 py-0.5 rounded-full bg-yellow-500/15 text-yellow-300 text-[11px] font-semibold">SEASON PASS</span>
-</div>
-<div class="text-[11px] font-medium text-yellow-300 mb-1">📱 Social Media &amp; Gaming</div>
-<a href="product.html?id=137" class="hover:text-primary-container transition-colors"><h3 class="font-display font-semibold text-white text-lg">Clash of Clans Gold Pass</h3></a>
-<p class="text-xs text-on-surface-variant mt-1 leading-relaxed">Season Bank booster, 1-gem donations, 20% builder reduction + exclusive hero skin.</p>
-<div class="flex items-center gap-2 mt-4 text-[11px] text-on-surface-variant">
-<span class="flex items-center gap-1 text-white"><span class="material-symbols-outlined text-[14px] text-tertiary">check_circle</span> Supercell ID</span>
-<span class="">•</span>
-<span class="">Instant Token</span>
-</div>
-</div>
-<div class="mt-6 pt-4 border-t border-white/[0.06]">
-<div class="flex items-baseline justify-between mb-3">
-<div>
-<span class="text-xs text-outline line-through">In-Game</span>
-<div class="text-xl font-display font-bold text-white">৳0 <span class="text-xs font-normal text-on-surface-variant">pass</span></div>
-</div>
-<span class="text-[11px] text-on-surface-variant bg-white/[0.04] px-2 py-0.5 rounded">Global Token</span>
-</div>
-<a href="product.html?id=137" class="w-full py-2.5 rounded-xl bg-primary-container text-on-primary-container font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 hover:brightness-110 shadow-[0_0_14px_rgba(0,229,255,0.25)]">
-<span class="material-symbols-outlined text-[15px]">bolt</span>
-<span class="">Claim Pass</span>
-</a>
-</div>
+<div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" data-category="social-gaming" data-product-id="137" data-title="clash of clans gold pass" onclick="if (!event.target.closest('a')) openProductPage(137)">
+  <!-- 16:9 Image Header with Obsidian Gradient Fade -->
+  <div class="relative h-44 sm:h-48 overflow-hidden bg-surface-container">
+    <img src="images/products/clash-of-clans-gold-pass-bd.webp" alt="Clash of Clans Gold Pass" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
+    <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-md backdrop-blur-md" style="background-color: #FFA000;">
+      Seasonal Pass
+    </div>
+    <div class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+      🎮 Mobile Gaming
+    </div>
+    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      <div class="bg-black/60 backdrop-blur-md rounded-full w-11 h-11 flex items-center justify-center border border-white/20 shadow-xl">
+        <span class="material-symbols-outlined text-white text-base">arrow_forward</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card Body -->
+  <div class="p-5 flex flex-col flex-grow justify-between">
+    <div>
+      <div class="flex items-center justify-between gap-2 mb-2">
+        <span class="px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-400 text-[10px] font-bold uppercase tracking-wider">HOT</span>
+        <span class="text-[11px] text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-tertiary">verified</span> Verified</span>
+      </div>
+      <a href="product.html?id=137" class="hover:text-primary-container transition-colors block">
+        <h3 class="font-display font-bold text-white text-base sm:text-lg leading-tight">Clash of Clans Gold Pass</h3>
+      </a>
+      <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">40 tiers of rewards, limited Hero Skin, 20% Builder Boost, Season Bank unlock.</p>
+      <div class="flex flex-wrap items-center gap-1.5 mt-3">
+        <span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Hero Skin</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">20% Boosts</span><span class="px-2 py-0.5 bg-white/[0.04] border border-white/10 rounded-md text-[11px] text-tertiary">Player Tag Only</span>
+      </div>
+    </div>
+
+    <!-- Pricing & Action Row -->
+    <div class="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+      <div>
+        <span class="text-[11px] text-outline line-through block">৳750</span>
+        <div class="text-lg sm:text-xl font-display font-bold text-white">৳650 <span class="text-xs font-normal text-on-surface-variant">/pass</span></div>
+      </div>
+      <a href="product.html?id=137" class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110 shadow-[0_0_12px_rgba(0,229,255,0.25)] transition-all">
+        <span class="material-symbols-outlined text-[14px]">bolt</span>
+        <span>Claim Pass</span>
+      </a>
+    </div>
+  </div>
 </div>
 </div>
 </section>

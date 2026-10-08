@@ -288,33 +288,52 @@ function renderRelated() {
   grid.innerHTML = related.map(p => {
     const pr = getProductPricing(p);
     const img = (p.images && p.images[0]) ? p.images[0] : '';
-    const letter = p.name.charAt(0);
+    const cat = (p.categories && p.categories[0]) || 'Digital';
     return `
-      <a href="product.html?id=${p.id}" class="glass-card rounded-2xl p-5 flex flex-col transition-all duration-200 group">
-        <div class="w-full aspect-video rounded-xl overflow-hidden bg-surface-container mb-4 flex items-center justify-center relative">
-          ${img ? `<img src="${img}" alt="${p.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.style.display='none';this.nextElementSibling.classList.remove('hidden');"/>` : ''}
-          <span class="hidden font-display text-4xl font-bold text-primary-container/60">${letter}</span>
+      <div class="product-item glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,229,255,0.18)]" onclick="openProductPage(${p.id})">
+        <div class="relative h-44 overflow-hidden bg-surface-container">
+          ${img ? `<img src="${img}" alt="${p.name}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />` : ''}
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
+          <div class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 text-white/90 backdrop-blur border border-white/10">
+            ${cat}
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+            <div class="bg-black/60 backdrop-blur-md rounded-full w-10 h-10 flex items-center justify-center border border-white/20 shadow-xl">
+              <span class="material-symbols-outlined text-white text-sm">arrow_forward</span>
+            </div>
+          </div>
         </div>
-        <div class="text-[11px] font-medium text-primary-container mb-1">${(p.categories && p.categories[0]) || 'Digital'}</div>
-        <h3 class="font-display font-semibold text-white text-sm leading-snug">${p.name}</h3>
-        <div class="flex items-baseline gap-2 mt-3 pt-3 border-t border-white/[0.06]">
-          <span class="text-base font-display font-bold text-white">${pr.min !== null ? `৳${pr.min.toLocaleString()}` : '৳0'}</span>
-          ${pr.reg && pr.reg > pr.min ? `<span class="text-[11px] text-outline line-through">৳${pr.reg.toLocaleString()}</span>` : ''}
+        <div class="p-5 flex flex-col flex-grow justify-between">
+          <div>
+            <h3 class="font-display font-bold text-white text-base leading-tight group-hover:text-primary-container transition-colors">${p.name}</h3>
+            <p class="text-xs text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">${cleanHtml(p.short_description || p.description).substring(0, 85)}...</p>
+          </div>
+          <div class="mt-4 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+            <div>
+              <span class="text-[10px] text-outline line-through block">${pr.reg && pr.reg > pr.min ? `৳${pr.reg.toLocaleString()}` : ''}</span>
+              <div class="text-lg font-display font-bold text-white">${pr.min !== null ? `৳${pr.min.toLocaleString()}` : '৳0'} <span class="text-xs font-normal text-on-surface-variant">/plan</span></div>
+            </div>
+            <span class="px-3 py-1.5 rounded-xl bg-primary-container text-on-primary-container font-bold text-xs uppercase tracking-wider flex items-center gap-1 hover:brightness-110">
+              <span class="material-symbols-outlined text-[13px]">bolt</span>
+              <span>View</span>
+            </span>
+          </div>
         </div>
-      </a>`;
+      </div>`;
   }).join('');
 }
 
 function initProductPage() {
   pProduct = findProduct();
   if (!pProduct) {
-    document.getElementById('pTitle').innerText = 'Product not found';
+    const titleEl = document.getElementById('pTitle');
+    if (titleEl) titleEl.innerText = 'Product not found';
     return;
   }
   
   // Clean product data to replace any references to old brand
   pProduct = cleanProductData(pProduct);
-   updateSEO(pProduct);
+  updateSEO(pProduct);
   
   document.title = `${pProduct.name} — DigitalSubShop`;
   const bcProduct = document.getElementById('bcProduct');
@@ -325,27 +344,50 @@ function initProductPage() {
   const cat = document.getElementById('pCategory');
   if (cat) cat.innerText = (pProduct.categories && pProduct.categories[0]) || 'Digital';
 
+  const catBox = document.getElementById('pCategoryBox');
+  if (catBox) catBox.innerText = (pProduct.categories && pProduct.categories[0]) || 'Digital';
+
+  const pTitle = document.getElementById('pTitle');
+  if (pTitle) pTitle.innerText = pProduct.name;
+
+  const pTitleBox = document.getElementById('pTitleBox');
+  if (pTitleBox) pTitleBox.innerText = pProduct.name;
+
+  const pHeroDesc = document.getElementById('pHeroDesc');
+  if (pHeroDesc) {
+    const rawDesc = pProduct.short_description || pProduct.description || '';
+    pHeroDesc.innerText = cleanHtml(rawDesc).substring(0, 180) + '...';
+  }
+
   const badge = document.getElementById('pStockBadge');
   if (badge) {
     if (pProduct.is_in_stock === false) {
-      badge.className = 'absolute top-3 right-3 px-3 py-1 rounded-full bg-red-500/20 text-red-400 text-[11px] font-semibold backdrop-blur';
+      badge.className = 'absolute bottom-3 left-3 px-3 py-1 rounded-full bg-red-500/20 text-red-400 text-[11px] font-semibold backdrop-blur border border-red-500/30';
       badge.innerText = 'Out of Stock';
+    } else {
+      badge.className = 'absolute bottom-3 left-3 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-[11px] font-semibold backdrop-blur border border-emerald-500/30';
+      badge.innerText = 'In Stock (Instant Dispatch)';
     }
   }
 
   const img = document.getElementById('pImage');
+  const heroBackdrop = document.getElementById('pHeroBackdrop');
   const fb = document.getElementById('pImageFallback');
   const letter = document.getElementById('pImageLetter');
   if (letter) letter.innerText = pProduct.name.charAt(0);
-  if (img) {
-    const src = (pProduct.images && pProduct.images[0]) ? pProduct.images[0] : '';
-    if (src) {
+  
+  const src = (pProduct.images && pProduct.images[0]) ? pProduct.images[0] : '';
+  if (src) {
+    if (img) {
       img.src = src;
       img.onerror = () => { img.style.display = 'none'; if (fb) fb.classList.remove('hidden'); };
-    } else {
-      img.style.display = 'none';
-      if (fb) fb.classList.remove('hidden');
     }
+    if (heroBackdrop) {
+      heroBackdrop.src = src;
+    }
+  } else {
+    if (img) img.style.display = 'none';
+    if (fb) fb.classList.remove('hidden');
   }
 
   renderVariations();
