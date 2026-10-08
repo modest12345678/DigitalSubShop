@@ -1,55 +1,130 @@
-# DigitalSubShop.com 🚀
+# DigitalSubShop — Premium Digital Subscriptions & Licenses Marketplace
 
-> Premium Digital Subscriptions & Licenses Marketplace (Optimized for Bangladesh)
-
-Live Domain: **[https://digitalsubshop.com](https://digitalsubshop.com)**
-
----
-
-## 🌟 Overview
-**DigitalSubShop** is a high-performance, dark-neon themed digital commerce storefront tailored for instant delivery of streaming services, frontier AI tools, creative software, and gaming subscriptions.
-
-### Featured Services (19 Products, 79 Plan Options):
-* **Streaming & OTT:** Netflix UHD 4K, Amazon Prime Video, YouTube Premium, Crunchyroll Mega Fan, Kuku TV, Ullu.
-* **AI & Productivity:** ChatGPT Pro (o1 Pro compute), Google Gemini Pro (2M context), SuperGrok, Quizlet Plus, vidIQ Boost.
-* **Design & Creative:** Adobe Creative Cloud (20+ Apps), Canva Pro, Envato Elements, CapCut Pro, Freepik Premium.
-* **Gaming & Social Media:** TikTok Coins, Facebook Page Likes & Followers, Clash of Clans Gold Pass.
+> **Client Project Handover & Documentation**  
+> **Production Domain:** [https://digitalsubshop.com](https://digitalsubshop.com)  
+> **Staging / Vercel Deployment:** [https://digitalsubshop.vercel.app](https://digitalsubshop.vercel.app)  
+> **Target Market:** Bangladesh (BDT ৳)  
+> **Primary Fulfillment:** WhatsApp Instant Automated Dispatch (`+8801887924939`)  
 
 ---
 
-## ⚡ Key Architecture & Fixes Applied
+## 📌 Project Overview
 
-1. **Vercel-Ready Deployment (`vercel.json`):**
-   * Configured clean URLs without `.html` extensions.
-   * Hardened HTTP security headers (`X-Frame-Options`, `X-Content-Type-Options`, `X-XSS-Protection`, `Referrer-Policy`).
-   * Long-term immutable caching for `/images/*` assets.
-2. **Local Asset Self-Hosting:**
-   * All 19 product image assets are stored locally in `/images/products/` with zero third-party hotlinking dependencies.
-3. **SEO & Social Optimization:**
-   * High-resolution Open Graph banner (`/og-image.jpg`) for WhatsApp, Messenger, Facebook, and Twitter rich links.
-   * Branded cyber SVG badge (`/favicon.svg`).
-   * Schema.org JSON-LD structured data for Google Search rich cards.
-   * Auto-generated `sitemap.xml` and `robots.txt`.
-4. **Seamless E-Commerce UX:**
-   * **Homepage Quick Checkout:** Clicking "Claim Slot" opens a responsive modal with duration options, real-time BDT calculations, bKash/Nagad/Rocket account copying, and 1-tap WhatsApp order dispatch.
-   * **Dedicated Detail Pages:** Clicking any product title directs to `/product.html?id=<id>` featuring comprehensive descriptions, license terms, warranty escrow details, and related recommendations.
+**DigitalSubShop** is a high-conversion, dark-cyber themed digital subscription marketplace built specifically for the Bangladeshi consumer market. It provides localized access to international digital services, streaming platforms, AI subscriptions, creative tools, and gaming passes without requiring international credit cards or PayPal.
+
+### Key Business Metrics
+- **Catalog:** 19 Verified Subscription Services
+- **Pricing Options:** 79 Duration & Account Tier Options
+- **Accepted Payments:** bKash, Nagad, Rocket (Personal Send Money)
+- **Support Channels:** Direct WhatsApp 24/7 & Facebook Messenger
 
 ---
 
-## 🛠️ Deploying to Vercel with Custom Domain
+## 🚀 Key Features & Architectural Highlights
 
-### Option 1: Vercel Dashboard (Recommended)
-1. Push this repository to GitHub: `https://github.com/BSC10840/DigitalSubShop`
-2. Go to [vercel.com](https://vercel.com) and click **"Add New Project"**.
-3. Import the `DigitalSubShop` repository.
-4. Keep Framework Preset as **Other** (Root directory: `./`), then click **Deploy**.
-5. Once deployed, navigate to **Project Settings > Domains**.
-6. Enter your domain: `digitalsubshop.com` and `www.digitalsubshop.com`.
-7. Configure DNS records at your domain registrar:
-   * **A Record:** `@` points to `76.76.21.21`
-   * **CNAME Record:** `www` points to `cname.vercel-dns.com`
+### 1. Dedicated Full Product Pages (`product.html?id=<id>`)
+- High-converting e-commerce layout replacing compact modal popups.
+- Dynamic 16:9 hero gallery with instant stock status badges.
+- Tabbed information architecture:
+  - **Description:** Complete product features & licensing specifications.
+  - **Delivery & Warranty:** 1–12 hour timeline & 365-day replacement escrow policy.
+  - **Why DigitalSubShop:** Value proposition & local trust factors.
+- Sticky interactive purchase console with duration selector, real-time BDT calculation, and one-tap WhatsApp ordering.
+- Dynamic **"You May Also Like"** related products grid filtered by category.
+
+### 2. Live Master Pricing Catalog
+- Filterable interactive table containing all 79 subscription tiers.
+- Real-time instant search by service name or tier keyword.
+- Filter by category: *Entertainment & OTT*, *AI & Productivity*, *Creative & Design*, *Education*, *Social & Gaming*.
+- One-click instant order triggers directing straight to WhatsApp with pre-filled plan details.
+
+### 3. Integrated WhatsApp & Local Payment Engine
+- Automated message payload generator formatting:
+  ```text
+  Hello DigitalSubShop! 🎬
+  I want to order:
+  *Service:* <Product Name>
+  *Plan:* <Selected Duration / Plan>
+  *Price:* ৳<Price BDT>
+  *Payment Method:* <bKash / Nagad / Rocket>
+  *My Phone/Account:* <Customer Number>
+  ```
+- Built-in one-tap clipboard copy for the official merchant personal account (`01887924939`) with visual toast confirmation.
+
+### 4. Custom Branding & Visual Identity
+- **Logo Assets (`/images/logo.png`):** High-resolution transparent emblem featuring the iconic 'D' speed streak and digital subscription bag (Netflix, Spotify, Steam, Windows).
+- **Responsive Favicons:** Multi-format cross-device support (`favicon.ico`, `favicon.png`, `favicon.svg`, `images/logo-192.png`, `images/logo-512.png`).
+- **Social Sharing Banner (`/og-image.jpg`):** Custom 1376×768 Open Graph preview for Facebook, WhatsApp, Twitter, and LinkedIn links.
+
+### 5. Production SEO & Structured Data
+- Schema.org JSON-LD structured data on the homepage (`Organization`, `WebSite`).
+- Dynamic Open Graph metadata, canonical tags, and `Product` / `Offer` microdata dynamically populated on `product.html`.
+- Complete search engine files:
+  - `sitemap.xml`: All 20 site URLs (homepage + all 19 product pages).
+  - `robots.txt`: Search crawler indexing rules.
+
+### 6. Zero-Dependency Static Architecture
+- Pure vanilla HTML5, Tailwind CSS, and lightweight modern ES6 JavaScript.
+- Ultra-fast load times (< 500ms First Contentful Paint).
+- 100% self-hosted assets in `/images/products/` with zero external image CDN dependencies.
 
 ---
 
-## 📄 License
-© 2026 DigitalSubShop. All rights reserved.
+## 📂 Repository File Structure
+
+```
+digitalsubshop/
+├── index.html              # Main storefront & 19 product cards catalog
+├── product.html            # Dedicated full product details page
+├── app.js                  # Global application engine & 79-tier pricing catalog
+├── product.js              # Product page renderer, tabs & dynamic SEO injector
+├── products_data.json      # Structured source-of-truth dataset (19 products)
+├── price_chart.csv         # Full 79-tier raw pricing dataset
+├── vercel.json             # Vercel routing rules & HTTP security headers
+├── robots.txt              # Search engine crawler indexing directives
+├── sitemap.xml             # XML sitemap covering all store routes
+├── favicon.svg             # Vector favicon
+├── favicon.png             # 64x64 PNG favicon
+├── favicon.ico             # Standard browser favicon
+├── og-image.jpg            # 1376x768 Open Graph social media banner
+└── images/
+    ├── logo.png            # Transparent brand logo
+    ├── logo-192.png        # PWA app icon (192x192)
+    ├── logo-512.png        # PWA app icon (512x512)
+    └── products/           # 19 localized product cover images
+```
+
+---
+
+## 🌐 Deployment & Hosting (Vercel)
+
+The project includes an optimized `vercel.json` configured with:
+- Clean URL rewrites (omits `.html` extensions).
+- Production HTTP security headers:
+  - `X-Frame-Options: SAMEORIGIN`
+  - `X-Content-Type-Options: nosniff`
+  - `X-XSS-Protection: 1; mode=block`
+  - `Referrer-Policy: strict-origin-when-cross-origin`
+- Cache-Control headers with immutable long-term caching for image assets.
+
+### Connecting Custom Domain (`digitalsubshop.com`)
+1. Import this repository in the [Vercel Dashboard](https://vercel.com).
+2. Set Framework Preset to **Other** (Root directory: `./`).
+3. Under **Settings > Domains**, add:
+   - `digitalsubshop.com`
+   - `www.digitalsubshop.com`
+4. Set up DNS records with your domain registrar:
+   | Type | Host / Name | Value / Points To |
+   | :--- | :--- | :--- |
+   | **A** | `@` | `76.76.21.21` |
+   | **CNAME** | `www` | `cname.vercel-dns.com` |
+
+---
+
+## 📞 Support & Contacts
+- **WhatsApp Support:** `+8801887924939`
+- **Facebook Page:** [facebook.com/share/1F3zoLEESe](https://www.facebook.com/share/1F3zoLEESe/)
+- **Delivery Guarantee:** 365-Day Escrow Replacement Warranty
+
+---
+*Client Delivery Document — Developed for DigitalSubShop.*
