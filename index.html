@@ -19,6 +19,10 @@
 <meta name="twitter:title" content="DigitalSubShop — Premium Digital Subscriptions &amp; Licenses"/>
 <meta name="twitter:description" content="Get premium digital subscriptions like Netflix, Spotify, ChatGPT, Adobe, Microsoft 365 at lowest prices in Bangladesh. Instant delivery via bKash, Nagad, Rocket."/>
 <meta name="twitter:image" content="https://digitalsubshop.com/og-image.jpg"/>
+<!-- High-Priority Asset Preloading for Instant LCP -->
+<link rel="preload" as="image" href="images/banners/hero-banner-1.webp" media="(min-width: 641px)" fetchpriority="high"/>
+<link rel="preload" as="image" href="images/banners/hero-banner-1-mobile.webp" media="(max-width: 640px)" fetchpriority="high"/>
+<link rel="preload" as="image" href="images/logo.webp" fetchpriority="high"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
@@ -115,7 +119,7 @@
 <header class="fixed top-0 left-0 right-0 z-50 bg-[#090d18]/85 backdrop-blur-xl border-b border-white/[0.08]">
 <div class="max-w-7xl mx-auto h-20 px-6 sm:px-8 flex items-center justify-between gap-6">
 <a class="flex items-center gap-3 group" href="#">
-<img src="images/logo.png" alt="DigitalSubShop Logo" class="h-10 w-auto object-contain group-hover:scale-105 transition-transform duration-300 drop-shadow-[0_0_12px_rgba(0,102,255,0.45)]"/>
+<img src="images/logo.webp" alt="DigitalSubShop Logo" class="h-10 w-auto object-contain group-hover:scale-105 transition-transform duration-300 drop-shadow-[0_0_12px_rgba(0,102,255,0.45)]" width="160" height="40" decoding="async" fetchpriority="high" onerror="this.src='images/logo.png'"/>
 <div class="flex flex-col">
 <span class="font-display font-bold text-lg tracking-tight text-white flex items-center gap-1">
             Digital<span class="text-[#00d2ff]">SubShop</span>
@@ -167,7 +171,7 @@
       <div class="min-w-full h-full flex-shrink-0 relative cursor-pointer" onclick="document.getElementById('catalog').scrollIntoView({behavior: 'smooth'})">
         <picture class="block w-full h-full">
           <source media="(max-width: 640px)" srcset="images/banners/hero-banner-1-mobile.webp">
-          <img src="images/banners/hero-banner-1.webp" alt="Premium OTT & Streaming Subscriptions - DigitalSubShop" class="w-full h-full object-contain sm:object-cover object-center block select-none" loading="eager" decoding="async">
+          <img src="images/banners/hero-banner-1.webp" alt="Premium OTT & Streaming Subscriptions - DigitalSubShop" class="w-full h-full object-contain sm:object-cover object-center block select-none" loading="eager" fetchpriority="high" decoding="async" width="1280" height="420">
         </picture>
       </div>
 
@@ -175,7 +179,7 @@
       <div class="min-w-full h-full flex-shrink-0 relative cursor-pointer" onclick="document.getElementById('catalog').scrollIntoView({behavior: 'smooth'})">
         <picture class="block w-full h-full">
           <source media="(max-width: 640px)" srcset="images/banners/hero-banner-2-mobile.webp">
-          <img src="images/banners/hero-banner-2.webp" alt="AI & Creative Suite Tools - DigitalSubShop" class="w-full h-full object-contain sm:object-cover object-center block select-none" loading="lazy" decoding="async">
+          <img src="images/banners/hero-banner-2.webp" alt="AI & Creative Suite Tools - DigitalSubShop" class="w-full h-full object-contain sm:object-cover object-center block select-none" loading="lazy" decoding="async" width="1280" height="420">
         </picture>
       </div>
 
@@ -183,7 +187,7 @@
       <div class="min-w-full h-full flex-shrink-0 relative cursor-pointer" onclick="document.getElementById('catalog').scrollIntoView({behavior: 'smooth'})">
         <picture class="block w-full h-full">
           <source media="(max-width: 640px)" srcset="images/banners/hero-banner-3-mobile.webp">
-          <img src="images/banners/hero-banner-3.webp" alt="Gaming & Social Top-Up - DigitalSubShop" class="w-full h-full object-contain sm:object-cover object-center block select-none" loading="lazy" decoding="async">
+          <img src="images/banners/hero-banner-3.webp" alt="Gaming & Social Top-Up - DigitalSubShop" class="w-full h-full object-contain sm:object-cover object-center block select-none" loading="lazy" decoding="async" width="1280" height="420">
         </picture>
       </div>
     </div>
@@ -280,7 +284,7 @@
 <div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="ott" data-product-id="392" data-title="netflix premium" onclick="if (!event.target.closest('a')) openProductPage(392)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
-    <img src="images/products/netflix-premium-subscription-bd.webp" alt="Netflix Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <img src="images/products/netflix-premium-subscription-bd.webp" alt="Netflix Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" width="600" height="338" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
     <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #E50914;">
       4K HDR
@@ -328,7 +332,7 @@
 <div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="ott" data-product-id="390" data-title="amazon prime video" onclick="if (!event.target.closest('a')) openProductPage(390)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
-    <img src="images/products/amazon-prime-video-subscription-bd.webp" alt="Amazon Prime Video" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <img src="images/products/amazon-prime-video-subscription-bd.webp" alt="Amazon Prime Video" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" width="600" height="338" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
     <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #00A8E1;">
       HD 1080p
@@ -376,7 +380,7 @@
 <div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="ott" data-product-id="861" data-title="youtube premium" onclick="if (!event.target.closest('a')) openProductPage(861)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
-    <img src="images/products/youtube-premium-subscription-bd.webp" alt="YouTube Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <img src="images/products/youtube-premium-subscription-bd.webp" alt="YouTube Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" width="600" height="338" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
     <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #FF0000;">
       Ad-Free
@@ -424,7 +428,7 @@
 <div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="ott" data-product-id="865" data-title="crunchyroll premium" onclick="if (!event.target.closest('a')) openProductPage(865)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
-    <img src="images/products/crunchyroll-premium-subscription-bd.webp" alt="Crunchyroll Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <img src="images/products/crunchyroll-premium-subscription-bd.webp" alt="Crunchyroll Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" width="600" height="338" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
     <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #F47521;">
       Simulcast
@@ -472,7 +476,7 @@
 <div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="ott" data-product-id="1328" data-title="kuku tv premium" onclick="if (!event.target.closest('a')) openProductPage(1328)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
-    <img src="images/products/kuku-tv-premium-bangladesh-price.webp" alt="Kuku TV Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <img src="images/products/kuku-tv-premium-bangladesh-price.webp" alt="Kuku TV Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" width="600" height="338" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
     <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #FF4500;">
       HD Drama
@@ -520,7 +524,7 @@
 <div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="ott" data-product-id="389" data-title="ullu premium" onclick="if (!event.target.closest('a')) openProductPage(389)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
-    <img src="images/products/ullu-premium-subscription.webp" alt="Ullu Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <img src="images/products/ullu-premium-subscription.webp" alt="Ullu Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" width="600" height="338" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
     <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #FF6B35;">
       Originals
@@ -568,7 +572,7 @@
 <div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="ai" data-product-id="142" data-title="chatgpt pro" onclick="if (!event.target.closest('a')) openProductPage(142)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
-    <img src="images/products/chatgpt-pro-subscription-bd.webp" alt="ChatGPT Pro (OpenAI)" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <img src="images/products/chatgpt-pro-subscription-bd.webp" alt="ChatGPT Pro (OpenAI)" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" width="600" height="338" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
     <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #10A37F;">
       o1 Pro / 4o
@@ -616,7 +620,7 @@
 <div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="ai" data-product-id="852" data-title="google gemini pro" onclick="if (!event.target.closest('a')) openProductPage(852)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
-    <img src="images/products/google-gemini-pro-subscription-bd.webp" alt="Google Gemini Advanced" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <img src="images/products/google-gemini-pro-subscription-bd.webp" alt="Google Gemini Advanced" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" width="600" height="338" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
     <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #4285F4;">
       2M Context
@@ -664,7 +668,7 @@
 <div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="ai" data-product-id="854" data-title="supergrok premium (xai)" onclick="if (!event.target.closest('a')) openProductPage(854)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
-    <img src="images/products/supergrok-premium-subscription-bd.webp" alt="SuperGrok Premium (xAI)" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <img src="images/products/supergrok-premium-subscription-bd.webp" alt="SuperGrok Premium (xAI)" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" width="600" height="338" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
     <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #1D9BF0;">
       Uncensored
@@ -712,7 +716,7 @@
 <div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="ai" data-product-id="1544" data-title="vidiq boost premium" onclick="if (!event.target.closest('a')) openProductPage(1544)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
-    <img src="images/products/vidiq-premium-price-bangladesh.webp" alt="vidIQ Boost Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <img src="images/products/vidiq-premium-price-bangladesh.webp" alt="vidIQ Boost Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" width="600" height="338" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
     <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #00D26A;">
       SEO Boost
@@ -760,7 +764,7 @@
 <div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="ai" data-product-id="863" data-title="quizlet plus" onclick="if (!event.target.closest('a')) openProductPage(863)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
-    <img src="images/products/quizlet-plus-subscription-bd.webp" alt="Quizlet Plus Subscription" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <img src="images/products/quizlet-plus-subscription-bd.webp" alt="Quizlet Plus Subscription" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" width="600" height="338" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
     <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #4257B2;">
       AI Study
@@ -808,7 +812,7 @@
 <div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="creative" data-product-id="858" data-title="canva pro" onclick="if (!event.target.closest('a')) openProductPage(858)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
-    <img src="images/products/canva-pro-subscription-bd.webp" alt="Canva Pro Subscription" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <img src="images/products/canva-pro-subscription-bd.webp" alt="Canva Pro Subscription" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" width="600" height="338" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
     <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #00C4CC;">
       Magic Studio
@@ -856,7 +860,7 @@
 <div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="creative" data-product-id="864" data-title="adobe creative cloud" onclick="if (!event.target.closest('a')) openProductPage(864)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
-    <img src="images/products/adobe-creative-cloud-subscription-bd.webp" alt="Adobe Creative Cloud" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <img src="images/products/adobe-creative-cloud-subscription-bd.webp" alt="Adobe Creative Cloud" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" width="600" height="338" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
     <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #FA0F00;">
       20+ Apps
@@ -904,7 +908,7 @@
 <div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="creative" data-product-id="855" data-title="envato elements" onclick="if (!event.target.closest('a')) openProductPage(855)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
-    <img src="images/products/envato-elements-subscription-bd.webp" alt="Envato Elements" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <img src="images/products/envato-elements-subscription-bd.webp" alt="Envato Elements" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" width="600" height="338" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
     <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #82B541;">
       Unlimited
@@ -952,7 +956,7 @@
 <div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="creative" data-product-id="847" data-title="capcut pro" onclick="if (!event.target.closest('a')) openProductPage(847)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
-    <img src="images/products/capcut-pro-subscription-bd.webp" alt="CapCut Pro Subscription" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <img src="images/products/capcut-pro-subscription-bd.webp" alt="CapCut Pro Subscription" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" width="600" height="338" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
     <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #101010;">
       4K 60FPS
@@ -1000,7 +1004,7 @@
 <div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="creative" data-product-id="834" data-title="freepik premium" onclick="if (!event.target.closest('a')) openProductPage(834)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
-    <img src="images/products/freepik-premium-subscription-bd.webp" alt="Freepik Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <img src="images/products/freepik-premium-subscription-bd.webp" alt="Freepik Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" width="600" height="338" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
     <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #1273EB;">
       Vectors & PSD
@@ -1048,7 +1052,7 @@
 <div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="social-gaming" data-product-id="862" data-title="tiktok coins (top-up)" onclick="if (!event.target.closest('a')) openProductPage(862)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
-    <img src="images/products/tiktok-coins-top-up-bd.webp" alt="TikTok Coins (Top-Up)" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <img src="images/products/tiktok-coins-top-up-bd.webp" alt="TikTok Coins (Top-Up)" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" width="600" height="338" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
     <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #FE2C55;">
       Instant LIVE
@@ -1096,7 +1100,7 @@
 <div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="social-gaming" data-product-id="860" data-title="facebook page likes &amp; followers" onclick="if (!event.target.closest('a')) openProductPage(860)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
-    <img src="images/products/facebook-page-likes-followers-bd.webp" alt="Facebook Page Likes & Followers" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <img src="images/products/facebook-page-likes-followers-bd.webp" alt="Facebook Page Likes & Followers" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" width="600" height="338" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
     <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #1877F2;">
       Non-Drop
@@ -1144,7 +1148,7 @@
 <div class="product-item glass-card rounded-xl sm:rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:border-primary-container/40 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,102,255,0.22)]" data-category="social-gaming" data-product-id="137" data-title="clash of clans gold pass" onclick="if (!event.target.closest('a')) openProductPage(137)">
   <!-- 16:9 Image Header with Obsidian Gradient Fade -->
   <div class="relative h-28 sm:h-44 md:h-48 overflow-hidden bg-surface-container">
-    <img src="images/products/clash-of-clans-gold-pass-bd.webp" alt="Clash of Clans Gold Pass" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+    <img src="images/products/clash-of-clans-gold-pass-bd.webp" alt="Clash of Clans Gold Pass" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" width="600" height="338" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0e121a] via-[#0e121a]/40 to-transparent"></div>
     <div class="absolute top-2 right-2 sm:top-3 sm:right-3 px-1.5 sm:px-2.5 py-0.5 rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider shadow backdrop-blur-md" style="background-color: #FFA000;">
       Pass
@@ -1343,7 +1347,7 @@
 <footer class="border-t border-white/[0.06] bg-[#05070a] py-12 px-6 sm:px-8">
 <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-on-surface-variant">
 <div class="flex items-center gap-3">
-<img src="images/logo.png" alt="DigitalSubShop Logo" class="h-8 w-auto object-contain"/>
+<img src="images/logo.webp" alt="DigitalSubShop Logo" class="h-8 w-auto object-contain" width="128" height="32" loading="lazy" decoding="async" onerror="this.src='images/logo.png'"/>
 <span class="text-white font-semibold font-display">DigitalSubShop.com</span>
 <span class="">• Encrypted Autonomous Commerce</span>
 </div>

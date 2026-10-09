@@ -91,7 +91,7 @@
 <header class="fixed top-0 left-0 right-0 z-50 bg-[#090d18]/85 backdrop-blur-xl border-b border-white/[0.08]">
   <div class="max-w-7xl mx-auto h-20 px-4 sm:px-8 flex items-center justify-between gap-6">
     <a class="flex items-center gap-3 group" href="index.html">
-      <img src="images/logo.png" alt="DigitalSubShop Logo" class="h-10 w-auto object-contain group-hover:scale-105 transition-transform duration-300 drop-shadow-[0_0_12px_rgba(0,102,255,0.45)]"/>
+      <img src="images/logo.webp" alt="DigitalSubShop Logo" class="h-10 w-auto object-contain group-hover:scale-105 transition-transform duration-300 drop-shadow-[0_0_12px_rgba(0,102,255,0.45)]" width="160" height="40" decoding="async" fetchpriority="high" onerror="this.src='images/logo.png'"/>
       <div class="flex flex-col">
         <span class="font-display font-bold text-lg tracking-tight text-white">Digital<span class="text-[#00d2ff]">SubShop</span></span>
         <span class="text-[10px] tracking-widest text-on-surface-variant font-medium uppercase -mt-0.5">Verified Licenses</span>
@@ -148,11 +148,11 @@
         <div class="glass-card rounded-2xl p-4 sm:p-5 relative overflow-hidden">
           <!-- Ambient blurred backdrop -->
           <div class="absolute inset-0 z-0 opacity-20 pointer-events-none">
-            <img id="pHeroBackdrop" src="" alt="" class="w-full h-full object-cover blur-2xl scale-125"/>
+            <img id="pHeroBackdrop" src="" alt="" class="w-full h-full object-cover blur-2xl scale-125" loading="lazy" decoding="async"/>
           </div>
           <div class="relative z-10">
             <div id="pImageWrap" class="relative w-full aspect-video rounded-xl overflow-hidden bg-surface-container flex items-center justify-center border border-white/10 shadow-2xl group">
-              <img id="pImage" src="" alt="Product image" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+              <img id="pImage" src="" alt="Product image" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="eager" fetchpriority="high" decoding="async" width="640" height="360"/>
               <span id="pStockBadge" class="absolute top-2.5 left-2.5 sm:top-3 sm:left-3 px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-[10px] sm:text-[11px] font-semibold backdrop-blur border border-emerald-500/30">In Stock</span>
               <div id="pHeroBadge" class="absolute top-2.5 right-2.5 sm:top-3 sm:right-3 px-2.5 py-0.5 sm:py-1 rounded-md text-[9px] sm:text-[10px] font-bold text-white uppercase tracking-wider backdrop-blur shadow bg-primary-container text-on-primary-container">
                 VERIFIED
@@ -342,7 +342,7 @@
 <footer class="border-t border-white/[0.06] bg-[#060912] py-12 px-6 sm:px-8">
   <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-on-surface-variant">
     <div class="flex items-center gap-3">
-<img src="images/logo.png" alt="DigitalSubShop Logo" class="h-8 w-auto object-contain"/>
+<img src="images/logo.webp" alt="DigitalSubShop Logo" class="h-8 w-auto object-contain" width="128" height="32" loading="lazy" decoding="async" onerror="this.src='images/logo.png'"/>
 <span class="text-white font-semibold font-display">DigitalSubShop.com</span>
 <span class="">• Encrypted Autonomous Commerce</span>
 </div>

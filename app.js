@@ -223,12 +223,12 @@ function renderSuggestionsDropdown(query) {
           const priceDisplay = minPrice > 0 ? `৳${minPrice.toLocaleString()}` : 'Custom';
           const cat = (p.categories && p.categories.length) ? p.categories[0] : 'Digital Service';
           const highlightedName = highlightMatchText(p.name, q);
-          const img = (p.images && p.images[0]) ? p.images[0] : 'images/logo.png';
+          const img = (p.images && p.images[0]) ? p.images[0] : 'images/logo.webp';
 
           return `
             <a href="product.html?id=${p.id}" data-index="${idx}" class="suggestion-item group flex items-center gap-2.5 sm:gap-3 p-2 sm:p-2.5 rounded-xl hover:bg-white/[0.07] border border-transparent hover:border-white/10 transition-all cursor-pointer">
               <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl overflow-hidden bg-black/40 border border-white/10 shrink-0 flex items-center justify-center">
-                <img src="${img}" alt="${p.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform" onerror="this.src='images/logo.png'"/>
+                <img src="${img}" alt="${p.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform" width="48" height="48" loading="lazy" decoding="async" onerror="this.src='images/logo.webp'"/>
               </div>
               <div class="flex-1 min-w-0">
                 <div class="text-xs sm:text-sm font-semibold text-white truncate group-hover:text-cyan-300 transition-colors">
