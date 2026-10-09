@@ -4,6 +4,7 @@
   "private": true,
   "description": "DigitalSubShop - Premium Digital Subscriptions & Licenses Marketplace (static site)",
   "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./css/tailwind.css --min",
     "build:css": "tailwindcss -i ./src/input.css -o ./css/tailwind.css --min",
     "serve": "node tools/serve.js"
   },
