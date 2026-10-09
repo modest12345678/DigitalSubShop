@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://digitalsubshop.com/sitemap.xml
+Sitemap: https://www.digitalsubshop.com/sitemap.xml
