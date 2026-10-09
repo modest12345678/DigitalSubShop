@@ -16,3 +16,9 @@ Thumbs.db
 *.tar.gz
 *.log
 scratch/
+
+# Local test artifacts (lighthouse runs, screenshots, icon-test dumps)
+lh-after*.json
+lh-after-status.txt
+shot-*.png
+tools/dom-*.txt

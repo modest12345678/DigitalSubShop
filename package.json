@@ -1,0 +1,20 @@
+{
+  "name": "digitalsubshop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DigitalSubShop - Premium Digital Subscriptions & Licenses Marketplace (static site)",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./css/tailwind.css --min",
+    "serve": "node tools/serve.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/modest12345678/DigitalSubShop.git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/container-queries": "^0.1.1",
+    "@tailwindcss/forms": "^0.5.10",
+    "tailwindcss": "^3.4.17"
+  }
+}

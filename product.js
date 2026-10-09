@@ -97,14 +97,14 @@ function updateSEO(product) {
   // Update OG image
   const ogImgEl = document.getElementById('og-image');
   if (ogImgEl) {
-    const img = (product.images && product.images[0]) ? product.images[0] : 'https://digitalsubshop.com/og-image.jpg';
+    const img = (product.images && product.images[0]) ? product.images[0] : 'https://www.digitalsubshop.com/og-image.jpg';
     ogImgEl.content = img;
   }
   // Update OG URL (include product id)
   const ogUrlEl = document.getElementById('og-url');
   if (ogUrlEl) {
     const id = product.id ? product.id : '';
-    ogUrlEl.content = `https://digitalsubshop.com/product.html?id=${id}`;
+    ogUrlEl.content = `https://www.digitalsubshop.com/product?id=${id}`;
   }
   // Update Twitter title
   const twTitleEl = document.getElementById('twitter-title');
@@ -118,13 +118,13 @@ function updateSEO(product) {
   // Update Twitter image
   const twImgEl = document.getElementById('twitter-image');
   if (twImgEl) {
-    const img = (product.images && product.images[0]) ? product.images[0] : 'https://digitalsubshop.com/og-image.jpg';
+    const img = (product.images && product.images[0]) ? product.images[0] : 'https://www.digitalsubshop.com/og-image.jpg';
     twImgEl.content = img;
   }
   // Update canonical URL
   const canonicalEl = document.querySelector('link[rel="canonical"]');
   if (canonicalEl && product.id) {
-    canonicalEl.href = `https://digitalsubshop.com/product.html?id=${product.id}`;
+    canonicalEl.href = `https://www.digitalsubshop.com/product?id=${product.id}`;
   }
   // Inject or update Schema.org Product JSON-LD
   let scriptEl = document.getElementById('product-schema-ld');
@@ -136,8 +136,8 @@ function updateSEO(product) {
   }
   const pricing = getProductPricing(product);
   const pImg = (product.images && product.images[0]) 
-    ? (product.images[0].startsWith('http') ? product.images[0] : `https://digitalsubshop.com/${product.images[0]}`)
-    : 'https://digitalsubshop.com/og-image.jpg';
+    ? (product.images[0].startsWith('http') ? product.images[0] : `https://www.digitalsubshop.com/${product.images[0]}`)
+    : 'https://www.digitalsubshop.com/og-image.jpg';
   scriptEl.textContent = JSON.stringify({
     "@context": "https://schema.org/",
     "@type": "Product",
@@ -150,11 +150,29 @@ function updateSEO(product) {
     },
     "offers": {
       "@type": "Offer",
-      "url": `https://digitalsubshop.com/product.html?id=${product.id}`,
+      "url": `https://www.digitalsubshop.com/product?id=${product.id}`,
       "priceCurrency": "BDT",
       "price": pricing.min || 0,
       "availability": product.is_in_stock ? "https://schema.org/InStock" : "https://schema.org/OutOfStock"
     }
+  });
+
+  // Breadcrumb structured data (SEO)
+  let bcEl = document.getElementById('breadcrumb-ld');
+  if (!bcEl) {
+    bcEl = document.createElement('script');
+    bcEl.id = 'breadcrumb-ld';
+    bcEl.type = 'application/ld+json';
+    document.head.appendChild(bcEl);
+  }
+  bcEl.textContent = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.digitalsubshop.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Catalog", "item": "https://www.digitalsubshop.com/#catalog" },
+      { "@type": "ListItem", "position": 3, "name": product.name, "item": "https://www.digitalsubshop.com/product?id=" + product.id }
+    ]
   });
 }
 window.updateSEO = updateSEO;

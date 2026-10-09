@@ -578,10 +578,11 @@ function updateHeroSlider() {
     track.style.transform = `translateX(-${currentHeroSlide * 100}%)`;
   }
   dots.forEach((dot, idx) => {
+    const bar = dot.querySelector('.hero-dot-bar') || dot;
     if (idx === currentHeroSlide) {
-      dot.className = 'hero-dot w-5 h-1 sm:h-1.5 rounded-full bg-primary-container transition-all';
+      bar.className = 'hero-dot-bar w-5 h-1 sm:h-1.5 rounded-full bg-primary-container transition-all';
     } else {
-      dot.className = 'hero-dot w-1.5 h-1 sm:h-1.5 rounded-full bg-white/40 hover:bg-white/70 transition-all';
+      bar.className = 'hero-dot-bar w-1.5 h-1 sm:h-1.5 rounded-full bg-white/40 hover:bg-white/70 transition-all';
     }
   });
 }

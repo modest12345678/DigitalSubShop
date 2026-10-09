@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8"/>
+<link href="../css/tailwind.css" rel="stylesheet"/>
+</head><body>
+<div id="results">PENDING</div>
+<div id="icons" style="position:absolute;left:-9999px;top:0">
+  <span class="material-symbols-outlined">account_balance_wallet</span>
+  <span class="material-symbols-outlined">arrow_forward</span>
+  <span class="material-symbols-outlined">auto_awesome</span>
+  <span class="material-symbols-outlined">bolt</span>
+  <span class="material-symbols-outlined">chat</span>
+  <span class="material-symbols-outlined">check_circle</span>
+  <span class="material-symbols-outlined">chevron_right</span>
+  <span class="material-symbols-outlined">close</span>
+  <span class="material-symbols-outlined">expand_more</span>
+  <span class="material-symbols-outlined">explore</span>
+  <span class="material-symbols-outlined">flash_on</span>
+  <span class="material-symbols-outlined">grid_view</span>
+  <span class="material-symbols-outlined">help</span>
+  <span class="material-symbols-outlined">lock</span>
+  <span class="material-symbols-outlined">menu</span>
+  <span class="material-symbols-outlined">payments</span>
+  <span class="material-symbols-outlined">search</span>
+  <span class="material-symbols-outlined">search_off</span>
+  <span class="material-symbols-outlined">shield</span>
+  <span class="material-symbols-outlined">shield_lock</span>
+  <span class="material-symbols-outlined">south</span>
+  <span class="material-symbols-outlined">stars</span>
+  <span class="material-symbols-outlined">trending_up</span>
+  <span class="material-symbols-outlined">tune</span>
+  <span class="material-symbols-outlined">verified</span>
+  <span class="material-symbols-outlined">verified_user</span>
+</div>
+<script>
+(async () => {
+  await document.fonts.ready;
+  const spans = document.querySelectorAll('#icons .material-symbols-outlined');
+  const lines = [];
+  let allOk = true;
+  spans.forEach(s => {
+    const w = s.getBoundingClientRect().width;
+    const name = s.textContent.trim();
+    const ok = w <= 45;
+    if (!ok) allOk = false;
+    lines.push(name + '=' + Math.round(w) + (ok ? 'OK' : 'FAIL'));
+  });
+  const fInter = document.fonts.check('16px Inter');
+  const fSG = document.fonts.check('700 16px "Space Grotesk"');
+  const fMS = document.fonts.check('24px "Material Symbols Outlined"');
+  document.getElementById('results').textContent =
+    'RESULT ALL_ICONS_OK=' + allOk + ' Inter=' + fInter + ' SpaceGrotesk=' + fSG + ' MaterialSymbols=' + fMS + ' :: ' + lines.join(', ');
+})();
+</script>
+</body></html>
