@@ -92,7 +92,47 @@
           "name": "How does instant direct delivery work without an account?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No registration or login account is required. As soon as your bKash, Nagad, or Rocket payment is verified via TrxID, your credentials or invitation links are sent directly to your WhatsApp — usually within minutes."
+            "text": "No registration or login account is required. Simply select your subscription plan, choose your payment method (bKash, Nagad, Rocket, or Upay), and message our WhatsApp team. Once your TrxID is verified, your credentials or official invitation links are sent directly to your WhatsApp — usually within minutes to 1-12 hours."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which mobile banking payment methods do you accept, and are there extra fees?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We accept bKash, Nagad, Rocket, and Upay Send Money to our official personal wallet number (01887924939). All purchases are priced in Bangladeshi Taka (BDT) with zero international transaction or currency exchange fees."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between a Shared Account and a Personal/Private Account?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Shared Account gives you a dedicated private profile with a personal 4-digit PIN lock on an official multi-screen account (strictly 1 screen at a time), offering the lowest price. A Personal/Private Account provides full master credentials or an invitation sent to your own email with complete multi-device control."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the 365-day replacement warranty protect my purchase?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Every order is covered by our 365-day replacement escrow warranty. If your subscription ever stops working or encounters issues during the active period, contact our 24/7 WhatsApp support and we will validate and re-issue a replacement slot or invitation quickly at zero extra cost."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need an international credit card or PayPal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No! You do not need any dual-currency credit card, passport endorsement, or PayPal account. All subscriptions are payable in BDT using local mobile banking apps: bKash, Nagad, Rocket, and Upay."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I renew my subscription on my existing email or account?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! Renewable services like YouTube Premium, Spotify, Canva Pro, and Microsoft 365 can be renewed directly on your personal Gmail/email without losing playlists, documents, or personal data."
           }
         },
         {
@@ -100,15 +140,47 @@
           "name": "How are TikTok Coins and Clash of Clans Gold Pass delivered?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Gaming and in-app currencies are sent directly to your Player ID / UID / Supercell ID. No password or personal login access is ever required."
+            "text": "Gaming and in-app currencies are sent directly to your Player ID, Supercell ID Tag, or TikTok Username. No password or personal login access is ever required."
           }
         },
         {
           "@type": "Question",
-          "name": "What happens if my subscription stops working during the term?",
+          "name": "Is my personal information and account privacy safe?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Every order is covered by our 365-day replacement warranty. If your subscription stops working during the term, contact our 24/7 WhatsApp support and we will validate and re-issue a new profile slot or invitation quickly — at no extra cost."
+            "text": "Yes, 100%. We operate under strict privacy standards. Shared profiles are PIN-protected, and for personal upgrades we only need your email address. We never store passwords or sell customer data."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I do if my subscription stops working or logs out?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Simply message our 24/7 customer support on WhatsApp (+880 1887-924939) with your order details and TrxID. Our dedicated support team verifies and restores your access or issues a replacement swiftly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use the subscription on multiple devices simultaneously?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For Shared Profile plans, usage is strictly 1 device/screen at a time to maintain account health. For Personal/Family subscriptions, you can log in on multiple devices according to the official plan specifications."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is your refund policy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If we fail to activate or deliver your service within our committed delivery timeframe, we issue a 100% full money-back refund back to your bKash, Nagad, Rocket, or Upay account without questions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I pay using bKash, Nagad, Rocket, or Upay?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Open your mobile banking app, select 'Send Money', enter our official personal number 01887924939 and the exact amount in BDT. Once sent, share the 8-10 character Transaction ID (TrxID) or screenshot via WhatsApp for instant processing."
           }
         }
       ]
@@ -1241,10 +1313,28 @@
           <div class="w-10 h-10 rounded-xl bg-secondary/10 border border-secondary/30 flex items-center justify-center text-secondary font-display font-bold text-lg mb-4">
             02
           </div>
-          <h3 class="font-display font-bold text-white text-base mb-2">Pay via bKash or Nagad</h3>
-          <p class="text-xs text-on-surface-variant leading-relaxed">
-            Send money to our official Personal number (<code>01887924939</code>) via bKash, Nagad or Rocket, then enter your TrxID or take a screenshot.
+          <h3 class="font-display font-bold text-white text-base mb-2">Pay via Mobile Banking</h3>
+          <p class="text-xs text-on-surface-variant leading-relaxed mb-3">
+            Send money to our official Personal number (<code>01887924939</code>) via bKash, Nagad, Rocket, or Upay, then share your TrxID.
           </p>
+          <div class="flex items-center gap-2 flex-wrap pt-1">
+            <span class="inline-flex items-center gap-1 px-2 py-1 rounded-lg bg-white/[0.04] border border-white/10 text-[10px] text-white">
+              <img src="images/payment/bkash-icon.svg" alt="bKash" class="w-4 h-4 rounded" width="16" height="16"/>
+              <span>bKash</span>
+            </span>
+            <span class="inline-flex items-center gap-1 px-2 py-1 rounded-lg bg-white/[0.04] border border-white/10 text-[10px] text-white">
+              <img src="images/payment/nagad-icon.svg" alt="Nagad" class="w-4 h-4 rounded" width="16" height="16"/>
+              <span>Nagad</span>
+            </span>
+            <span class="inline-flex items-center gap-1 px-2 py-1 rounded-lg bg-white/[0.04] border border-white/10 text-[10px] text-white">
+              <img src="images/payment/rocket-icon.svg" alt="Rocket" class="w-4 h-4 rounded" width="16" height="16"/>
+              <span>Rocket</span>
+            </span>
+            <span class="inline-flex items-center gap-1 px-2 py-1 rounded-lg bg-white/[0.04] border border-white/10 text-[10px] text-white">
+              <img src="images/payment/upay-icon.svg" alt="Upay" class="w-4 h-4 rounded" width="16" height="16"/>
+              <span>Upay</span>
+            </span>
+          </div>
         </div>
         <div class="glass-card rounded-2xl p-6 relative">
           <div class="w-10 h-10 rounded-xl bg-tertiary/10 border border-tertiary/30 flex items-center justify-center text-tertiary font-display font-bold text-lg mb-4">
@@ -1288,32 +1378,102 @@
 </div>
 </div>
 </section>
+
+<!-- ================= ACCEPTED MOBILE BANKING METHODS ================= -->
+<section class="py-14 px-6 sm:px-8 max-w-7xl mx-auto border-t border-white/[0.06]" id="payment-methods">
+  <div class="text-center max-w-2xl mx-auto mb-10">
+    <span class="text-xs font-semibold uppercase tracking-widest text-primary-bright">100% Local BD Payment</span>
+    <h2 class="font-display text-2xl sm:text-3xl font-bold text-white mt-1">Accepted Mobile Banking Methods</h2>
+    <p class="text-xs text-on-surface-variant mt-2">Zero foreign currency conversion fee. Pay safely in BDT via Personal Send Money from your favorite mobile banking app.</p>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+    <!-- bKash Card -->
+    <div class="glass-card p-5 sm:p-6 rounded-2xl border border-white/[0.08] hover:border-[#E2136E]/50 transition-all duration-300 flex flex-col justify-between group">
+      <div>
+        <div class="flex items-center justify-between mb-4">
+          <img src="images/payment/bkash.svg" alt="bKash Logo" class="h-9 w-auto object-contain rounded-lg shadow-sm" width="120" height="36"/>
+          <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-[#E2136E]/20 text-[#ff66ab] border border-[#E2136E]/30">Instant</span>
+        </div>
+        <h3 class="font-display font-bold text-white text-base mb-1">bKash Send Money</h3>
+        <p class="text-xs text-on-surface-variant leading-relaxed">Fastest transaction verification via 10-digit TrxID with instant receipt.</p>
+      </div>
+      <div class="mt-4 pt-3 border-t border-white/[0.06] flex items-center justify-between text-[11px]">
+        <span class="text-on-surface-variant">Personal: <code class="text-white font-mono font-semibold">01887924939</code></span>
+        <button type="button" onclick="copyText('01887924939')" class="text-primary-bright hover:underline inline-flex items-center gap-0.5 font-semibold">Copy</button>
+      </div>
+    </div>
+
+    <!-- Nagad Card -->
+    <div class="glass-card p-5 sm:p-6 rounded-2xl border border-white/[0.08] hover:border-[#F7941D]/50 transition-all duration-300 flex flex-col justify-between group">
+      <div>
+        <div class="flex items-center justify-between mb-4">
+          <img src="images/payment/nagad.svg" alt="Nagad Logo" class="h-9 w-auto object-contain rounded-lg shadow-sm" width="120" height="36"/>
+          <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-[#F7941D]/20 text-[#ffaa47] border border-[#F7941D]/30">Lowest Fee</span>
+        </div>
+        <h3 class="font-display font-bold text-white text-base mb-1">Nagad Send Money</h3>
+        <p class="text-xs text-on-surface-variant leading-relaxed">Enjoy the lowest cashout charge in Bangladesh with instant SMS confirmation.</p>
+      </div>
+      <div class="mt-4 pt-3 border-t border-white/[0.06] flex items-center justify-between text-[11px]">
+        <span class="text-on-surface-variant">Personal: <code class="text-white font-mono font-semibold">01887924939</code></span>
+        <button type="button" onclick="copyText('01887924939')" class="text-primary-bright hover:underline inline-flex items-center gap-0.5 font-semibold">Copy</button>
+      </div>
+    </div>
+
+    <!-- Rocket Card -->
+    <div class="glass-card p-5 sm:p-6 rounded-2xl border border-white/[0.08] hover:border-[#8C3494]/50 transition-all duration-300 flex flex-col justify-between group">
+      <div>
+        <div class="flex items-center justify-between mb-4">
+          <img src="images/payment/rocket.svg" alt="Rocket Logo" class="h-9 w-auto object-contain rounded-lg shadow-sm" width="120" height="36"/>
+          <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-[#8C3494]/20 text-[#d875e0] border border-[#8C3494]/30">DBBL</span>
+        </div>
+        <h3 class="font-display font-bold text-white text-base mb-1">Rocket Mobile Banking</h3>
+        <p class="text-xs text-on-surface-variant leading-relaxed">Dutch-Bangla Bank mobile banking with direct TrxID verification.</p>
+      </div>
+      <div class="mt-4 pt-3 border-t border-white/[0.06] flex items-center justify-between text-[11px]">
+        <span class="text-on-surface-variant">Personal: <code class="text-white font-mono font-semibold">01887924939</code></span>
+        <button type="button" onclick="copyText('01887924939')" class="text-primary-bright hover:underline inline-flex items-center gap-0.5 font-semibold">Copy</button>
+      </div>
+    </div>
+
+    <!-- Upay Card -->
+    <div class="glass-card p-5 sm:p-6 rounded-2xl border border-white/[0.08] hover:border-[#00609C]/50 transition-all duration-300 flex flex-col justify-between group">
+      <div>
+        <div class="flex items-center justify-between mb-4">
+          <img src="images/payment/upay.svg" alt="Upay Logo" class="h-9 w-auto object-contain rounded-lg shadow-sm" width="120" height="36"/>
+          <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-[#00609C]/20 text-[#54b8ff] border border-[#00609C]/30">UCB Fin</span>
+        </div>
+        <h3 class="font-display font-bold text-white text-base mb-1">Upay Mobile Banking</h3>
+        <p class="text-xs text-on-surface-variant leading-relaxed">United Commercial Bank (UCB) Upay wallet for rapid digital checkout.</p>
+      </div>
+      <div class="mt-4 pt-3 border-t border-white/[0.06] flex items-center justify-between text-[11px]">
+        <span class="text-on-surface-variant">Personal: <code class="text-white font-mono font-semibold">01887924939</code></span>
+        <button type="button" onclick="copyText('01887924939')" class="text-primary-bright hover:underline inline-flex items-center gap-0.5 font-semibold">Copy</button>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ================= FAQ SECTION ================= -->
 <section class="py-12 px-6 sm:px-8 max-w-4xl mx-auto border-t border-white/[0.06]" id="faq">
 <div class="text-center mb-8">
 <span class="text-xs font-semibold uppercase tracking-widest text-primary-bright">Support &amp; Details</span>
 <h2 class="font-display text-2xl font-bold text-white mt-1">Frequently Asked Questions</h2>
+<p class="text-xs text-on-surface-variant mt-2 max-w-lg mx-auto">Everything you need to know about purchasing, warranty coverage, payment, and account delivery in Bangladesh.</p>
 </div>
 <div class="space-y-3">
-<details class="glass-card rounded-xl p-4 cursor-pointer group"><summary class="font-display font-semibold text-sm text-white flex items-center justify-between list-none"><span class="">How does instant direct delivery work without an account?</span><span class="material-symbols-outlined text-[18px] text-primary-bright group-open:rotate-180 transition-transform">expand_more</span></summary><p class="text-xs text-on-surface-variant mt-3 leading-relaxed">No registration or login account is required. As soon as your bKash, Nagad, or Rocket payment is verified via TrxID, your credentials or invitation links are sent directly to your WhatsApp — usually within minutes.</p></details>
-<details class="glass-card rounded-xl p-4 cursor-pointer group">
-<summary class="font-display font-semibold text-sm text-white flex items-center justify-between list-none">
-<span class="">How are TikTok Coins and Clash of Clans Gold Pass delivered?</span>
-<span class="material-symbols-outlined text-[18px] text-primary-bright group-open:rotate-180 transition-transform">expand_more</span>
-</summary>
-<p class="text-xs text-on-surface-variant mt-3 leading-relaxed">
-            Gaming and in-app currencies are sent directly to your Player ID / UID / Supercell ID. No password or personal login access is ever required.
-          </p>
-</details>
-<details class="glass-card rounded-xl p-4 cursor-pointer group">
-<summary class="font-display font-semibold text-sm text-white flex items-center justify-between list-none">
-<span class="">What happens if my subscription stops working during the term?</span>
-<span class="material-symbols-outlined text-[18px] text-primary-bright group-open:rotate-180 transition-transform">expand_more</span>
-</summary>
-<p class="text-xs text-on-surface-variant mt-3 leading-relaxed">
-            Every order is covered by our 365-day replacement warranty. If your subscription stops working during the term, contact our 24/7 WhatsApp support and we will validate and re-issue a new profile slot or invitation quickly — at no extra cost.
-          </p>
-</details>
+<details class="glass-card rounded-xl p-4 cursor-pointer group"><summary class="font-display font-semibold text-sm text-white flex items-center justify-between list-none"><span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-bright"></span>How does instant direct delivery work without an account?</span><span class="material-symbols-outlined text-[18px] text-primary-bright group-open:rotate-180 transition-transform">expand_more</span></summary><p class="text-xs text-on-surface-variant mt-3 pl-3.5 leading-relaxed">No registration or login account is required. Simply select your subscription plan, choose your payment method (bKash, Nagad, Rocket, or Upay), and message our WhatsApp team. Once your TrxID is verified, your credentials or official invitation links are sent directly to your WhatsApp — usually within minutes to 1–12 hours.</p></details>
+<details class="glass-card rounded-xl p-4 cursor-pointer group"><summary class="font-display font-semibold text-sm text-white flex items-center justify-between list-none"><span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-bright"></span>Which mobile banking payment methods do you accept, and are there extra fees?</span><span class="material-symbols-outlined text-[18px] text-primary-bright group-open:rotate-180 transition-transform">expand_more</span></summary><p class="text-xs text-on-surface-variant mt-3 pl-3.5 leading-relaxed">We accept bKash, Nagad, Rocket, and Upay Send Money to our official personal wallet number (<code class="text-white">01887924939</code>). All purchases are priced in Bangladeshi Taka (BDT) with zero international transaction or currency exchange fees.</p></details>
+<details class="glass-card rounded-xl p-4 cursor-pointer group"><summary class="font-display font-semibold text-sm text-white flex items-center justify-between list-none"><span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-bright"></span>What is the difference between a Shared Account and a Personal/Private Account?</span><span class="material-symbols-outlined text-[18px] text-primary-bright group-open:rotate-180 transition-transform">expand_more</span></summary><p class="text-xs text-on-surface-variant mt-3 pl-3.5 leading-relaxed"><strong>Shared Account:</strong> You receive a dedicated profile with your own name and a private 4-digit PIN lock on an official multi-screen account (strictly 1 screen at a time), offering the lowest price.<br><br><strong>Personal / Private Account:</strong> You get full master credentials or an invitation sent to your own email with complete multi-device control.</p></details>
+<details class="glass-card rounded-xl p-4 cursor-pointer group"><summary class="font-display font-semibold text-sm text-white flex items-center justify-between list-none"><span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-bright"></span>How does the 365-day replacement warranty protect my purchase?</span><span class="material-symbols-outlined text-[18px] text-primary-bright group-open:rotate-180 transition-transform">expand_more</span></summary><p class="text-xs text-on-surface-variant mt-3 pl-3.5 leading-relaxed">Every order is covered by our 365-day replacement escrow warranty. If your subscription ever stops working or encounters issues during the active period, contact our 24/7 WhatsApp support and we will validate and re-issue a replacement slot or invitation quickly at zero extra cost.</p></details>
+<details class="glass-card rounded-xl p-4 cursor-pointer group"><summary class="font-display font-semibold text-sm text-white flex items-center justify-between list-none"><span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-bright"></span>Do I need an international credit card or PayPal?</span><span class="material-symbols-outlined text-[18px] text-primary-bright group-open:rotate-180 transition-transform">expand_more</span></summary><p class="text-xs text-on-surface-variant mt-3 pl-3.5 leading-relaxed">No! You do not need any dual-currency credit card, passport endorsement, or PayPal account. All subscriptions are payable in BDT using local mobile banking apps: bKash, Nagad, Rocket, and Upay.</p></details>
+<details class="glass-card rounded-xl p-4 cursor-pointer group"><summary class="font-display font-semibold text-sm text-white flex items-center justify-between list-none"><span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-bright"></span>Can I renew my subscription on my existing email or account?</span><span class="material-symbols-outlined text-[18px] text-primary-bright group-open:rotate-180 transition-transform">expand_more</span></summary><p class="text-xs text-on-surface-variant mt-3 pl-3.5 leading-relaxed">Yes! Renewable services like YouTube Premium, Spotify, Canva Pro, and Microsoft 365 can be renewed directly on your personal Gmail/email without losing playlists, documents, or personal data.</p></details>
+<details class="glass-card rounded-xl p-4 cursor-pointer group"><summary class="font-display font-semibold text-sm text-white flex items-center justify-between list-none"><span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-bright"></span>How are TikTok Coins and Clash of Clans Gold Pass delivered?</span><span class="material-symbols-outlined text-[18px] text-primary-bright group-open:rotate-180 transition-transform">expand_more</span></summary><p class="text-xs text-on-surface-variant mt-3 pl-3.5 leading-relaxed">Gaming and in-app currencies are sent directly to your Player ID, Supercell ID Tag, or TikTok Username. No password or personal login access is ever required.</p></details>
+<details class="glass-card rounded-xl p-4 cursor-pointer group"><summary class="font-display font-semibold text-sm text-white flex items-center justify-between list-none"><span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-bright"></span>Is my personal information and account privacy safe?</span><span class="material-symbols-outlined text-[18px] text-primary-bright group-open:rotate-180 transition-transform">expand_more</span></summary><p class="text-xs text-on-surface-variant mt-3 pl-3.5 leading-relaxed">Yes, 100%. We operate under strict privacy standards. Shared profiles are PIN-protected, and for personal upgrades we only need your email address. We never store passwords or sell customer data.</p></details>
+<details class="glass-card rounded-xl p-4 cursor-pointer group"><summary class="font-display font-semibold text-sm text-white flex items-center justify-between list-none"><span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-bright"></span>What should I do if my subscription stops working or logs out?</span><span class="material-symbols-outlined text-[18px] text-primary-bright group-open:rotate-180 transition-transform">expand_more</span></summary><p class="text-xs text-on-surface-variant mt-3 pl-3.5 leading-relaxed">Simply message our 24/7 customer support on WhatsApp (+880 1887-924939) with your order details and TrxID. Our dedicated support team verifies and restores your access or issues a replacement swiftly.</p></details>
+<details class="glass-card rounded-xl p-4 cursor-pointer group"><summary class="font-display font-semibold text-sm text-white flex items-center justify-between list-none"><span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-bright"></span>Can I use the subscription on multiple devices simultaneously?</span><span class="material-symbols-outlined text-[18px] text-primary-bright group-open:rotate-180 transition-transform">expand_more</span></summary><p class="text-xs text-on-surface-variant mt-3 pl-3.5 leading-relaxed">For Shared Profile plans, usage is strictly 1 device/screen at a time to maintain account health. For Personal/Family subscriptions, you can log in on multiple devices according to the official plan specifications.</p></details>
+<details class="glass-card rounded-xl p-4 cursor-pointer group"><summary class="font-display font-semibold text-sm text-white flex items-center justify-between list-none"><span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-bright"></span>What is your refund policy?</span><span class="material-symbols-outlined text-[18px] text-primary-bright group-open:rotate-180 transition-transform">expand_more</span></summary><p class="text-xs text-on-surface-variant mt-3 pl-3.5 leading-relaxed">If we fail to activate or deliver your service within our committed delivery timeframe, we issue a 100% full money-back refund back to your bKash, Nagad, Rocket, or Upay account without questions.</p></details>
+<details class="glass-card rounded-xl p-4 cursor-pointer group"><summary class="font-display font-semibold text-sm text-white flex items-center justify-between list-none"><span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-bright"></span>How do I pay using bKash, Nagad, Rocket, or Upay?</span><span class="material-symbols-outlined text-[18px] text-primary-bright group-open:rotate-180 transition-transform">expand_more</span></summary><p class="text-xs text-on-surface-variant mt-3 pl-3.5 leading-relaxed">Open your mobile banking app, select 'Send Money', enter our official personal number <code class="text-white">01887924939</code> and the exact amount in BDT. Once sent, share the 8-10 character Transaction ID (TrxID) or screenshot via WhatsApp for instant processing.</p></details>
 </div>
 </section>
 </main>
@@ -1358,10 +1518,22 @@
         <h3 class="text-[11px] font-bold uppercase tracking-widest text-white mb-4">We Accept</h3>
         <p class="text-[11px] leading-relaxed text-on-surface-variant mb-4">All prices in Bangladeshi Taka (৳). Pay via personal send money from your favorite mobile banking app.</p>
         <div class="grid grid-cols-2 gap-2">
-          <span class="flex items-center gap-2 px-3 py-2 rounded-xl bg-white/[0.04] border border-white/10 text-[11px] font-semibold text-white"><span class="w-2 h-2 rounded-full bg-[#E2136E] shrink-0"></span>bKash</span>
-          <span class="flex items-center gap-2 px-3 py-2 rounded-xl bg-white/[0.04] border border-white/10 text-[11px] font-semibold text-white"><span class="w-2 h-2 rounded-full bg-[#F7941D] shrink-0"></span>Nagad</span>
-          <span class="flex items-center gap-2 px-3 py-2 rounded-xl bg-white/[0.04] border border-white/10 text-[11px] font-semibold text-white"><span class="w-2 h-2 rounded-full bg-[#8C3494] shrink-0"></span>Rocket</span>
-          <span class="flex items-center gap-2 px-3 py-2 rounded-xl bg-white/[0.04] border border-white/10 text-[11px] font-semibold text-white"><span class="w-2 h-2 rounded-full bg-[#0EA5E9] shrink-0"></span>Upay</span>
+          <span class="flex items-center gap-2 px-3 py-2 rounded-xl bg-white/[0.04] border border-white/10 text-[11px] font-semibold text-white hover:border-[#E2136E]/40 transition-colors">
+            <img src="images/payment/bkash-icon.svg" alt="bKash" class="w-4 h-4 rounded shrink-0 object-contain" width="16" height="16"/>
+            <span>bKash</span>
+          </span>
+          <span class="flex items-center gap-2 px-3 py-2 rounded-xl bg-white/[0.04] border border-white/10 text-[11px] font-semibold text-white hover:border-[#F7941D]/40 transition-colors">
+            <img src="images/payment/nagad-icon.svg" alt="Nagad" class="w-4 h-4 rounded shrink-0 object-contain" width="16" height="16"/>
+            <span>Nagad</span>
+          </span>
+          <span class="flex items-center gap-2 px-3 py-2 rounded-xl bg-white/[0.04] border border-white/10 text-[11px] font-semibold text-white hover:border-[#8C3494]/40 transition-colors">
+            <img src="images/payment/rocket-icon.svg" alt="Rocket" class="w-4 h-4 rounded shrink-0 object-contain" width="16" height="16"/>
+            <span>Rocket</span>
+          </span>
+          <span class="flex items-center gap-2 px-3 py-2 rounded-xl bg-white/[0.04] border border-white/10 text-[11px] font-semibold text-white hover:border-[#00609C]/40 transition-colors">
+            <img src="images/payment/upay-icon.svg" alt="Upay" class="w-4 h-4 rounded shrink-0 object-contain" width="16" height="16"/>
+            <span>Upay</span>
+          </span>
         </div>
       </div>
       <div>

@@ -70,7 +70,7 @@ const DELIVERY_HTML = `<h4>Delivery Process</h4>
 <h4>Important Notes</h4>
 <ul><li>Subscription supports single-device/account login to maintain security.</li><li>Account modification is restricted to keep service validity.</li><li>Refunds or replacements are not applicable for suspicious activity or T&C violations.</li></ul>`;
 const WHY_HTML = `<h4>Why Buy from DigitalSubShop?</h4>
-<ul><li>100% genuine and authentic subscription guarantee.</li><li>Fastest delivery directly to your account.</li><li>Convenient local payment methods including bKash, Nagad, and Rocket.</li><li>Dedicated 24/7 local customer support on WhatsApp, Messenger and phone.</li><li>Lowest price guarantee in Bangladesh for premium subscriptions.</li></ul>`;
+<ul><li>100% genuine and authentic subscription guarantee.</li><li>Fastest delivery directly to your account.</li><li>Convenient local payment methods including bKash, Nagad, Rocket, and Upay.</li><li>Dedicated 24/7 local customer support on WhatsApp, Messenger and phone.</li><li>Lowest price guarantee in Bangladesh for premium subscriptions.</li></ul>`;
 /**
  * Update SEO meta tags and title based on product data
  */

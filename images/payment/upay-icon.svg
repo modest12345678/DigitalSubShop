@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
+  <defs>
+    <linearGradient id="upayIconBg" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00609C"/>
+      <stop offset="100%" stop-color="#003B6D"/>
+    </linearGradient>
+  </defs>
+  <rect width="40" height="40" rx="10" fill="url(#upayIconBg)"/>
+  <g transform="translate(6, 6)">
+    <circle cx="14" cy="14" r="13" fill="#FFFFFF" opacity="0.15"/>
+    <path d="M8 9V14.5C8 17.8 10.7 20.5 14 20.5C17.3 20.5 20 17.8 20 14.5V9H17V14.5C17 16.15 15.65 17.5 14 17.5C12.35 17.5 11 16.15 11 14.5V9H8Z" fill="#FFFFFF"/>
+    <circle cx="21" cy="9" r="3" fill="#FFC72C"/>
+  </g>
+</svg>

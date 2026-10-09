@@ -187,15 +187,22 @@
             <label class="block text-xs font-semibold text-white uppercase tracking-wider mb-2 flex items-center gap-1.5">
               <span class="material-symbols-outlined text-sm text-primary-bright">account_balance_wallet</span> Select Payment Method:
             </label>
-            <div class="grid grid-cols-3 gap-2">
-              <button onclick="setPaymentMethod('bKash', this)" class="pay-method-btn py-2 px-2.5 rounded-xl border border-primary-container bg-primary-container/20 text-white font-semibold text-xs flex items-center justify-center gap-1.5 transition-all">
-                <span class="w-2 h-2 rounded-full bg-[#E2136E]"></span><span>bKash</span>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+              <button onclick="setPaymentMethod('bKash', this)" class="pay-method-btn py-2 px-2 rounded-xl border border-primary-container bg-primary-container/20 text-white font-semibold text-xs flex items-center justify-center gap-1.5 transition-all">
+                <img src="images/payment/bkash-icon.svg" alt="bKash" class="w-4 h-4 rounded shrink-0 object-contain" width="16" height="16"/>
+                <span>bKash</span>
               </button>
-              <button onclick="setPaymentMethod('Nagad', this)" class="pay-method-btn py-2 px-2.5 rounded-xl border border-white/10 bg-white/[0.03] text-on-surface-variant font-semibold text-xs flex items-center justify-center gap-1.5 transition-all">
-                <span class="w-2 h-2 rounded-full bg-[#F7941D]"></span><span>Nagad</span>
+              <button onclick="setPaymentMethod('Nagad', this)" class="pay-method-btn py-2 px-2 rounded-xl border border-white/10 bg-white/[0.03] text-on-surface-variant font-semibold text-xs flex items-center justify-center gap-1.5 transition-all">
+                <img src="images/payment/nagad-icon.svg" alt="Nagad" class="w-4 h-4 rounded shrink-0 object-contain" width="16" height="16"/>
+                <span>Nagad</span>
               </button>
-              <button onclick="setPaymentMethod('Rocket', this)" class="pay-method-btn py-2 px-2.5 rounded-xl border border-white/10 bg-white/[0.03] text-on-surface-variant font-semibold text-xs flex items-center justify-center gap-1.5 transition-all">
-                <span class="w-2 h-2 rounded-full bg-[#8C3494]"></span><span>Rocket</span>
+              <button onclick="setPaymentMethod('Rocket', this)" class="pay-method-btn py-2 px-2 rounded-xl border border-white/10 bg-white/[0.03] text-on-surface-variant font-semibold text-xs flex items-center justify-center gap-1.5 transition-all">
+                <img src="images/payment/rocket-icon.svg" alt="Rocket" class="w-4 h-4 rounded shrink-0 object-contain" width="16" height="16"/>
+                <span>Rocket</span>
+              </button>
+              <button onclick="setPaymentMethod('Upay', this)" class="pay-method-btn py-2 px-2 rounded-xl border border-white/10 bg-white/[0.03] text-on-surface-variant font-semibold text-xs flex items-center justify-center gap-1.5 transition-all">
+                <img src="images/payment/upay-icon.svg" alt="Upay" class="w-4 h-4 rounded shrink-0 object-contain" width="16" height="16"/>
+                <span>Upay</span>
               </button>
             </div>
           </div>
@@ -304,6 +311,58 @@
         <!-- Injected via product.js -->
       </div>
     </section>
+    <!-- ================= FREQUENTLY ASKED QUESTIONS ================= -->
+    <section class="mt-14 sm:mt-16 pt-10 border-t border-white/[0.06]" id="faq">
+      <div class="text-center mb-8">
+        <span class="text-xs font-semibold uppercase tracking-widest text-[#00d2ff]">Support &amp; Details</span>
+        <h3 class="font-display font-bold text-xl sm:text-2xl text-white mt-1">Frequently Asked Questions</h3>
+        <p class="text-xs text-on-surface-variant mt-1.5 max-w-md mx-auto">Common questions about subscription validity, warranty, and mobile banking payment.</p>
+      </div>
+      <div class="max-w-4xl mx-auto space-y-3">
+        <details class="glass-card rounded-xl p-4 cursor-pointer group">
+          <summary class="font-display font-semibold text-sm text-white flex items-center justify-between list-none">
+            <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-bright"></span>How does instant direct delivery work without an account?</span>
+            <span class="material-symbols-outlined text-[18px] text-primary-bright group-open:rotate-180 transition-transform">expand_more</span>
+          </summary>
+          <p class="text-xs text-on-surface-variant mt-3 pl-3.5 leading-relaxed">No registration or login account is required. Simply select your subscription plan, choose your payment method (bKash, Nagad, Rocket, or Upay), and message our WhatsApp team. Once your TrxID is verified, your credentials or official invitation links are sent directly to your WhatsApp — usually within minutes to 1–12 hours.</p>
+        </details>
+        <details class="glass-card rounded-xl p-4 cursor-pointer group">
+          <summary class="font-display font-semibold text-sm text-white flex items-center justify-between list-none">
+            <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-bright"></span>Which mobile banking payment methods do you accept, and are there extra fees?</span>
+            <span class="material-symbols-outlined text-[18px] text-primary-bright group-open:rotate-180 transition-transform">expand_more</span>
+          </summary>
+          <p class="text-xs text-on-surface-variant mt-3 pl-3.5 leading-relaxed">We accept bKash, Nagad, Rocket, and Upay Send Money to our official personal wallet number (01887924939). All purchases are priced in Bangladeshi Taka (BDT) with zero international transaction or currency exchange fees.</p>
+        </details>
+        <details class="glass-card rounded-xl p-4 cursor-pointer group">
+          <summary class="font-display font-semibold text-sm text-white flex items-center justify-between list-none">
+            <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-bright"></span>What is the difference between a Shared Account and a Personal/Private Account?</span>
+            <span class="material-symbols-outlined text-[18px] text-primary-bright group-open:rotate-180 transition-transform">expand_more</span>
+          </summary>
+          <p class="text-xs text-on-surface-variant mt-3 pl-3.5 leading-relaxed"><strong>Shared Account:</strong> Dedicated private profile with personal 4-digit PIN lock on an official multi-screen account (1 screen at a time), offering lowest price.<br><br><strong>Personal / Private Account:</strong> Master credentials or direct invite to your own email with full multi-device control.</p>
+        </details>
+        <details class="glass-card rounded-xl p-4 cursor-pointer group">
+          <summary class="font-display font-semibold text-sm text-white flex items-center justify-between list-none">
+            <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-bright"></span>How does the 365-day replacement warranty protect my purchase?</span>
+            <span class="material-symbols-outlined text-[18px] text-primary-bright group-open:rotate-180 transition-transform">expand_more</span>
+          </summary>
+          <p class="text-xs text-on-surface-variant mt-3 pl-3.5 leading-relaxed">Every order is covered by our 365-day replacement escrow warranty. If your subscription ever stops working or encounters issues during the active period, contact our 24/7 WhatsApp support and we will validate and re-issue a replacement slot or invitation quickly at zero extra cost.</p>
+        </details>
+        <details class="glass-card rounded-xl p-4 cursor-pointer group">
+          <summary class="font-display font-semibold text-sm text-white flex items-center justify-between list-none">
+            <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-bright"></span>Do I need an international credit card or PayPal?</span>
+            <span class="material-symbols-outlined text-[18px] text-primary-bright group-open:rotate-180 transition-transform">expand_more</span>
+          </summary>
+          <p class="text-xs text-on-surface-variant mt-3 pl-3.5 leading-relaxed">No! You do not need any dual-currency credit card, passport endorsement, or PayPal account. All subscriptions are payable in BDT using local mobile banking apps: bKash, Nagad, Rocket, and Upay.</p>
+        </details>
+        <details class="glass-card rounded-xl p-4 cursor-pointer group">
+          <summary class="font-display font-semibold text-sm text-white flex items-center justify-between list-none">
+            <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-bright"></span>What should I do if my subscription stops working or logs out?</span>
+            <span class="material-symbols-outlined text-[18px] text-primary-bright group-open:rotate-180 transition-transform">expand_more</span>
+          </summary>
+          <p class="text-xs text-on-surface-variant mt-3 pl-3.5 leading-relaxed">Simply message our 24/7 customer support on WhatsApp (+880 1887-924939) with your order details and TrxID. Our dedicated support team verifies and restores your access or issues a replacement swiftly.</p>
+        </details>
+      </div>
+    </section>
   </div>
 </main>
 <!-- ================= PREMIUM FOOTER ================= -->
@@ -347,10 +406,22 @@
         <h3 class="text-[11px] font-bold uppercase tracking-widest text-white mb-4">We Accept</h3>
         <p class="text-[11px] leading-relaxed text-on-surface-variant mb-4">All prices in Bangladeshi Taka (৳). Pay via personal send money from your favorite mobile banking app.</p>
         <div class="grid grid-cols-2 gap-2">
-          <span class="flex items-center gap-2 px-3 py-2 rounded-xl bg-white/[0.04] border border-white/10 text-[11px] font-semibold text-white"><span class="w-2 h-2 rounded-full bg-[#E2136E] shrink-0"></span>bKash</span>
-          <span class="flex items-center gap-2 px-3 py-2 rounded-xl bg-white/[0.04] border border-white/10 text-[11px] font-semibold text-white"><span class="w-2 h-2 rounded-full bg-[#F7941D] shrink-0"></span>Nagad</span>
-          <span class="flex items-center gap-2 px-3 py-2 rounded-xl bg-white/[0.04] border border-white/10 text-[11px] font-semibold text-white"><span class="w-2 h-2 rounded-full bg-[#8C3494] shrink-0"></span>Rocket</span>
-          <span class="flex items-center gap-2 px-3 py-2 rounded-xl bg-white/[0.04] border border-white/10 text-[11px] font-semibold text-white"><span class="w-2 h-2 rounded-full bg-[#0EA5E9] shrink-0"></span>Upay</span>
+          <span class="flex items-center gap-2 px-3 py-2 rounded-xl bg-white/[0.04] border border-white/10 text-[11px] font-semibold text-white hover:border-[#E2136E]/40 transition-colors">
+            <img src="images/payment/bkash-icon.svg" alt="bKash" class="w-4 h-4 rounded shrink-0 object-contain" width="16" height="16"/>
+            <span>bKash</span>
+          </span>
+          <span class="flex items-center gap-2 px-3 py-2 rounded-xl bg-white/[0.04] border border-white/10 text-[11px] font-semibold text-white hover:border-[#F7941D]/40 transition-colors">
+            <img src="images/payment/nagad-icon.svg" alt="Nagad" class="w-4 h-4 rounded shrink-0 object-contain" width="16" height="16"/>
+            <span>Nagad</span>
+          </span>
+          <span class="flex items-center gap-2 px-3 py-2 rounded-xl bg-white/[0.04] border border-white/10 text-[11px] font-semibold text-white hover:border-[#8C3494]/40 transition-colors">
+            <img src="images/payment/rocket-icon.svg" alt="Rocket" class="w-4 h-4 rounded shrink-0 object-contain" width="16" height="16"/>
+            <span>Rocket</span>
+          </span>
+          <span class="flex items-center gap-2 px-3 py-2 rounded-xl bg-white/[0.04] border border-white/10 text-[11px] font-semibold text-white hover:border-[#00609C]/40 transition-colors">
+            <img src="images/payment/upay-icon.svg" alt="Upay" class="w-4 h-4 rounded shrink-0 object-contain" width="16" height="16"/>
+            <span>Upay</span>
+          </span>
         </div>
       </div>
       <div>

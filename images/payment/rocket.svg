@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 42" fill="none">
+  <defs>
+    <linearGradient id="rocketBg" x1="0" y1="0" x2="140" y2="42" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#8C3494"/>
+      <stop offset="100%" stop-color="#5B1668"/>
+    </linearGradient>
+  </defs>
+  <rect width="140" height="42" rx="8" fill="url(#rocketBg)"/>
+  <!-- Rocket Emblem -->
+  <g transform="translate(11, 7)">
+    <circle cx="14" cy="14" r="13" fill="#FFFFFF" opacity="0.15"/>
+    <!-- Stylized Rocket Silhouette -->
+    <path d="M19.5 7.5C19.5 7.5 17 8 14.5 10.5C12.5 12.5 11.5 15 11.5 16.5L9.5 17.5L8 16L7 17.5L9 19.5L7.5 21L9 22L10.5 20.5L12.5 22.5L14 21.5L12.5 20L13.5 18C15 18 17.5 17 19.5 15C22 12.5 22.5 10 22.5 10C22.5 10 20.5 9 19.5 7.5Z" fill="#FFFFFF"/>
+    <!-- Flame / Speed detail -->
+    <path d="M9.5 19.5L6.5 22.5C6.2 22.8 6.5 23.3 7 23.2L10 22.2L9.5 19.5Z" fill="#FF9E1B"/>
+    <!-- Window dot -->
+    <circle cx="16.5" cy="13.5" r="1.5" fill="#8C3494"/>
+  </g>
+  <!-- Rocket Wordmark -->
+  <text x="44" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="20" fill="#FFFFFF" letter-spacing="-0.3">Rocket</text>
+</svg>
