@@ -2,6 +2,7 @@
 'use strict';
 
 var WHATSAPP_PHONE = window.WHATSAPP_PHONE || '8801887924939';
+var MOBILE_BANKING_PHONE = '01632350367';
 const FB_PAGE_URL = 'https://www.facebook.com/share/1F3zoLEESe/';
 
 let pCurrentVariation = null;
@@ -282,6 +283,10 @@ function setPaymentMethod(method, btn) {
   });
   btn.classList.add('border-primary-container', 'bg-primary-container/20', 'text-white');
   btn.classList.remove('border-white/10', 'bg-white/[0.03]', 'text-on-surface-variant');
+  const label = document.getElementById('pPayMethodLabel');
+  if (label) {
+    label.textContent = `${method} (Send Money):`;
+  }
 }
 window.setPaymentMethod = setPaymentMethod;
 
@@ -290,7 +295,7 @@ function sendWhatsAppOrder() {
   const phoneInput = document.getElementById('customerPhone');
   const customerPhone = phoneInput ? phoneInput.value.trim() : '';
   const price = pCurrentVariation.price !== null ? `৳${pCurrentVariation.price}` : 'Contact Us';
-  const text = `Hello DigitalSubShop! 🎬\n\nI want to order:\n*Service:* ${pProduct.name}\n*Plan:* ${pCurrentVariation.option}\n*Price:* ${price}\n*Payment Method:* ${pCurrentPaymentMethod}${customerPhone ? `\n*My Phone/Account:* ${customerPhone}` : ''}\n\nPlease confirm my order. Thank you!`;
+  const text = `Hello DigitalSubShop! 🎬\n\nI want to order:\n*Service:* ${pProduct.name}\n*Plan:* ${pCurrentVariation.option}\n*Price:* ${price}\n*Payment Method:* ${pCurrentPaymentMethod} (Send Money to 01632350367)${customerPhone ? `\n*My Phone/Account:* ${customerPhone}` : ''}\n\nPlease confirm my order. Thank you!`;
   window.open(`https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(text)}`, '_blank');
 }
 window.sendWhatsAppOrder = sendWhatsAppOrder;
